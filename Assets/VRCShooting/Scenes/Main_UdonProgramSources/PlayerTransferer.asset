@@ -14,12 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 6f4bc6d3213366f43a3db85aea87e381,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export textUI\r\n    .export teleportFrom\r\n
-    \   .export teleportTo\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64,
-    null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n    teleportFrom:
-    %UnityEngineGameObject, null\r\n    teleportTo: %UnityEngineGameObject, null\r\n
-    \   textUI: %UnityEngineUIText, null\r\n    isPlayerDetected: %SystemBoolean,
-    null\r\n    onTriggerEnterOther: %UnityEngineCollider, null\r\n    onTriggerExitOther:
+  udonAssembly: ".data_start\r\n\r\n    .export teleportFrom\r\n    .export teleportTo\r\n\r\n
+    \   __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName:
+    %SystemString, null\r\n    teleportFrom: %UnityEngineGameObject, null\r\n    teleportTo:
+    %UnityEngineGameObject, null\r\n    isPlayerDetected: %SystemBoolean, null\r\n
+    \   onTriggerEnterOther: %UnityEngineCollider, null\r\n    onTriggerExitOther:
     %UnityEngineCollider, null\r\n    __0_other_Collider: %UnityEngineCollider, null\r\n
     \   __1_other_Collider: %UnityEngineCollider, null\r\n    __0_playerRot_Quaternion:
     %UnityEngineQuaternion, null\r\n    __0_playerPos_Vector3: %UnityEngineVector3,
@@ -27,8 +26,6 @@ MonoBehaviour:
     %UnityEngineVector3, null\r\n    __0_teleportToPos_Vector3: %UnityEngineVector3,
     null\r\n    __0_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n    __0_const_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __1_const_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __0_const_intnl_SystemString: %SystemString, null\r\n    __1_const_intnl_SystemString:
-    %SystemString, null\r\n    __2_const_intnl_SystemString: %SystemString, null\r\n
     \   __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_SystemUInt32:
     %SystemUInt32, null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
@@ -44,7 +41,6 @@ MonoBehaviour:
     \        # using UdonSharp;\r\n        \r\n         # using UnityEngine.UI;\r\n
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # public class
     UserDetector : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # [SerializeField]\r\n
-    \       \r\n         # private Text textUI;\r\n        \r\n         # [SerializeField]\r\n
     \       \r\n         # private GameObject teleportFrom = null;\r\n        \r\n
     \        # [SerializeField]\r\n        \r\n         # private GameObject teleportTo
     = null;\r\n        \r\n         # private bool isPlayerDetected;\r\n        \r\n
@@ -56,35 +52,29 @@ MonoBehaviour:
     \"UnityEngineCollider.__GetType__SystemType\"\r\n        PUSH, __0_intnl_SystemType\r\n
     \       PUSH, __0_const_intnl_SystemType\r\n        PUSH, __0_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemType.__op_Equality__SystemType_SystemType__SystemBoolean\"\r\n
-    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000090\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000078\r\n
     \       \r\n         # {\r\n        \r\n         # isPlayerDetected = true;\r\n
     \       PUSH, __0_const_intnl_SystemBoolean\r\n        PUSH, isPlayerDetected\r\n
-    \       COPY\r\n        \r\n         # textUI.text = \"true\";\r\n        PUSH,
-    textUI\r\n        PUSH, __0_const_intnl_SystemString\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
-    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
-    \        # private void OnTriggerExit(Collider other)\r\n    .export _onTriggerExit\r\n
-    \       \r\n    _onTriggerExit:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, onTriggerExitOther\r\n        PUSH, __1_other_Collider\r\n        COPY\r\n
-    \       \r\n         # {\r\n        \r\n         # if (other.GetType() == typeof(CharacterController))\r\n
-    \       PUSH, __1_other_Collider\r\n        PUSH, __1_intnl_SystemType\r\n        EXTERN,
-    \"UnityEngineCollider.__GetType__SystemType\"\r\n        PUSH, __1_intnl_SystemType\r\n
-    \       PUSH, __0_const_intnl_SystemType\r\n        PUSH, __1_intnl_SystemBoolean\r\n
-    \       EXTERN, \"SystemType.__op_Equality__SystemType_SystemType__SystemBoolean\"\r\n
-    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000134\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n
+    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
+    \       \r\n         # private void OnTriggerExit(Collider other)\r\n    .export
+    _onTriggerExit\r\n        \r\n    _onTriggerExit:\r\n        \r\n        PUSH,
+    __0_const_intnl_SystemUInt32\r\n        PUSH, onTriggerExitOther\r\n        PUSH,
+    __1_other_Collider\r\n        COPY\r\n        \r\n         # {\r\n        \r\n
+    \        # if (other.GetType() == typeof(CharacterController))\r\n        PUSH,
+    __1_other_Collider\r\n        PUSH, __1_intnl_SystemType\r\n        EXTERN, \"UnityEngineCollider.__GetType__SystemType\"\r\n
+    \       PUSH, __1_intnl_SystemType\r\n        PUSH, __0_const_intnl_SystemType\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        EXTERN, \"SystemType.__op_Equality__SystemType_SystemType__SystemBoolean\"\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000104\r\n
     \       \r\n         # {\r\n        \r\n         # isPlayerDetected = false;\r\n
     \       PUSH, __1_const_intnl_SystemBoolean\r\n        PUSH, isPlayerDetected\r\n
-    \       COPY\r\n        \r\n         # textUI.text = \"false\";\r\n        PUSH,
-    textUI\r\n        PUSH, __1_const_intnl_SystemString\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
-    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
-    \        # public void Transfer()\r\n    .export Transfer\r\n        \r\n    Transfer:\r\n
-    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        \r\n         #
-    {\r\n        \r\n         # textUI.text = \"transfer\";\r\n        PUSH, textUI\r\n
-    \       PUSH, __2_const_intnl_SystemString\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       \r\n         # if (!isPlayerDetected)\r\n        PUSH, isPlayerDetected\r\n
-    \       PUSH, __2_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
-    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000001A4\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n
+    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
+    \       \r\n         # public void Transfer()\r\n    .export Transfer\r\n        \r\n
+    \   Transfer:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        \r\n
+    \        # {\r\n        \r\n         # if (!isPlayerDetected)\r\n        PUSH,
+    isPlayerDetected\r\n        PUSH, __2_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000015C\r\n
     \       \r\n         # {\r\n        \r\n         # return;\r\n        PUSH, __0_intnl_returnTarget_UInt32
     #Explicit return sequence\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
     \       \r\n         # var player = Networking.LocalPlayer;\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n
@@ -284,897 +274,736 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 168
-      endSourceChar: 188
+      endSourceChar: 207
       line: 8
-      lineChar: 12
-      spanCodeSection: "Text textUI;\r\n\r\n    "
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 188
-      endSourceChar: 189
-      line: 10
-      lineChar: 4
-      spanCodeSection: '['
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 189
-      endSourceChar: 189
-      line: 10
-      lineChar: 5
-      spanCodeSection: 
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 189
-      endSourceChar: 218
-      line: 10
-      lineChar: 5
-      spanCodeSection: "SerializeField]\r\n    private "
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 218
-      endSourceChar: 218
-      line: 11
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 218
-      endSourceChar: 257
-      line: 11
       lineChar: 12
       spanCodeSection: "GameObject teleportFrom = null;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 257
-      endSourceChar: 258
-      line: 13
+      startSourceChar: 207
+      endSourceChar: 208
+      line: 10
       lineChar: 4
       spanCodeSection: '['
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 258
-      endSourceChar: 258
-      line: 13
+      startSourceChar: 208
+      endSourceChar: 208
+      line: 10
       lineChar: 5
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 258
-      endSourceChar: 287
-      line: 13
+      startSourceChar: 208
+      endSourceChar: 237
+      line: 10
       lineChar: 5
       spanCodeSection: "SerializeField]\r\n    private "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 287
-      endSourceChar: 287
-      line: 14
+      startSourceChar: 237
+      endSourceChar: 237
+      line: 11
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 287
-      endSourceChar: 324
-      line: 14
+      startSourceChar: 237
+      endSourceChar: 274
+      line: 11
       lineChar: 12
       spanCodeSection: "GameObject teleportTo = null;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 324
-      endSourceChar: 332
-      line: 16
+      startSourceChar: 274
+      endSourceChar: 282
+      line: 13
       lineChar: 4
       spanCodeSection: 'private '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 332
-      endSourceChar: 332
-      line: 16
+      startSourceChar: 282
+      endSourceChar: 282
+      line: 13
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 332
-      endSourceChar: 362
-      line: 16
+      startSourceChar: 282
+      endSourceChar: 312
+      line: 13
       lineChar: 12
       spanCodeSection: "bool isPlayerDetected;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 362
-      endSourceChar: 390
-      line: 18
+      startSourceChar: 312
+      endSourceChar: 340
+      line: 15
       lineChar: 4
       spanCodeSection: private void OnTriggerEnter(
     - startInstruction: 0
       endInstruction: 27
-      startSourceChar: 390
-      endSourceChar: 411
-      line: 18
+      startSourceChar: 340
+      endSourceChar: 361
+      line: 15
       lineChar: 32
       spanCodeSection: "Collider other)\r\n    "
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 411
-      endSourceChar: 422
-      line: 19
+      startSourceChar: 361
+      endSourceChar: 372
+      line: 16
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 422
-      endSourceChar: 426
-      line: 20
+      startSourceChar: 372
+      endSourceChar: 376
+      line: 17
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 426
-      endSourceChar: 426
-      line: 20
+      startSourceChar: 376
+      endSourceChar: 376
+      line: 17
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 426
-      endSourceChar: 426
-      line: 20
+      startSourceChar: 376
+      endSourceChar: 376
+      line: 17
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 426
-      endSourceChar: 426
-      line: 20
+      startSourceChar: 376
+      endSourceChar: 376
+      line: 17
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 426
-      endSourceChar: 432
-      line: 20
+      startSourceChar: 376
+      endSourceChar: 382
+      line: 17
       lineChar: 12
       spanCodeSection: other.
     - startInstruction: 28
       endInstruction: 51
-      startSourceChar: 432
-      endSourceChar: 445
-      line: 20
+      startSourceChar: 382
+      endSourceChar: 395
+      line: 17
       lineChar: 18
       spanCodeSection: 'GetType() == '
     - startInstruction: 52
       endInstruction: 51
-      startSourceChar: 445
-      endSourceChar: 452
-      line: 20
+      startSourceChar: 395
+      endSourceChar: 402
+      line: 17
       lineChar: 31
       spanCodeSection: typeof(
     - startInstruction: 52
       endInstruction: 99
-      startSourceChar: 452
-      endSourceChar: 483
-      line: 20
+      startSourceChar: 402
+      endSourceChar: 433
+      line: 17
       lineChar: 38
       spanCodeSection: "CharacterController))\r\n        "
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 483
-      endSourceChar: 498
-      line: 21
+      startSourceChar: 433
+      endSourceChar: 448
+      line: 18
       lineChar: 8
       spanCodeSection: "{\r\n            "
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 498
-      endSourceChar: 498
-      line: 22
+      startSourceChar: 448
+      endSourceChar: 448
+      line: 19
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 498
-      endSourceChar: 498
-      line: 22
+      startSourceChar: 448
+      endSourceChar: 448
+      line: 19
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 498
-      endSourceChar: 517
-      line: 22
+      startSourceChar: 448
+      endSourceChar: 467
+      line: 19
       lineChar: 12
       spanCodeSection: 'isPlayerDetected = '
     - startInstruction: 100
-      endInstruction: 119
-      startSourceChar: 517
-      endSourceChar: 536
-      line: 22
+      endInstruction: 139
+      startSourceChar: 467
+      endSourceChar: 498
+      line: 19
       lineChar: 31
-      spanCodeSection: "true;\r\n            "
-    - startInstruction: 120
-      endInstruction: 119
-      startSourceChar: 536
-      endSourceChar: 536
+      spanCodeSection: "true;\r\n        }\r\n    }\r\n\r\n    "
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 498
+      endSourceChar: 525
       line: 23
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 120
-      endInstruction: 119
-      startSourceChar: 536
-      endSourceChar: 536
-      line: 23
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 120
-      endInstruction: 119
-      startSourceChar: 536
-      endSourceChar: 536
-      line: 23
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 120
-      endInstruction: 119
-      startSourceChar: 536
-      endSourceChar: 543
-      line: 23
-      lineChar: 12
-      spanCodeSection: textUI.
-    - startInstruction: 120
-      endInstruction: 119
-      startSourceChar: 543
-      endSourceChar: 550
-      line: 23
-      lineChar: 19
-      spanCodeSection: 'text = '
-    - startInstruction: 120
-      endInstruction: 163
-      startSourceChar: 550
-      endSourceChar: 583
-      line: 23
-      lineChar: 26
-      spanCodeSection: "\"true\";\r\n        }\r\n    }\r\n\r\n    "
-    - startInstruction: 164
-      endInstruction: 163
-      startSourceChar: 583
-      endSourceChar: 610
-      line: 27
       lineChar: 4
       spanCodeSection: private void OnTriggerExit(
-    - startInstruction: 164
-      endInstruction: 191
-      startSourceChar: 610
-      endSourceChar: 631
-      line: 27
+    - startInstruction: 140
+      endInstruction: 167
+      startSourceChar: 525
+      endSourceChar: 546
+      line: 23
       lineChar: 31
       spanCodeSection: "Collider other)\r\n    "
-    - startInstruction: 192
-      endInstruction: 191
-      startSourceChar: 631
-      endSourceChar: 642
-      line: 28
+    - startInstruction: 168
+      endInstruction: 167
+      startSourceChar: 546
+      endSourceChar: 557
+      line: 24
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 192
-      endInstruction: 191
-      startSourceChar: 642
-      endSourceChar: 646
-      line: 29
+    - startInstruction: 168
+      endInstruction: 167
+      startSourceChar: 557
+      endSourceChar: 561
+      line: 25
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 192
-      endInstruction: 191
-      startSourceChar: 646
-      endSourceChar: 646
-      line: 29
+    - startInstruction: 168
+      endInstruction: 167
+      startSourceChar: 561
+      endSourceChar: 561
+      line: 25
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 192
-      endInstruction: 191
-      startSourceChar: 646
-      endSourceChar: 646
-      line: 29
+    - startInstruction: 168
+      endInstruction: 167
+      startSourceChar: 561
+      endSourceChar: 561
+      line: 25
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 192
-      endInstruction: 191
-      startSourceChar: 646
-      endSourceChar: 646
-      line: 29
+    - startInstruction: 168
+      endInstruction: 167
+      startSourceChar: 561
+      endSourceChar: 561
+      line: 25
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 192
-      endInstruction: 191
-      startSourceChar: 646
-      endSourceChar: 652
-      line: 29
+    - startInstruction: 168
+      endInstruction: 167
+      startSourceChar: 561
+      endSourceChar: 567
+      line: 25
       lineChar: 12
       spanCodeSection: other.
-    - startInstruction: 192
-      endInstruction: 215
-      startSourceChar: 652
-      endSourceChar: 665
-      line: 29
+    - startInstruction: 168
+      endInstruction: 191
+      startSourceChar: 567
+      endSourceChar: 580
+      line: 25
       lineChar: 18
       spanCodeSection: 'GetType() == '
-    - startInstruction: 216
-      endInstruction: 215
-      startSourceChar: 665
-      endSourceChar: 672
-      line: 29
+    - startInstruction: 192
+      endInstruction: 191
+      startSourceChar: 580
+      endSourceChar: 587
+      line: 25
       lineChar: 31
       spanCodeSection: typeof(
-    - startInstruction: 216
-      endInstruction: 263
-      startSourceChar: 672
-      endSourceChar: 703
-      line: 29
+    - startInstruction: 192
+      endInstruction: 239
+      startSourceChar: 587
+      endSourceChar: 618
+      line: 25
       lineChar: 38
       spanCodeSection: "CharacterController))\r\n        "
-    - startInstruction: 264
-      endInstruction: 263
-      startSourceChar: 703
-      endSourceChar: 718
-      line: 30
+    - startInstruction: 240
+      endInstruction: 239
+      startSourceChar: 618
+      endSourceChar: 633
+      line: 26
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 264
-      endInstruction: 263
-      startSourceChar: 718
-      endSourceChar: 718
-      line: 31
+    - startInstruction: 240
+      endInstruction: 239
+      startSourceChar: 633
+      endSourceChar: 633
+      line: 27
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 264
-      endInstruction: 263
-      startSourceChar: 718
-      endSourceChar: 718
-      line: 31
+    - startInstruction: 240
+      endInstruction: 239
+      startSourceChar: 633
+      endSourceChar: 633
+      line: 27
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 264
-      endInstruction: 263
-      startSourceChar: 718
-      endSourceChar: 737
-      line: 31
+    - startInstruction: 240
+      endInstruction: 239
+      startSourceChar: 633
+      endSourceChar: 652
+      line: 27
       lineChar: 12
       spanCodeSection: 'isPlayerDetected = '
-    - startInstruction: 264
-      endInstruction: 283
-      startSourceChar: 737
-      endSourceChar: 757
-      line: 31
+    - startInstruction: 240
+      endInstruction: 279
+      startSourceChar: 652
+      endSourceChar: 684
+      line: 27
       lineChar: 31
-      spanCodeSection: "false;\r\n            "
-    - startInstruction: 284
-      endInstruction: 283
-      startSourceChar: 757
-      endSourceChar: 757
-      line: 32
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 284
-      endInstruction: 283
-      startSourceChar: 757
-      endSourceChar: 757
-      line: 32
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 284
-      endInstruction: 283
-      startSourceChar: 757
-      endSourceChar: 757
-      line: 32
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 284
-      endInstruction: 283
-      startSourceChar: 757
-      endSourceChar: 764
-      line: 32
-      lineChar: 12
-      spanCodeSection: textUI.
-    - startInstruction: 284
-      endInstruction: 283
-      startSourceChar: 764
-      endSourceChar: 771
-      line: 32
-      lineChar: 19
-      spanCodeSection: 'text = '
-    - startInstruction: 284
-      endInstruction: 327
-      startSourceChar: 771
-      endSourceChar: 805
-      line: 32
-      lineChar: 26
-      spanCodeSection: "\"false\";\r\n        }\r\n    }\r\n\r\n    "
-    - startInstruction: 328
-      endInstruction: 335
-      startSourceChar: 805
-      endSourceChar: 833
-      line: 36
+      spanCodeSection: "false;\r\n        }\r\n    }\r\n\r\n    "
+    - startInstruction: 280
+      endInstruction: 287
+      startSourceChar: 684
+      endSourceChar: 712
+      line: 31
       lineChar: 4
       spanCodeSection: "public void Transfer()\r\n    "
-    - startInstruction: 336
-      endInstruction: 335
-      startSourceChar: 833
-      endSourceChar: 844
-      line: 37
+    - startInstruction: 288
+      endInstruction: 287
+      startSourceChar: 712
+      endSourceChar: 723
+      line: 32
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 336
-      endInstruction: 335
-      startSourceChar: 844
-      endSourceChar: 844
-      line: 38
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 336
-      endInstruction: 335
-      startSourceChar: 844
-      endSourceChar: 844
-      line: 38
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 336
-      endInstruction: 335
-      startSourceChar: 844
-      endSourceChar: 844
-      line: 38
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 336
-      endInstruction: 335
-      startSourceChar: 844
-      endSourceChar: 851
-      line: 38
-      lineChar: 8
-      spanCodeSection: textUI.
-    - startInstruction: 336
-      endInstruction: 335
-      startSourceChar: 851
-      endSourceChar: 858
-      line: 38
-      lineChar: 15
-      spanCodeSection: 'text = '
-    - startInstruction: 336
-      endInstruction: 359
-      startSourceChar: 858
-      endSourceChar: 879
-      line: 38
-      lineChar: 22
-      spanCodeSection: "\"transfer\";\r\n        "
-    - startInstruction: 360
-      endInstruction: 359
-      startSourceChar: 879
-      endSourceChar: 883
-      line: 39
+    - startInstruction: 288
+      endInstruction: 287
+      startSourceChar: 723
+      endSourceChar: 727
+      line: 33
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 360
-      endInstruction: 359
-      startSourceChar: 883
-      endSourceChar: 884
-      line: 39
+    - startInstruction: 288
+      endInstruction: 287
+      startSourceChar: 727
+      endSourceChar: 728
+      line: 33
       lineChar: 12
       spanCodeSection: '!'
-    - startInstruction: 360
-      endInstruction: 399
-      startSourceChar: 884
-      endSourceChar: 911
-      line: 39
+    - startInstruction: 288
+      endInstruction: 327
+      startSourceChar: 728
+      endSourceChar: 755
+      line: 33
       lineChar: 13
       spanCodeSection: "isPlayerDetected)\r\n        "
-    - startInstruction: 400
-      endInstruction: 399
-      startSourceChar: 911
-      endSourceChar: 926
-      line: 40
+    - startInstruction: 328
+      endInstruction: 327
+      startSourceChar: 755
+      endSourceChar: 770
+      line: 34
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 400
-      endInstruction: 419
-      startSourceChar: 926
-      endSourceChar: 956
-      line: 41
+    - startInstruction: 328
+      endInstruction: 347
+      startSourceChar: 770
+      endSourceChar: 800
+      line: 35
       lineChar: 12
       spanCodeSection: "return;\r\n        }\r\n\r\n        "
-    - startInstruction: 420
-      endInstruction: 419
-      startSourceChar: 956
-      endSourceChar: 956
-      line: 44
+    - startInstruction: 348
+      endInstruction: 347
+      startSourceChar: 800
+      endSourceChar: 800
+      line: 38
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 420
-      endInstruction: 419
-      startSourceChar: 956
-      endSourceChar: 956
-      line: 44
+    - startInstruction: 348
+      endInstruction: 347
+      startSourceChar: 800
+      endSourceChar: 800
+      line: 38
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 420
-      endInstruction: 419
-      startSourceChar: 956
-      endSourceChar: 967
-      line: 44
+    - startInstruction: 348
+      endInstruction: 347
+      startSourceChar: 800
+      endSourceChar: 811
+      line: 38
       lineChar: 8
       spanCodeSection: 'var player '
-    - startInstruction: 420
-      endInstruction: 419
-      startSourceChar: 967
-      endSourceChar: 969
-      line: 44
+    - startInstruction: 348
+      endInstruction: 347
+      startSourceChar: 811
+      endSourceChar: 813
+      line: 38
       lineChar: 19
       spanCodeSection: '= '
-    - startInstruction: 420
-      endInstruction: 419
-      startSourceChar: 969
-      endSourceChar: 969
-      line: 44
+    - startInstruction: 348
+      endInstruction: 347
+      startSourceChar: 813
+      endSourceChar: 813
+      line: 38
       lineChar: 21
       spanCodeSection: 
-    - startInstruction: 420
-      endInstruction: 419
-      startSourceChar: 969
-      endSourceChar: 980
-      line: 44
+    - startInstruction: 348
+      endInstruction: 347
+      startSourceChar: 813
+      endSourceChar: 824
+      line: 38
       lineChar: 21
       spanCodeSection: Networking.
-    - startInstruction: 420
-      endInstruction: 455
-      startSourceChar: 980
-      endSourceChar: 1002
-      line: 44
+    - startInstruction: 348
+      endInstruction: 383
+      startSourceChar: 824
+      endSourceChar: 846
+      line: 38
       lineChar: 32
       spanCodeSection: "LocalPlayer;\r\n        "
-    - startInstruction: 456
-      endInstruction: 455
-      startSourceChar: 1002
-      endSourceChar: 1002
-      line: 45
+    - startInstruction: 384
+      endInstruction: 383
+      startSourceChar: 846
+      endSourceChar: 846
+      line: 39
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 456
-      endInstruction: 455
-      startSourceChar: 1002
-      endSourceChar: 1002
-      line: 45
+    - startInstruction: 384
+      endInstruction: 383
+      startSourceChar: 846
+      endSourceChar: 846
+      line: 39
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 456
-      endInstruction: 455
-      startSourceChar: 1002
-      endSourceChar: 1016
-      line: 45
+    - startInstruction: 384
+      endInstruction: 383
+      startSourceChar: 846
+      endSourceChar: 860
+      line: 39
       lineChar: 8
       spanCodeSection: 'var playerPos '
-    - startInstruction: 456
-      endInstruction: 455
-      startSourceChar: 1016
-      endSourceChar: 1018
-      line: 45
+    - startInstruction: 384
+      endInstruction: 383
+      startSourceChar: 860
+      endSourceChar: 862
+      line: 39
       lineChar: 22
       spanCodeSection: '= '
-    - startInstruction: 456
-      endInstruction: 455
-      startSourceChar: 1018
-      endSourceChar: 1018
-      line: 45
+    - startInstruction: 384
+      endInstruction: 383
+      startSourceChar: 862
+      endSourceChar: 862
+      line: 39
       lineChar: 24
       spanCodeSection: 
-    - startInstruction: 456
-      endInstruction: 455
-      startSourceChar: 1018
-      endSourceChar: 1018
-      line: 45
+    - startInstruction: 384
+      endInstruction: 383
+      startSourceChar: 862
+      endSourceChar: 862
+      line: 39
       lineChar: 24
       spanCodeSection: 
-    - startInstruction: 456
-      endInstruction: 455
-      startSourceChar: 1018
-      endSourceChar: 1025
-      line: 45
+    - startInstruction: 384
+      endInstruction: 383
+      startSourceChar: 862
+      endSourceChar: 869
+      line: 39
       lineChar: 24
       spanCodeSection: player.
-    - startInstruction: 456
-      endInstruction: 499
-      startSourceChar: 1025
-      endSourceChar: 1049
-      line: 45
+    - startInstruction: 384
+      endInstruction: 427
+      startSourceChar: 869
+      endSourceChar: 893
+      line: 39
       lineChar: 31
       spanCodeSection: "GetPosition();\r\n        "
-    - startInstruction: 500
-      endInstruction: 499
-      startSourceChar: 1049
-      endSourceChar: 1049
-      line: 46
+    - startInstruction: 428
+      endInstruction: 427
+      startSourceChar: 893
+      endSourceChar: 893
+      line: 40
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 500
-      endInstruction: 499
-      startSourceChar: 1049
-      endSourceChar: 1049
-      line: 46
+    - startInstruction: 428
+      endInstruction: 427
+      startSourceChar: 893
+      endSourceChar: 893
+      line: 40
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 500
-      endInstruction: 499
-      startSourceChar: 1049
-      endSourceChar: 1063
-      line: 46
+    - startInstruction: 428
+      endInstruction: 427
+      startSourceChar: 893
+      endSourceChar: 907
+      line: 40
       lineChar: 8
       spanCodeSection: 'var playerRot '
-    - startInstruction: 500
-      endInstruction: 499
-      startSourceChar: 1063
-      endSourceChar: 1065
-      line: 46
+    - startInstruction: 428
+      endInstruction: 427
+      startSourceChar: 907
+      endSourceChar: 909
+      line: 40
       lineChar: 22
       spanCodeSection: '= '
-    - startInstruction: 500
-      endInstruction: 499
-      startSourceChar: 1065
-      endSourceChar: 1065
-      line: 46
+    - startInstruction: 428
+      endInstruction: 427
+      startSourceChar: 909
+      endSourceChar: 909
+      line: 40
       lineChar: 24
       spanCodeSection: 
-    - startInstruction: 500
-      endInstruction: 499
-      startSourceChar: 1065
-      endSourceChar: 1065
-      line: 46
+    - startInstruction: 428
+      endInstruction: 427
+      startSourceChar: 909
+      endSourceChar: 909
+      line: 40
       lineChar: 24
       spanCodeSection: 
-    - startInstruction: 500
-      endInstruction: 499
-      startSourceChar: 1065
-      endSourceChar: 1072
-      line: 46
+    - startInstruction: 428
+      endInstruction: 427
+      startSourceChar: 909
+      endSourceChar: 916
+      line: 40
       lineChar: 24
       spanCodeSection: player.
-    - startInstruction: 500
-      endInstruction: 543
-      startSourceChar: 1072
-      endSourceChar: 1098
-      line: 46
+    - startInstruction: 428
+      endInstruction: 471
+      startSourceChar: 916
+      endSourceChar: 942
+      line: 40
       lineChar: 31
       spanCodeSection: "GetRotation();\r\n\r\n        "
-    - startInstruction: 544
-      endInstruction: 543
-      startSourceChar: 1098
-      endSourceChar: 1098
-      line: 48
+    - startInstruction: 472
+      endInstruction: 471
+      startSourceChar: 942
+      endSourceChar: 942
+      line: 42
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 544
-      endInstruction: 543
-      startSourceChar: 1098
-      endSourceChar: 1098
-      line: 48
+    - startInstruction: 472
+      endInstruction: 471
+      startSourceChar: 942
+      endSourceChar: 942
+      line: 42
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 544
-      endInstruction: 543
-      startSourceChar: 1098
-      endSourceChar: 1118
-      line: 48
+    - startInstruction: 472
+      endInstruction: 471
+      startSourceChar: 942
+      endSourceChar: 962
+      line: 42
       lineChar: 8
       spanCodeSection: 'var teleportFromPos '
-    - startInstruction: 544
-      endInstruction: 543
-      startSourceChar: 1118
-      endSourceChar: 1120
-      line: 48
+    - startInstruction: 472
+      endInstruction: 471
+      startSourceChar: 962
+      endSourceChar: 964
+      line: 42
       lineChar: 28
       spanCodeSection: '= '
-    - startInstruction: 544
-      endInstruction: 543
-      startSourceChar: 1120
-      endSourceChar: 1120
-      line: 48
+    - startInstruction: 472
+      endInstruction: 471
+      startSourceChar: 964
+      endSourceChar: 964
+      line: 42
       lineChar: 30
       spanCodeSection: 
-    - startInstruction: 544
-      endInstruction: 543
-      startSourceChar: 1120
-      endSourceChar: 1120
-      line: 48
+    - startInstruction: 472
+      endInstruction: 471
+      startSourceChar: 964
+      endSourceChar: 964
+      line: 42
       lineChar: 30
       spanCodeSection: 
-    - startInstruction: 544
-      endInstruction: 543
-      startSourceChar: 1120
-      endSourceChar: 1133
-      line: 48
+    - startInstruction: 472
+      endInstruction: 471
+      startSourceChar: 964
+      endSourceChar: 977
+      line: 42
       lineChar: 30
       spanCodeSection: teleportFrom.
-    - startInstruction: 544
-      endInstruction: 543
-      startSourceChar: 1133
-      endSourceChar: 1143
-      line: 48
+    - startInstruction: 472
+      endInstruction: 471
+      startSourceChar: 977
+      endSourceChar: 987
+      line: 42
       lineChar: 43
       spanCodeSection: transform.
-    - startInstruction: 544
-      endInstruction: 611
-      startSourceChar: 1143
-      endSourceChar: 1162
-      line: 48
+    - startInstruction: 472
+      endInstruction: 539
+      startSourceChar: 987
+      endSourceChar: 1006
+      line: 42
       lineChar: 53
       spanCodeSection: "position;\r\n        "
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1162
-      endSourceChar: 1162
-      line: 49
+    - startInstruction: 540
+      endInstruction: 539
+      startSourceChar: 1006
+      endSourceChar: 1006
+      line: 43
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1162
-      endSourceChar: 1162
-      line: 49
+    - startInstruction: 540
+      endInstruction: 539
+      startSourceChar: 1006
+      endSourceChar: 1006
+      line: 43
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1162
-      endSourceChar: 1180
-      line: 49
+    - startInstruction: 540
+      endInstruction: 539
+      startSourceChar: 1006
+      endSourceChar: 1024
+      line: 43
       lineChar: 8
       spanCodeSection: 'var teleportToPos '
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1180
-      endSourceChar: 1182
-      line: 49
+    - startInstruction: 540
+      endInstruction: 539
+      startSourceChar: 1024
+      endSourceChar: 1026
+      line: 43
       lineChar: 26
       spanCodeSection: '= '
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1182
-      endSourceChar: 1182
-      line: 49
+    - startInstruction: 540
+      endInstruction: 539
+      startSourceChar: 1026
+      endSourceChar: 1026
+      line: 43
       lineChar: 28
       spanCodeSection: 
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1182
-      endSourceChar: 1182
-      line: 49
+    - startInstruction: 540
+      endInstruction: 539
+      startSourceChar: 1026
+      endSourceChar: 1026
+      line: 43
       lineChar: 28
       spanCodeSection: 
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1182
-      endSourceChar: 1193
-      line: 49
+    - startInstruction: 540
+      endInstruction: 539
+      startSourceChar: 1026
+      endSourceChar: 1037
+      line: 43
       lineChar: 28
       spanCodeSection: teleportTo.
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1193
-      endSourceChar: 1203
-      line: 49
+    - startInstruction: 540
+      endInstruction: 539
+      startSourceChar: 1037
+      endSourceChar: 1047
+      line: 43
       lineChar: 39
       spanCodeSection: transform.
-    - startInstruction: 612
-      endInstruction: 679
-      startSourceChar: 1203
-      endSourceChar: 1222
-      line: 49
+    - startInstruction: 540
+      endInstruction: 607
+      startSourceChar: 1047
+      endSourceChar: 1066
+      line: 43
       lineChar: 49
       spanCodeSection: "position;\r\n        "
-    - startInstruction: 680
-      endInstruction: 679
-      startSourceChar: 1222
-      endSourceChar: 1222
-      line: 50
+    - startInstruction: 608
+      endInstruction: 607
+      startSourceChar: 1066
+      endSourceChar: 1066
+      line: 44
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 680
-      endInstruction: 679
-      startSourceChar: 1222
-      endSourceChar: 1222
-      line: 50
+    - startInstruction: 608
+      endInstruction: 607
+      startSourceChar: 1066
+      endSourceChar: 1066
+      line: 44
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 680
-      endInstruction: 679
-      startSourceChar: 1222
-      endSourceChar: 1239
-      line: 50
+    - startInstruction: 608
+      endInstruction: 607
+      startSourceChar: 1066
+      endSourceChar: 1083
+      line: 44
       lineChar: 8
       spanCodeSection: 'var targetVector '
-    - startInstruction: 680
-      endInstruction: 679
-      startSourceChar: 1239
-      endSourceChar: 1241
-      line: 50
+    - startInstruction: 608
+      endInstruction: 607
+      startSourceChar: 1083
+      endSourceChar: 1085
+      line: 44
       lineChar: 25
       spanCodeSection: '= '
-    - startInstruction: 680
-      endInstruction: 679
-      startSourceChar: 1241
-      endSourceChar: 1241
-      line: 50
+    - startInstruction: 608
+      endInstruction: 607
+      startSourceChar: 1085
+      endSourceChar: 1085
+      line: 44
       lineChar: 27
       spanCodeSection: 
-    - startInstruction: 680
-      endInstruction: 679
-      startSourceChar: 1241
-      endSourceChar: 1257
-      line: 50
+    - startInstruction: 608
+      endInstruction: 607
+      startSourceChar: 1085
+      endSourceChar: 1101
+      line: 44
       lineChar: 27
       spanCodeSection: 'teleportToPos - '
-    - startInstruction: 680
-      endInstruction: 731
-      startSourceChar: 1257
-      endSourceChar: 1285
-      line: 50
+    - startInstruction: 608
+      endInstruction: 659
+      startSourceChar: 1101
+      endSourceChar: 1129
+      line: 44
       lineChar: 43
       spanCodeSection: "teleportFromPos;\r\n\r\n        "
-    - startInstruction: 732
-      endInstruction: 731
-      startSourceChar: 1285
-      endSourceChar: 1285
-      line: 52
+    - startInstruction: 660
+      endInstruction: 659
+      startSourceChar: 1129
+      endSourceChar: 1129
+      line: 46
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 732
-      endInstruction: 731
-      startSourceChar: 1285
-      endSourceChar: 1285
-      line: 52
+    - startInstruction: 660
+      endInstruction: 659
+      startSourceChar: 1129
+      endSourceChar: 1129
+      line: 46
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 732
-      endInstruction: 731
-      startSourceChar: 1285
-      endSourceChar: 1285
-      line: 52
+    - startInstruction: 660
+      endInstruction: 659
+      startSourceChar: 1129
+      endSourceChar: 1129
+      line: 46
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 732
-      endInstruction: 731
-      startSourceChar: 1285
-      endSourceChar: 1292
-      line: 52
+    - startInstruction: 660
+      endInstruction: 659
+      startSourceChar: 1129
+      endSourceChar: 1136
+      line: 46
       lineChar: 8
       spanCodeSection: player.
-    - startInstruction: 732
-      endInstruction: 731
-      startSourceChar: 1292
-      endSourceChar: 1303
-      line: 52
+    - startInstruction: 660
+      endInstruction: 659
+      startSourceChar: 1136
+      endSourceChar: 1147
+      line: 46
       lineChar: 15
       spanCodeSection: TeleportTo(
-    - startInstruction: 732
-      endInstruction: 731
-      startSourceChar: 1303
-      endSourceChar: 1303
-      line: 52
+    - startInstruction: 660
+      endInstruction: 659
+      startSourceChar: 1147
+      endSourceChar: 1147
+      line: 46
       lineChar: 26
       spanCodeSection: 
-    - startInstruction: 732
-      endInstruction: 731
-      startSourceChar: 1303
-      endSourceChar: 1315
-      line: 52
+    - startInstruction: 660
+      endInstruction: 659
+      startSourceChar: 1147
+      endSourceChar: 1159
+      line: 46
       lineChar: 26
       spanCodeSection: 'playerPos + '
-    - startInstruction: 732
-      endInstruction: 763
-      startSourceChar: 1315
-      endSourceChar: 1329
-      line: 52
+    - startInstruction: 660
+      endInstruction: 691
+      startSourceChar: 1159
+      endSourceChar: 1173
+      line: 46
       lineChar: 38
       spanCodeSection: 'targetVector, '
-    - startInstruction: 764
-      endInstruction: 764
-      startSourceChar: 1329
-      endSourceChar: 1329
-      line: 52
+    - startInstruction: 692
+      endInstruction: 692
+      startSourceChar: 1173
+      endSourceChar: 1173
+      line: 46
       lineChar: 52
       spanCodeSection: 
   hasInteractEvent: 0
@@ -1200,13 +1029,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 1
-      Data: textUI
+      Data: teleportFrom
     - Name: $v
       Entry: 7
       Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -1218,7 +1047,7 @@ MonoBehaviour:
       Data: 4|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: UnityEngine.UI.Text, UnityEngine.UI
+      Data: UnityEngine.GameObject, UnityEngine.CoreModule
     - Name: 
       Entry: 8
       Data: 
@@ -1230,13 +1059,13 @@ MonoBehaviour:
       Data: 0
     - Name: symbolResolvedTypeName
       Entry: 1
-      Data: UnityEngineUIText
+      Data: UnityEngineGameObject
     - Name: symbolOriginalName
       Entry: 1
-      Data: textUI
+      Data: teleportFrom
     - Name: symbolUniqueName
       Entry: 1
-      Data: textUI
+      Data: teleportFrom
     - Name: symbolDefaultValue
       Entry: 6
       Data: 
@@ -1275,7 +1104,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: teleportFrom
+      Data: teleportTo
     - Name: $v
       Entry: 7
       Data: 7|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -1283,77 +1112,8 @@ MonoBehaviour:
       Entry: 7
       Data: 8|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
-      Entry: 7
-      Data: 9|System.RuntimeType, mscorlib
-    - Name: 
-      Entry: 1
-      Data: UnityEngine.GameObject, UnityEngine.CoreModule
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: declarationType
-      Entry: 3
-      Data: 1
-    - Name: syncMode
-      Entry: 3
-      Data: 0
-    - Name: symbolResolvedTypeName
-      Entry: 1
-      Data: UnityEngineGameObject
-    - Name: symbolOriginalName
-      Entry: 1
-      Data: teleportFrom
-    - Name: symbolUniqueName
-      Entry: 1
-      Data: teleportFrom
-    - Name: symbolDefaultValue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fieldAttributes
-      Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 11|UnityEngine.SerializeField, UnityEngine.CoreModule
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: userBehaviourSource
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: teleportTo
-    - Name: $v
-      Entry: 7
-      Data: 12|UdonSharp.FieldDefinition, UdonSharp.Editor
-    - Name: fieldSymbol
-      Entry: 7
-      Data: 13|UdonSharp.SymbolDefinition, UdonSharp.Editor
-    - Name: internalType
       Entry: 9
-      Data: 9
+      Data: 4
     - Name: declarationType
       Entry: 3
       Data: 1
@@ -1377,13 +1137,13 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 14|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 9|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 15|UnityEngine.SerializeField, UnityEngine.CoreModule
+      Data: 10|UnityEngine.SerializeField, UnityEngine.CoreModule
     - Name: 
       Entry: 8
       Data: 
@@ -1410,13 +1170,13 @@ MonoBehaviour:
       Data: isPlayerDetected
     - Name: $v
       Entry: 7
-      Data: 16|UdonSharp.FieldDefinition, UdonSharp.Editor
+      Data: 11|UdonSharp.FieldDefinition, UdonSharp.Editor
     - Name: fieldSymbol
       Entry: 7
-      Data: 17|UdonSharp.SymbolDefinition, UdonSharp.Editor
+      Data: 12|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
       Entry: 7
-      Data: 18|System.RuntimeType, mscorlib
+      Data: 13|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: System.Boolean, mscorlib
@@ -1446,7 +1206,7 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 19|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 14|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
