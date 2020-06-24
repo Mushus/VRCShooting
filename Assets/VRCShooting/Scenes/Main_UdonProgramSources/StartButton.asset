@@ -498,464 +498,464 @@ MonoBehaviour:
     - startInstruction: 324
       endInstruction: 343
       startSourceChar: 486
-      endSourceChar: 555
+      endSourceChar: 566
       line: 20
       lineChar: 12
-      spanCodeSection: "return;\r\n        }\r\n        // gameObject.SetActive(false);\r\n
-        \       "
+      spanCodeSection: "return;\r\n        }\r\n\r\n        // TODO: \u691C\u77E5\u3055\u308C\u3066\u308B\u30E6\u30FC\u30B6\u30FC\u3092
+        BattleField \u4E0A\u306B\u98DB\u3070\u3059\u51E6\u7406\r\n        "
     - startInstruction: 344
       endInstruction: 343
-      startSourceChar: 555
-      endSourceChar: 555
-      line: 23
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 344
-      endInstruction: 343
-      startSourceChar: 555
-      endSourceChar: 555
-      line: 23
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 344
-      endInstruction: 343
-      startSourceChar: 555
+      startSourceChar: 566
       endSourceChar: 566
-      line: 23
+      line: 24
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 566
+      endSourceChar: 566
+      line: 24
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 566
+      endSourceChar: 577
+      line: 24
       lineChar: 8
       spanCodeSection: 'var player '
     - startInstruction: 344
       endInstruction: 343
-      startSourceChar: 566
-      endSourceChar: 568
-      line: 23
+      startSourceChar: 577
+      endSourceChar: 579
+      line: 24
       lineChar: 19
       spanCodeSection: '= '
     - startInstruction: 344
       endInstruction: 343
-      startSourceChar: 568
-      endSourceChar: 568
-      line: 23
+      startSourceChar: 579
+      endSourceChar: 579
+      line: 24
       lineChar: 21
       spanCodeSection: 
     - startInstruction: 344
       endInstruction: 343
-      startSourceChar: 568
-      endSourceChar: 579
-      line: 23
+      startSourceChar: 579
+      endSourceChar: 590
+      line: 24
       lineChar: 21
       spanCodeSection: Networking.
     - startInstruction: 344
       endInstruction: 379
-      startSourceChar: 579
-      endSourceChar: 601
-      line: 23
+      startSourceChar: 590
+      endSourceChar: 612
+      line: 24
       lineChar: 32
       spanCodeSection: "LocalPlayer;\r\n        "
     - startInstruction: 380
       endInstruction: 379
-      startSourceChar: 601
-      endSourceChar: 601
-      line: 24
+      startSourceChar: 612
+      endSourceChar: 612
+      line: 25
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 380
       endInstruction: 379
-      startSourceChar: 601
-      endSourceChar: 601
-      line: 24
+      startSourceChar: 612
+      endSourceChar: 612
+      line: 25
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 380
       endInstruction: 379
-      startSourceChar: 601
-      endSourceChar: 615
-      line: 24
+      startSourceChar: 612
+      endSourceChar: 626
+      line: 25
       lineChar: 8
       spanCodeSection: 'var playerPos '
     - startInstruction: 380
       endInstruction: 379
-      startSourceChar: 615
-      endSourceChar: 617
-      line: 24
+      startSourceChar: 626
+      endSourceChar: 628
+      line: 25
       lineChar: 22
       spanCodeSection: '= '
     - startInstruction: 380
       endInstruction: 379
-      startSourceChar: 617
-      endSourceChar: 617
-      line: 24
+      startSourceChar: 628
+      endSourceChar: 628
+      line: 25
       lineChar: 24
       spanCodeSection: 
     - startInstruction: 380
       endInstruction: 379
-      startSourceChar: 617
-      endSourceChar: 617
-      line: 24
+      startSourceChar: 628
+      endSourceChar: 628
+      line: 25
       lineChar: 24
       spanCodeSection: 
     - startInstruction: 380
       endInstruction: 379
-      startSourceChar: 617
-      endSourceChar: 624
-      line: 24
+      startSourceChar: 628
+      endSourceChar: 635
+      line: 25
       lineChar: 24
       spanCodeSection: player.
     - startInstruction: 380
       endInstruction: 423
-      startSourceChar: 624
-      endSourceChar: 648
-      line: 24
+      startSourceChar: 635
+      endSourceChar: 659
+      line: 25
       lineChar: 31
       spanCodeSection: "GetPosition();\r\n        "
     - startInstruction: 424
       endInstruction: 423
-      startSourceChar: 648
-      endSourceChar: 648
-      line: 25
+      startSourceChar: 659
+      endSourceChar: 659
+      line: 26
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 424
       endInstruction: 423
-      startSourceChar: 648
-      endSourceChar: 648
-      line: 25
+      startSourceChar: 659
+      endSourceChar: 659
+      line: 26
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 424
       endInstruction: 423
-      startSourceChar: 648
-      endSourceChar: 662
-      line: 25
+      startSourceChar: 659
+      endSourceChar: 673
+      line: 26
       lineChar: 8
       spanCodeSection: 'var playerRot '
     - startInstruction: 424
       endInstruction: 423
-      startSourceChar: 662
-      endSourceChar: 664
-      line: 25
+      startSourceChar: 673
+      endSourceChar: 675
+      line: 26
       lineChar: 22
       spanCodeSection: '= '
     - startInstruction: 424
       endInstruction: 423
-      startSourceChar: 664
-      endSourceChar: 664
-      line: 25
+      startSourceChar: 675
+      endSourceChar: 675
+      line: 26
       lineChar: 24
       spanCodeSection: 
     - startInstruction: 424
       endInstruction: 423
-      startSourceChar: 664
-      endSourceChar: 664
-      line: 25
+      startSourceChar: 675
+      endSourceChar: 675
+      line: 26
       lineChar: 24
       spanCodeSection: 
     - startInstruction: 424
       endInstruction: 423
-      startSourceChar: 664
-      endSourceChar: 671
-      line: 25
+      startSourceChar: 675
+      endSourceChar: 682
+      line: 26
       lineChar: 24
       spanCodeSection: player.
     - startInstruction: 424
       endInstruction: 467
-      startSourceChar: 671
-      endSourceChar: 697
-      line: 25
+      startSourceChar: 682
+      endSourceChar: 708
+      line: 26
       lineChar: 31
       spanCodeSection: "GetRotation();\r\n\r\n        "
     - startInstruction: 468
       endInstruction: 467
-      startSourceChar: 697
-      endSourceChar: 697
-      line: 27
+      startSourceChar: 708
+      endSourceChar: 708
+      line: 28
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 468
       endInstruction: 467
-      startSourceChar: 697
-      endSourceChar: 697
-      line: 27
+      startSourceChar: 708
+      endSourceChar: 708
+      line: 28
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 468
       endInstruction: 467
-      startSourceChar: 697
-      endSourceChar: 717
-      line: 27
+      startSourceChar: 708
+      endSourceChar: 728
+      line: 28
       lineChar: 8
       spanCodeSection: 'var teleportFromPos '
     - startInstruction: 468
       endInstruction: 467
-      startSourceChar: 717
-      endSourceChar: 719
-      line: 27
+      startSourceChar: 728
+      endSourceChar: 730
+      line: 28
       lineChar: 28
       spanCodeSection: '= '
     - startInstruction: 468
       endInstruction: 467
-      startSourceChar: 719
-      endSourceChar: 719
-      line: 27
+      startSourceChar: 730
+      endSourceChar: 730
+      line: 28
       lineChar: 30
       spanCodeSection: 
     - startInstruction: 468
       endInstruction: 467
-      startSourceChar: 719
-      endSourceChar: 719
-      line: 27
+      startSourceChar: 730
+      endSourceChar: 730
+      line: 28
       lineChar: 30
       spanCodeSection: 
     - startInstruction: 468
       endInstruction: 467
-      startSourceChar: 719
-      endSourceChar: 732
-      line: 27
+      startSourceChar: 730
+      endSourceChar: 743
+      line: 28
       lineChar: 30
       spanCodeSection: teleportFrom.
     - startInstruction: 468
       endInstruction: 467
-      startSourceChar: 732
-      endSourceChar: 742
-      line: 27
+      startSourceChar: 743
+      endSourceChar: 753
+      line: 28
       lineChar: 43
       spanCodeSection: transform.
     - startInstruction: 468
       endInstruction: 535
-      startSourceChar: 742
-      endSourceChar: 761
-      line: 27
+      startSourceChar: 753
+      endSourceChar: 772
+      line: 28
       lineChar: 53
       spanCodeSection: "position;\r\n        "
     - startInstruction: 536
       endInstruction: 535
-      startSourceChar: 761
-      endSourceChar: 761
-      line: 28
+      startSourceChar: 772
+      endSourceChar: 772
+      line: 29
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 536
       endInstruction: 535
-      startSourceChar: 761
-      endSourceChar: 761
-      line: 28
+      startSourceChar: 772
+      endSourceChar: 772
+      line: 29
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 536
       endInstruction: 535
-      startSourceChar: 761
-      endSourceChar: 779
-      line: 28
+      startSourceChar: 772
+      endSourceChar: 790
+      line: 29
       lineChar: 8
       spanCodeSection: 'var teleportToPos '
     - startInstruction: 536
       endInstruction: 535
-      startSourceChar: 779
-      endSourceChar: 781
-      line: 28
+      startSourceChar: 790
+      endSourceChar: 792
+      line: 29
       lineChar: 26
       spanCodeSection: '= '
     - startInstruction: 536
       endInstruction: 535
-      startSourceChar: 781
-      endSourceChar: 781
-      line: 28
-      lineChar: 28
-      spanCodeSection: 
-    - startInstruction: 536
-      endInstruction: 535
-      startSourceChar: 781
-      endSourceChar: 781
-      line: 28
-      lineChar: 28
-      spanCodeSection: 
-    - startInstruction: 536
-      endInstruction: 535
-      startSourceChar: 781
+      startSourceChar: 792
       endSourceChar: 792
-      line: 28
+      line: 29
+      lineChar: 28
+      spanCodeSection: 
+    - startInstruction: 536
+      endInstruction: 535
+      startSourceChar: 792
+      endSourceChar: 792
+      line: 29
+      lineChar: 28
+      spanCodeSection: 
+    - startInstruction: 536
+      endInstruction: 535
+      startSourceChar: 792
+      endSourceChar: 803
+      line: 29
       lineChar: 28
       spanCodeSection: teleportTo.
     - startInstruction: 536
       endInstruction: 535
-      startSourceChar: 792
-      endSourceChar: 802
-      line: 28
+      startSourceChar: 803
+      endSourceChar: 813
+      line: 29
       lineChar: 39
       spanCodeSection: transform.
     - startInstruction: 536
       endInstruction: 603
-      startSourceChar: 802
-      endSourceChar: 821
-      line: 28
+      startSourceChar: 813
+      endSourceChar: 832
+      line: 29
       lineChar: 49
       spanCodeSection: "position;\r\n        "
     - startInstruction: 604
       endInstruction: 603
-      startSourceChar: 821
-      endSourceChar: 821
-      line: 29
+      startSourceChar: 832
+      endSourceChar: 832
+      line: 30
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 604
       endInstruction: 603
-      startSourceChar: 821
-      endSourceChar: 821
-      line: 29
+      startSourceChar: 832
+      endSourceChar: 832
+      line: 30
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 604
       endInstruction: 603
-      startSourceChar: 821
-      endSourceChar: 838
-      line: 29
+      startSourceChar: 832
+      endSourceChar: 849
+      line: 30
       lineChar: 8
       spanCodeSection: 'var targetVector '
     - startInstruction: 604
       endInstruction: 603
-      startSourceChar: 838
-      endSourceChar: 840
-      line: 29
+      startSourceChar: 849
+      endSourceChar: 851
+      line: 30
       lineChar: 25
       spanCodeSection: '= '
     - startInstruction: 604
       endInstruction: 603
-      startSourceChar: 840
-      endSourceChar: 840
-      line: 29
+      startSourceChar: 851
+      endSourceChar: 851
+      line: 30
       lineChar: 27
       spanCodeSection: 
     - startInstruction: 604
       endInstruction: 603
-      startSourceChar: 840
-      endSourceChar: 856
-      line: 29
+      startSourceChar: 851
+      endSourceChar: 867
+      line: 30
       lineChar: 27
       spanCodeSection: 'teleportToPos - '
     - startInstruction: 604
       endInstruction: 655
-      startSourceChar: 856
-      endSourceChar: 892
-      line: 29
+      startSourceChar: 867
+      endSourceChar: 903
+      line: 30
       lineChar: 43
       spanCodeSection: "teleportFromPos;\r\n        \r\n        "
     - startInstruction: 656
       endInstruction: 655
-      startSourceChar: 892
-      endSourceChar: 892
-      line: 31
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 32
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 656
       endInstruction: 655
-      startSourceChar: 892
-      endSourceChar: 892
-      line: 31
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 32
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 656
       endInstruction: 655
-      startSourceChar: 892
-      endSourceChar: 905
-      line: 31
+      startSourceChar: 903
+      endSourceChar: 916
+      line: 32
       lineChar: 8
       spanCodeSection: 'var rotation '
     - startInstruction: 656
       endInstruction: 655
-      startSourceChar: 905
-      endSourceChar: 907
-      line: 31
+      startSourceChar: 916
+      endSourceChar: 918
+      line: 32
       lineChar: 21
       spanCodeSection: '= '
     - startInstruction: 656
       endInstruction: 655
-      startSourceChar: 907
-      endSourceChar: 907
-      line: 31
+      startSourceChar: 918
+      endSourceChar: 918
+      line: 32
       lineChar: 23
       spanCodeSection: 
     - startInstruction: 656
       endInstruction: 655
-      startSourceChar: 907
-      endSourceChar: 907
-      line: 31
+      startSourceChar: 918
+      endSourceChar: 918
+      line: 32
       lineChar: 23
       spanCodeSection: 
     - startInstruction: 656
       endInstruction: 655
-      startSourceChar: 907
-      endSourceChar: 914
-      line: 31
+      startSourceChar: 918
+      endSourceChar: 925
+      line: 32
       lineChar: 23
       spanCodeSection: player.
     - startInstruction: 656
       endInstruction: 699
-      startSourceChar: 914
-      endSourceChar: 938
-      line: 31
+      startSourceChar: 925
+      endSourceChar: 949
+      line: 32
       lineChar: 30
       spanCodeSection: "GetRotation();\r\n        "
     - startInstruction: 700
       endInstruction: 699
-      startSourceChar: 938
-      endSourceChar: 938
-      line: 32
+      startSourceChar: 949
+      endSourceChar: 949
+      line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 700
       endInstruction: 699
-      startSourceChar: 938
-      endSourceChar: 938
-      line: 32
+      startSourceChar: 949
+      endSourceChar: 949
+      line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 700
       endInstruction: 699
-      startSourceChar: 938
-      endSourceChar: 938
-      line: 32
+      startSourceChar: 949
+      endSourceChar: 949
+      line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 700
       endInstruction: 699
-      startSourceChar: 938
-      endSourceChar: 945
-      line: 32
+      startSourceChar: 949
+      endSourceChar: 956
+      line: 33
       lineChar: 8
       spanCodeSection: player.
     - startInstruction: 700
       endInstruction: 699
-      startSourceChar: 945
-      endSourceChar: 956
-      line: 32
+      startSourceChar: 956
+      endSourceChar: 967
+      line: 33
       lineChar: 15
       spanCodeSection: TeleportTo(
     - startInstruction: 700
       endInstruction: 699
-      startSourceChar: 956
-      endSourceChar: 956
-      line: 32
+      startSourceChar: 967
+      endSourceChar: 967
+      line: 33
       lineChar: 26
       spanCodeSection: 
     - startInstruction: 700
       endInstruction: 699
-      startSourceChar: 956
-      endSourceChar: 968
-      line: 32
+      startSourceChar: 967
+      endSourceChar: 979
+      line: 33
       lineChar: 26
       spanCodeSection: 'playerPos + '
     - startInstruction: 700
       endInstruction: 731
-      startSourceChar: 968
-      endSourceChar: 982
-      line: 32
+      startSourceChar: 979
+      endSourceChar: 993
+      line: 33
       lineChar: 38
       spanCodeSection: 'targetVector, '
     - startInstruction: 732
       endInstruction: 732
-      startSourceChar: 982
-      endSourceChar: 982
-      line: 32
+      startSourceChar: 993
+      endSourceChar: 993
+      line: 33
       lineChar: 52
       spanCodeSection: 
   hasInteractEvent: 1
