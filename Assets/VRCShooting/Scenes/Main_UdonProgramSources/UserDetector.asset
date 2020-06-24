@@ -345,191 +345,190 @@ MonoBehaviour:
     - startInstruction: 116
       endInstruction: 115
       startSourceChar: 482
-      endSourceChar: 524
+      endSourceChar: 493
       line: 21
       lineChar: 4
-      spanCodeSection: "{\r\n        // TODO: \u547C\u3073\u51FA\u3055\u308C\u306A\u3044\u539F\u56E0\u3092\u63A2\u308B\r\n
-        \       "
+      spanCodeSection: "{\r\n        "
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 524
-      endSourceChar: 528
-      line: 23
+      startSourceChar: 493
+      endSourceChar: 497
+      line: 22
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 528
-      endSourceChar: 528
-      line: 23
+      startSourceChar: 497
+      endSourceChar: 497
+      line: 22
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 528
-      endSourceChar: 528
-      line: 23
+      startSourceChar: 497
+      endSourceChar: 497
+      line: 22
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 528
-      endSourceChar: 528
-      line: 23
+      startSourceChar: 497
+      endSourceChar: 497
+      line: 22
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 528
-      endSourceChar: 534
-      line: 23
+      startSourceChar: 497
+      endSourceChar: 503
+      line: 22
       lineChar: 12
       spanCodeSection: other.
     - startInstruction: 116
       endInstruction: 139
-      startSourceChar: 534
-      endSourceChar: 547
-      line: 23
+      startSourceChar: 503
+      endSourceChar: 516
+      line: 22
       lineChar: 18
       spanCodeSection: 'GetType() == '
     - startInstruction: 140
       endInstruction: 139
-      startSourceChar: 547
-      endSourceChar: 554
-      line: 23
+      startSourceChar: 516
+      endSourceChar: 523
+      line: 22
       lineChar: 31
       spanCodeSection: typeof(
     - startInstruction: 140
       endInstruction: 187
-      startSourceChar: 554
-      endSourceChar: 585
-      line: 23
+      startSourceChar: 523
+      endSourceChar: 554
+      line: 22
       lineChar: 38
       spanCodeSection: "CharacterController))\r\n        "
     - startInstruction: 188
       endInstruction: 187
-      startSourceChar: 585
-      endSourceChar: 600
-      line: 24
+      startSourceChar: 554
+      endSourceChar: 569
+      line: 23
       lineChar: 8
       spanCodeSection: "{\r\n            "
     - startInstruction: 188
       endInstruction: 187
-      startSourceChar: 600
-      endSourceChar: 600
-      line: 25
+      startSourceChar: 569
+      endSourceChar: 569
+      line: 24
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 188
       endInstruction: 187
-      startSourceChar: 600
-      endSourceChar: 600
-      line: 25
+      startSourceChar: 569
+      endSourceChar: 569
+      line: 24
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 188
       endInstruction: 187
-      startSourceChar: 600
-      endSourceChar: 611
-      line: 25
+      startSourceChar: 569
+      endSourceChar: 580
+      line: 24
       lineChar: 12
       spanCodeSection: 'var player '
     - startInstruction: 188
       endInstruction: 187
-      startSourceChar: 611
-      endSourceChar: 613
-      line: 25
+      startSourceChar: 580
+      endSourceChar: 582
+      line: 24
       lineChar: 23
       spanCodeSection: '= '
     - startInstruction: 188
       endInstruction: 187
-      startSourceChar: 613
-      endSourceChar: 613
-      line: 25
+      startSourceChar: 582
+      endSourceChar: 582
+      line: 24
       lineChar: 25
       spanCodeSection: 
     - startInstruction: 188
       endInstruction: 187
-      startSourceChar: 613
-      endSourceChar: 624
-      line: 25
+      startSourceChar: 582
+      endSourceChar: 593
+      line: 24
       lineChar: 25
       spanCodeSection: Networking.
     - startInstruction: 188
       endInstruction: 223
-      startSourceChar: 624
-      endSourceChar: 650
-      line: 25
+      startSourceChar: 593
+      endSourceChar: 619
+      line: 24
       lineChar: 36
       spanCodeSection: "LocalPlayer;\r\n            "
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 650
-      endSourceChar: 650
-      line: 26
+      startSourceChar: 619
+      endSourceChar: 619
+      line: 25
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 650
-      endSourceChar: 650
-      line: 26
+      startSourceChar: 619
+      endSourceChar: 619
+      line: 25
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 650
-      endSourceChar: 650
-      line: 26
+      startSourceChar: 619
+      endSourceChar: 619
+      line: 25
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 650
-      endSourceChar: 657
-      line: 26
+      startSourceChar: 619
+      endSourceChar: 626
+      line: 25
       lineChar: 12
       spanCodeSection: player.
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 657
-      endSourceChar: 669
-      line: 26
+      startSourceChar: 626
+      endSourceChar: 638
+      line: 25
       lineChar: 19
       spanCodeSection: SetVelocity(
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 669
-      endSourceChar: 669
-      line: 26
+      startSourceChar: 638
+      endSourceChar: 638
+      line: 25
       lineChar: 31
       spanCodeSection: 
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 669
-      endSourceChar: 677
-      line: 26
+      startSourceChar: 638
+      endSourceChar: 646
+      line: 25
       lineChar: 31
       spanCodeSection: 'speed * '
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 677
-      endSourceChar: 677
-      line: 26
+      startSourceChar: 646
+      endSourceChar: 646
+      line: 25
       lineChar: 39
       spanCodeSection: 
     - startInstruction: 224
       endInstruction: 223
-      startSourceChar: 677
-      endSourceChar: 693
-      line: 26
+      startSourceChar: 646
+      endSourceChar: 662
+      line: 25
       lineChar: 39
       spanCodeSection: cashedTransform.
     - startInstruction: 224
       endInstruction: 224
-      startSourceChar: 693
-      endSourceChar: 693
-      line: 26
+      startSourceChar: 662
+      endSourceChar: 662
+      line: 25
       lineChar: 55
       spanCodeSection: 
   hasInteractEvent: 0
