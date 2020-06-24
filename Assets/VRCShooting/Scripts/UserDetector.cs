@@ -20,7 +20,6 @@ public class UserDetector : UdonSharpBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        // TODO: 呼び出されない原因を探る
         if (other.GetType() == typeof(CharacterController))
         {
             var player = Networking.LocalPlayer;
