@@ -2,14 +2,13 @@
 using UnityEngine.UI;
 using UdonSharp;
 using VRC.SDKBase;
+using VRC.Udon;
 
 public class StartButton : UdonSharpBehaviour
 {
     [SerializeField]
-    private GameObject teleportFrom = null;
+    private GameObject PlayerTransferer;
 
-    [SerializeField]
-    private GameObject teleportTo = null;
     private void Update()
     {
         transform.Rotate(Vector3.up, 90f * Time.deltaTime);
@@ -17,20 +16,17 @@ public class StartButton : UdonSharpBehaviour
 
     public override void Interact()
     {
-        if (teleportFrom == null || teleportTo == null) {
+        if (PlayerTransferer == null)
+        {
             return;
         }
 
-        // TODO: 検知されてるユーザーを BattleField 上に飛ばす処理
-        var player = Networking.LocalPlayer;
-        var playerPos = player.GetPosition();
-        var playerRot = player.GetRotation();
+        var transferer = (UdonBehaviour)PlayerTransferer.GetComponent(typeof(UdonBehaviour));
+        if (transferer == null)
+        {
+            return;
+        }
 
-        var teleportFromPos = teleportFrom.transform.position;
-        var teleportToPos = teleportTo.transform.position;
-        var targetVector = teleportToPos - teleportFromPos;
-        
-        var rotation = player.GetRotation();
-        player.TeleportTo(playerPos + targetVector, playerRot);
+        transferer.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "Transfer");
     }
 }
