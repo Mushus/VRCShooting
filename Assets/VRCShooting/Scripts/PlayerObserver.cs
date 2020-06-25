@@ -39,15 +39,11 @@ public class PlayerObserver : UdonSharpBehaviour
     private void insertPlayer(VRCPlayerApi player)
     {
         var id = player.playerId;
-        textUI.text = "hello world!";
         for (int i = maxUsers - 1; i > 0; i--)
         {
             textUI.text = i.ToString();
             var nextUser = players[i - 1];
-            if (nextUser == null)
-            {
-                continue;
-            }
+            if (nextUser == null) continue;
 
             if (nextUser.playerId < id)
             {
@@ -63,9 +59,10 @@ public class PlayerObserver : UdonSharpBehaviour
         players[0] = player;
     }
 
-    private void initializeIfNeeded() {
-        textUI.text = "initialize!";
-        if (players == null ) {
+    private void initializeIfNeeded()
+    {
+        if (players == null)
+        {
             players = new VRCPlayerApi[maxUsers];
         }
     }
@@ -78,15 +75,8 @@ public class PlayerObserver : UdonSharpBehaviour
         {
             var currentPlayer = players[i];
             players[i] = prevPlayer;
-            if (currentPlayer == null)
-            {
-                continue;
-            }
-
-            if (currentPlayer.playerId == id)
-            {
-                return;
-            }
+            if (currentPlayer == null) continue;
+            if (currentPlayer.playerId == id) return;
             prevPlayer = currentPlayer;
         }
     }
@@ -97,10 +87,7 @@ public class PlayerObserver : UdonSharpBehaviour
         for (int i = 0; i < maxUsers; i++)
         {
             var currentPlayer = players[i];
-            if (currentPlayer == null)
-            {
-                break;
-            }
+            if (currentPlayer == null) break;
 
             var id = currentPlayer.playerId;
             var displayName = currentPlayer.displayName;
