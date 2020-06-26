@@ -863,64 +863,65 @@ MonoBehaviour:
     - startInstruction: 588
       endInstruction: 639
       startSourceChar: 872
-      endSourceChar: 893
+      endSourceChar: 946
       line: 32
       lineChar: 33
-      spanCodeSection: "distance;\r\n\r\n        "
+      spanCodeSection: "distance;\r\n\r\n        // transform.position += direction
+        * speed;\r\n        "
     - startInstruction: 640
       endInstruction: 639
-      startSourceChar: 893
-      endSourceChar: 893
-      line: 34
+      startSourceChar: 946
+      endSourceChar: 946
+      line: 35
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 640
       endInstruction: 639
-      startSourceChar: 893
-      endSourceChar: 893
-      line: 34
+      startSourceChar: 946
+      endSourceChar: 946
+      line: 35
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 640
       endInstruction: 639
-      startSourceChar: 893
-      endSourceChar: 893
-      line: 34
+      startSourceChar: 946
+      endSourceChar: 946
+      line: 35
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 640
       endInstruction: 639
-      startSourceChar: 893
-      endSourceChar: 903
-      line: 34
+      startSourceChar: 946
+      endSourceChar: 956
+      line: 35
       lineChar: 8
       spanCodeSection: rigidbody.
     - startInstruction: 640
       endInstruction: 639
-      startSourceChar: 903
-      endSourceChar: 914
-      line: 34
+      startSourceChar: 956
+      endSourceChar: 967
+      line: 35
       lineChar: 18
       spanCodeSection: 'velocity = '
     - startInstruction: 640
       endInstruction: 639
-      startSourceChar: 914
-      endSourceChar: 914
-      line: 34
+      startSourceChar: 967
+      endSourceChar: 967
+      line: 35
       lineChar: 29
       spanCodeSection: 
     - startInstruction: 640
       endInstruction: 639
-      startSourceChar: 914
-      endSourceChar: 926
-      line: 34
+      startSourceChar: 967
+      endSourceChar: 979
+      line: 35
       lineChar: 29
       spanCodeSection: 'direction * '
     - startInstruction: 640
       endInstruction: 640
-      startSourceChar: 926
-      endSourceChar: 926
-      line: 34
+      startSourceChar: 979
+      endSourceChar: 979
+      line: 35
       lineChar: 41
       spanCodeSection: 
   hasInteractEvent: 0
