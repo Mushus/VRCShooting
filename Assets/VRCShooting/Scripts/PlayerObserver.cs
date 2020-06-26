@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UdonSharp;
 using VRC.SDKBase;
 
-public class PlayerObserver : UdonSharpBehaviour
+public class PlayerDetector : UdonSharpBehaviour
 {
     [SerializeField]
     private Text textUI;
@@ -14,57 +14,46 @@ public class PlayerObserver : UdonSharpBehaviour
      * ユーザー一覧
      * 常に ID の昇順
      */
-    private VRCPlayerApi[] players;
+    public VRCPlayerApi[] Players;
 
     private void Start()
-    {
-        textUI.text = "hello world!";
-        players = new VRCPlayerApi[maxUsers];
+    {   
+        Players = new VRCPlayerApi[maxUsers];
     }
 
     public override void OnPlayerJoined(VRCPlayerApi player)
     {
-        initializeIfNeeded();
         insertPlayer(player);
         UpdateText();
     }
 
     public override void OnPlayerLeft(VRCPlayerApi player)
     {
-        initializeIfNeeded();
         RemovePlayer(player);
         UpdateText();
     }
-
+    
     private void insertPlayer(VRCPlayerApi player)
     {
         var id = player.playerId;
         for (int i = maxUsers - 1; i > 0; i--)
         {
             textUI.text = i.ToString();
-            var nextUser = players[i - 1];
+            var nextUser = Players[i - 1];
             if (nextUser == null) continue;
 
             if (nextUser.playerId < id)
             {
                 // insert
-                players[i] = player;
+                Players[i] = player;
                 return;
             }
             // shift
-            players[i] = nextUser;
+            Players[i] = nextUser;
         }
 
         // i = 0
-        players[0] = player;
-    }
-
-    private void initializeIfNeeded()
-    {
-        if (players == null)
-        {
-            players = new VRCPlayerApi[maxUsers];
-        }
+        Players[0] = player;
     }
 
     private void RemovePlayer(VRCPlayerApi player)
@@ -73,8 +62,8 @@ public class PlayerObserver : UdonSharpBehaviour
         VRCPlayerApi prevPlayer = null;
         for (int i = maxUsers - 1; i >= 0; i--)
         {
-            var currentPlayer = players[i];
-            players[i] = prevPlayer;
+            var currentPlayer = Players[i];
+            Players[i] = prevPlayer;
             if (currentPlayer == null) continue;
             if (currentPlayer.playerId == id) return;
             prevPlayer = currentPlayer;
@@ -86,7 +75,7 @@ public class PlayerObserver : UdonSharpBehaviour
         var text = "";
         for (int i = 0; i < maxUsers; i++)
         {
-            var currentPlayer = players[i];
+            var currentPlayer = Players[i];
             if (currentPlayer == null) break;
 
             var id = currentPlayer.playerId;
