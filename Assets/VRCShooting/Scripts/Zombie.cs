@@ -11,6 +11,11 @@ public class Zombie : UdonSharpBehaviour
 
     public VRCPlayerApi Target;
 
+    private Rigidbody rigidbody;
+    private void Start()
+    {
+        rigidbody = (Rigidbody)GetComponent(typeof(Rigidbody));
+    }
     private void Update()
     {
         // 自分がオーナーのときだけ操作
@@ -27,6 +32,7 @@ public class Zombie : UdonSharpBehaviour
         if (distance == 0) return;
         var direction = moveTo / distance;
 
-        transform.position += direction * speed;
+        // transform.position += direction * speed;
+        rigidbody.velocity = direction * speed;
     }
 }
