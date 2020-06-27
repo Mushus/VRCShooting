@@ -52,7 +52,7 @@ MonoBehaviour:
     \   __2_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n\r\n.data_end\r\n\r\n
     \       \r\n         # using UnityEngine;\r\n        \r\n         # using UnityEngine.UI;\r\n
     \       \r\n         # using UdonSharp;\r\n        \r\n         # using VRC.SDKBase;\r\n
-    \       \r\n         # public class PlayerDetector : UdonSharpBehaviour\r\n.code_start\r\n
+    \       \r\n         # public class PlayerObserver : UdonSharpBehaviour\r\n.code_start\r\n
     \       \r\n         # [SerializeField]\r\n        \r\n         # private Text
     textUI;\r\n        \r\n         # private int maxUsers = 80;\r\n        \r\n         #
     public VRCPlayerApi[] Players;\r\n        \r\n         # private void Start()\r\n
@@ -316,7 +316,7 @@ MonoBehaviour:
       endSourceChar: 111
       line: 5
       lineChar: 0
-      spanCodeSection: 'public class PlayerDetector '
+      spanCodeSection: 'public class PlayerObserver '
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 111

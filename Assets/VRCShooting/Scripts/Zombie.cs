@@ -19,6 +19,7 @@ public class Zombie : UdonSharpBehaviour
     {
         rigidbody = (Rigidbody)GetComponent(typeof(Rigidbody));
     }
+    
     private void Update()
     {
         // 自分がオーナーのときだけ操作

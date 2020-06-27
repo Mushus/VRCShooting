@@ -4,20 +4,21 @@ using UdonSharp;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class PlayerObserver : UdonSharpBehaviour
+public class PlayerDetector : UdonSharpBehaviour
 {
     [SerializeField]
     private Text textUI;
 
     [SerializeField]
-    private GameObject ZombieGroup;
+    private GameObject playerObserver;
 
     [SerializeField]
-    private GameObject playerObserver;
+    private GameObject playerEventListener;
 
     private UdonBehaviour playerObserverUdon;
 
     private int maxUsers = 80;
+    private bool isUpdeteFirstTime = true;
 
     /**
      * ユーザー一覧
@@ -27,8 +28,6 @@ public class PlayerObserver : UdonSharpBehaviour
 
     private int zombieIndex = 0;
 
-
-
     private void Start()
     {
         Players = new VRCPlayerApi[maxUsers];
@@ -37,7 +36,6 @@ public class PlayerObserver : UdonSharpBehaviour
     private void Update()
     {
         updatePlayers();
-        setZombieTarget();
     }
 
     private void updatePlayers()
@@ -49,6 +47,8 @@ public class PlayerObserver : UdonSharpBehaviour
 
         var allPlayers = (VRCPlayerApi[])playerObserverUdon.GetProgramVariable("Players");
         if (allPlayers == null) return;
+
+        var isModified = false;
 
         var halfScale = transform.localScale / 2;
         var zMin = transform.position.z - halfScale.z;
@@ -65,6 +65,10 @@ public class PlayerObserver : UdonSharpBehaviour
             var isInArea = zMin < ppos.z && ppos.z < zMax && xMin < ppos.x && ppos.x < xMax;
             if (isInArea)
             {
+                if (Players[k] == null || Players[k].playerId != player.playerId)
+                {
+                    isModified = true;
+                }
                 Players[k++] = player;
             }
         }
@@ -73,43 +77,38 @@ public class PlayerObserver : UdonSharpBehaviour
         {
             if (Players[k] == null) break;
             Players[k] = null;
+            isModified = true;
         }
 
-        UpdateText();
+        if (isModified)
+        {
+            updateText();
+            emitModifyEvent();
+        }
+
     }
-    private void setZombieTarget()
-    {
-        if (zombieIndex >= ZombieGroup.transform.childCount)
-        {
-            zombieIndex = 0;
-        }
 
-        var zombie = ZombieGroup.transform.GetChild(zombieIndex).gameObject;
-        var zombiePos = zombie.transform.position;
-        
-        // 一番近くのプレイヤーを探す
-        double minSqrMagnitude = 10000000;
-        VRCPlayerApi nearestPlayer = null;
-        for (int i = 0; i < Players.Length; i++)
+    private void emitModifyEvent()
+    {
+        if (playerEventListener == null) return;
+        var childNum = playerEventListener.transform.childCount;
+        for (int i = 0; i < childNum; i++)
         {
-            var player = Players[i];
-            if (player == null) break;
-            var distanceVec = player.GetPosition() - zombie.transform.position;
-            var distanceSqrMagnitude = distanceVec.sqrMagnitude;
-            if (distanceSqrMagnitude < minSqrMagnitude) {
-                minSqrMagnitude = distanceSqrMagnitude;
-                nearestPlayer = player;
+            var listenerGameObject = playerEventListener.transform.GetChild(i).gameObject;
+            var listenerUdonBehaviour = (UdonBehaviour)listenerGameObject.GetComponent(typeof(UdonBehaviour));
+            // 最初一回参照をコピーしてあげれば次からは勝手に反映されるので必要ない
+            if (isUpdeteFirstTime)
+            {
+                listenerUdonBehaviour.SetProgramVariable("Players", Players);
             }
+            listenerUdonBehaviour.SendCustomEvent("OnUpdatePlayers");
         }
-
-        var zombieUdon = (UdonBehaviour)zombie.GetComponent(typeof(UdonBehaviour));
-        zombieUdon.SetProgramVariable("Target", nearestPlayer);
-
-        zombieIndex++;
+        isUpdeteFirstTime = false;
     }
 
-    private void UpdateText()
+    private void updateText()
     {
+        if (textUI == null) return;
         var text = "";
         for (int i = 0; i < Players.Length; i++)
         {

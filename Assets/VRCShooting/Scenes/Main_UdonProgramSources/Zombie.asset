@@ -426,656 +426,656 @@ MonoBehaviour:
     - startInstruction: 8
       endInstruction: 79
       startSourceChar: 431
-      endSourceChar: 456
+      endSourceChar: 462
       line: 19
       lineChar: 51
-      spanCodeSection: "Rigidbody));\r\n    }\r\n    "
+      spanCodeSection: "Rigidbody));\r\n    }\r\n    \r\n    "
     - startInstruction: 80
       endInstruction: 87
-      startSourceChar: 456
-      endSourceChar: 483
-      line: 21
+      startSourceChar: 462
+      endSourceChar: 489
+      line: 22
       lineChar: 4
       spanCodeSection: "private void Update()\r\n    "
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 483
-      endSourceChar: 521
-      line: 22
+      startSourceChar: 489
+      endSourceChar: 527
+      line: 23
       lineChar: 4
       spanCodeSection: "{\r\n        // \u81EA\u5206\u304C\u30AA\u30FC\u30CA\u30FC\u306E\u3068\u304D\u3060\u3051\u64CD\u4F5C\r\n
         \       "
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 521
-      endSourceChar: 521
-      line: 24
+      startSourceChar: 527
+      endSourceChar: 527
+      line: 25
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 521
-      endSourceChar: 521
-      line: 24
+      startSourceChar: 527
+      endSourceChar: 527
+      line: 25
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 521
-      endSourceChar: 537
-      line: 24
+      startSourceChar: 527
+      endSourceChar: 543
+      line: 25
       lineChar: 8
       spanCodeSection: 'var localPlayer '
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 537
-      endSourceChar: 539
-      line: 24
+      startSourceChar: 543
+      endSourceChar: 545
+      line: 25
       lineChar: 24
       spanCodeSection: '= '
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 539
-      endSourceChar: 539
-      line: 24
+      startSourceChar: 545
+      endSourceChar: 545
+      line: 25
       lineChar: 26
       spanCodeSection: 
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 539
-      endSourceChar: 550
-      line: 24
+      startSourceChar: 545
+      endSourceChar: 556
+      line: 25
       lineChar: 26
       spanCodeSection: Networking.
     - startInstruction: 88
       endInstruction: 123
-      startSourceChar: 550
-      endSourceChar: 572
-      line: 24
+      startSourceChar: 556
+      endSourceChar: 578
+      line: 25
       lineChar: 37
       spanCodeSection: "LocalPlayer;\r\n        "
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 572
-      endSourceChar: 576
-      line: 25
+      startSourceChar: 578
+      endSourceChar: 582
+      line: 26
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 576
-      endSourceChar: 577
-      line: 25
+      startSourceChar: 582
+      endSourceChar: 583
+      line: 26
       lineChar: 12
       spanCodeSection: '!'
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 577
-      endSourceChar: 577
-      line: 25
+      startSourceChar: 583
+      endSourceChar: 583
+      line: 26
       lineChar: 13
       spanCodeSection: 
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 577
-      endSourceChar: 577
-      line: 25
+      startSourceChar: 583
+      endSourceChar: 583
+      line: 26
       lineChar: 13
       spanCodeSection: 
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 577
-      endSourceChar: 588
-      line: 25
+      startSourceChar: 583
+      endSourceChar: 594
+      line: 26
       lineChar: 13
       spanCodeSection: Networking.
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 588
-      endSourceChar: 596
-      line: 25
+      startSourceChar: 594
+      endSourceChar: 602
+      line: 26
       lineChar: 24
       spanCodeSection: IsOwner(
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 596
-      endSourceChar: 609
-      line: 25
+      startSourceChar: 602
+      endSourceChar: 615
+      line: 26
       lineChar: 32
       spanCodeSection: 'localPlayer, '
     - startInstruction: 124
       endInstruction: 195
-      startSourceChar: 609
-      endSourceChar: 622
-      line: 25
+      startSourceChar: 615
+      endSourceChar: 628
+      line: 26
       lineChar: 45
       spanCodeSection: 'gameObject)) '
     - startInstruction: 196
       endInstruction: 215
-      startSourceChar: 622
-      endSourceChar: 649
-      line: 25
+      startSourceChar: 628
+      endSourceChar: 655
+      line: 26
       lineChar: 58
       spanCodeSection: "return;\r\n        \r\n        "
     - startInstruction: 216
       endInstruction: 215
-      startSourceChar: 649
-      endSourceChar: 653
-      line: 27
+      startSourceChar: 655
+      endSourceChar: 659
+      line: 28
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 216
       endInstruction: 215
-      startSourceChar: 653
-      endSourceChar: 653
-      line: 27
+      startSourceChar: 659
+      endSourceChar: 659
+      line: 28
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 216
       endInstruction: 215
-      startSourceChar: 653
-      endSourceChar: 663
-      line: 27
+      startSourceChar: 659
+      endSourceChar: 669
+      line: 28
       lineChar: 12
       spanCodeSection: 'Target == '
     - startInstruction: 216
       endInstruction: 263
-      startSourceChar: 663
-      endSourceChar: 669
-      line: 27
+      startSourceChar: 669
+      endSourceChar: 675
+      line: 28
       lineChar: 22
       spanCodeSection: 'null) '
     - startInstruction: 264
       endInstruction: 283
-      startSourceChar: 669
-      endSourceChar: 688
-      line: 27
+      startSourceChar: 675
+      endSourceChar: 694
+      line: 28
       lineChar: 28
       spanCodeSection: "return;\r\n\r\n        "
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 688
-      endSourceChar: 688
-      line: 29
+      startSourceChar: 694
+      endSourceChar: 694
+      line: 30
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 688
-      endSourceChar: 688
-      line: 29
+      startSourceChar: 694
+      endSourceChar: 694
+      line: 30
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 688
-      endSourceChar: 707
-      line: 29
+      startSourceChar: 694
+      endSourceChar: 713
+      line: 30
       lineChar: 8
       spanCodeSection: 'var targetPosition '
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 707
-      endSourceChar: 709
-      line: 29
+      startSourceChar: 713
+      endSourceChar: 715
+      line: 30
       lineChar: 27
       spanCodeSection: '= '
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 709
-      endSourceChar: 709
-      line: 29
+      startSourceChar: 715
+      endSourceChar: 715
+      line: 30
       lineChar: 29
       spanCodeSection: 
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 709
-      endSourceChar: 709
-      line: 29
+      startSourceChar: 715
+      endSourceChar: 715
+      line: 30
       lineChar: 29
       spanCodeSection: 
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 709
-      endSourceChar: 716
-      line: 29
+      startSourceChar: 715
+      endSourceChar: 722
+      line: 30
       lineChar: 29
       spanCodeSection: Target.
     - startInstruction: 284
       endInstruction: 327
-      startSourceChar: 716
-      endSourceChar: 740
-      line: 29
+      startSourceChar: 722
+      endSourceChar: 746
+      line: 30
       lineChar: 36
       spanCodeSection: "GetPosition();\r\n        "
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 740
-      endSourceChar: 740
-      line: 30
+      startSourceChar: 746
+      endSourceChar: 746
+      line: 31
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 740
-      endSourceChar: 740
-      line: 30
+      startSourceChar: 746
+      endSourceChar: 746
+      line: 31
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 740
-      endSourceChar: 751
-      line: 30
+      startSourceChar: 746
+      endSourceChar: 757
+      line: 31
       lineChar: 8
       spanCodeSection: 'var moveTo '
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 751
-      endSourceChar: 753
-      line: 30
+      startSourceChar: 757
+      endSourceChar: 759
+      line: 31
       lineChar: 19
       spanCodeSection: '= '
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 753
-      endSourceChar: 753
-      line: 30
+      startSourceChar: 759
+      endSourceChar: 759
+      line: 31
       lineChar: 21
       spanCodeSection: 
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 753
-      endSourceChar: 770
-      line: 30
+      startSourceChar: 759
+      endSourceChar: 776
+      line: 31
       lineChar: 21
       spanCodeSection: 'targetPosition - '
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 770
-      endSourceChar: 770
-      line: 30
+      startSourceChar: 776
+      endSourceChar: 776
+      line: 31
       lineChar: 38
       spanCodeSection: 
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 770
-      endSourceChar: 780
-      line: 30
+      startSourceChar: 776
+      endSourceChar: 786
+      line: 31
       lineChar: 38
       spanCodeSection: transform.
     - startInstruction: 328
       endInstruction: 403
-      startSourceChar: 780
-      endSourceChar: 821
-      line: 30
+      startSourceChar: 786
+      endSourceChar: 827
+      line: 31
       lineChar: 48
       spanCodeSection: "position;\r\n        // \u6A2A\u79FB\u52D5\u3060\u3051\u8FFD\u5F93\u3059\u308B\r\n
         \       "
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 821
-      endSourceChar: 821
-      line: 32
+      startSourceChar: 827
+      endSourceChar: 827
+      line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 821
-      endSourceChar: 821
-      line: 32
+      startSourceChar: 827
+      endSourceChar: 827
+      line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 821
-      endSourceChar: 821
-      line: 32
+      startSourceChar: 827
+      endSourceChar: 827
+      line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 821
-      endSourceChar: 828
-      line: 32
+      startSourceChar: 827
+      endSourceChar: 834
+      line: 33
       lineChar: 8
       spanCodeSection: moveTo.
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 828
-      endSourceChar: 832
-      line: 32
+      startSourceChar: 834
+      endSourceChar: 838
+      line: 33
       lineChar: 15
       spanCodeSection: 'y = '
     - startInstruction: 404
       endInstruction: 451
-      startSourceChar: 832
-      endSourceChar: 897
-      line: 32
+      startSourceChar: 838
+      endSourceChar: 903
+      line: 33
       lineChar: 19
       spanCodeSection: "0;\r\n        // velocity \u306B\u76F4\u63A5\u4EE3\u5165\u3057\u3066\u3057\u307E\u3046\u3068
         gravity \u304C\u6D88\u3048\u3066\u843D\u4E0B\u304C\u9045\u304F\u306A\u308B\r\n
         \       "
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 897
-      endSourceChar: 897
-      line: 34
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 35
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 897
-      endSourceChar: 897
-      line: 34
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 35
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 897
-      endSourceChar: 912
-      line: 34
+      startSourceChar: 903
+      endSourceChar: 918
+      line: 35
       lineChar: 8
       spanCodeSection: 'var myVelocity '
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 912
-      endSourceChar: 914
-      line: 34
+      startSourceChar: 918
+      endSourceChar: 920
+      line: 35
       lineChar: 23
       spanCodeSection: '= '
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 914
-      endSourceChar: 914
-      line: 34
+      startSourceChar: 920
+      endSourceChar: 920
+      line: 35
       lineChar: 25
       spanCodeSection: 
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 914
-      endSourceChar: 924
-      line: 34
+      startSourceChar: 920
+      endSourceChar: 930
+      line: 35
       lineChar: 25
       spanCodeSection: rigidbody.
     - startInstruction: 452
       endInstruction: 495
-      startSourceChar: 924
-      endSourceChar: 943
-      line: 34
+      startSourceChar: 930
+      endSourceChar: 949
+      line: 35
       lineChar: 35
       spanCodeSection: "velocity;\r\n        "
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 943
-      endSourceChar: 943
-      line: 35
+      startSourceChar: 949
+      endSourceChar: 949
+      line: 36
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 943
-      endSourceChar: 943
-      line: 35
+      startSourceChar: 949
+      endSourceChar: 949
+      line: 36
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 943
-      endSourceChar: 962
-      line: 35
+      startSourceChar: 949
+      endSourceChar: 968
+      line: 36
       lineChar: 8
       spanCodeSection: 'var repulsiveForce '
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 962
-      endSourceChar: 964
-      line: 35
+      startSourceChar: 968
+      endSourceChar: 970
+      line: 36
       lineChar: 27
       spanCodeSection: '= '
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 964
-      endSourceChar: 968
-      line: 35
+      startSourceChar: 970
+      endSourceChar: 974
+      line: 36
       lineChar: 29
       spanCodeSection: 'new '
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 968
-      endSourceChar: 976
-      line: 35
+      startSourceChar: 974
+      endSourceChar: 982
+      line: 36
       lineChar: 33
       spanCodeSection: Vector3(
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 976
-      endSourceChar: 976
-      line: 35
+      startSourceChar: 982
+      endSourceChar: 982
+      line: 36
       lineChar: 41
       spanCodeSection: 
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 976
-      endSourceChar: 976
-      line: 35
+      startSourceChar: 982
+      endSourceChar: 982
+      line: 36
       lineChar: 41
       spanCodeSection: 
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 976
-      endSourceChar: 987
-      line: 35
+      startSourceChar: 982
+      endSourceChar: 993
+      line: 36
       lineChar: 41
       spanCodeSection: myVelocity.
     - startInstruction: 496
       endInstruction: 519
-      startSourceChar: 987
-      endSourceChar: 990
-      line: 35
+      startSourceChar: 993
+      endSourceChar: 996
+      line: 36
       lineChar: 52
       spanCodeSection: 'x, '
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 990
-      endSourceChar: 990
-      line: 35
+      startSourceChar: 996
+      endSourceChar: 996
+      line: 36
       lineChar: 55
       spanCodeSection: 
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 990
-      endSourceChar: 993
-      line: 35
+      startSourceChar: 996
+      endSourceChar: 999
+      line: 36
       lineChar: 55
       spanCodeSection: '0, '
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 993
-      endSourceChar: 993
-      line: 35
+      startSourceChar: 999
+      endSourceChar: 999
+      line: 36
       lineChar: 58
       spanCodeSection: 
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 993
-      endSourceChar: 993
-      line: 35
+      startSourceChar: 999
+      endSourceChar: 999
+      line: 36
       lineChar: 58
       spanCodeSection: 
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 993
-      endSourceChar: 1004
-      line: 35
+      startSourceChar: 999
+      endSourceChar: 1010
+      line: 36
       lineChar: 58
       spanCodeSection: myVelocity.
     - startInstruction: 520
       endInstruction: 627
-      startSourceChar: 1004
-      endSourceChar: 1017
-      line: 35
+      startSourceChar: 1010
+      endSourceChar: 1023
+      line: 36
       lineChar: 69
       spanCodeSection: "z);\r\n        "
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1017
-      endSourceChar: 1017
-      line: 36
+      startSourceChar: 1023
+      endSourceChar: 1023
+      line: 37
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1017
-      endSourceChar: 1017
-      line: 36
+      startSourceChar: 1023
+      endSourceChar: 1023
+      line: 37
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1017
-      endSourceChar: 1027
-      line: 36
+      startSourceChar: 1023
+      endSourceChar: 1033
+      line: 37
       lineChar: 8
       spanCodeSection: 'var force '
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1027
-      endSourceChar: 1029
-      line: 36
+      startSourceChar: 1033
+      endSourceChar: 1035
+      line: 37
       lineChar: 18
       spanCodeSection: '= '
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1029
-      endSourceChar: 1029
-      line: 36
+      startSourceChar: 1035
+      endSourceChar: 1035
+      line: 37
       lineChar: 20
       spanCodeSection: 
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1029
-      endSourceChar: 1029
-      line: 36
+      startSourceChar: 1035
+      endSourceChar: 1035
+      line: 37
       lineChar: 20
       spanCodeSection: 
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1029
-      endSourceChar: 1036
-      line: 36
+      startSourceChar: 1035
+      endSourceChar: 1042
+      line: 37
       lineChar: 20
       spanCodeSection: moveTo.
     - startInstruction: 628
       endInstruction: 651
-      startSourceChar: 1036
-      endSourceChar: 1049
-      line: 36
+      startSourceChar: 1042
+      endSourceChar: 1055
+      line: 37
       lineChar: 27
       spanCodeSection: 'normalized * '
     - startInstruction: 652
       endInstruction: 703
-      startSourceChar: 1049
-      endSourceChar: 1065
-      line: 36
+      startSourceChar: 1055
+      endSourceChar: 1071
+      line: 37
       lineChar: 40
       spanCodeSection: "speed;\r\n        "
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1065
-      endSourceChar: 1065
-      line: 37
+      startSourceChar: 1071
+      endSourceChar: 1071
+      line: 38
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1065
-      endSourceChar: 1065
-      line: 37
+      startSourceChar: 1071
+      endSourceChar: 1071
+      line: 38
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1065
-      endSourceChar: 1065
-      line: 37
+      startSourceChar: 1071
+      endSourceChar: 1071
+      line: 38
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1065
-      endSourceChar: 1075
-      line: 37
+      startSourceChar: 1071
+      endSourceChar: 1081
+      line: 38
       lineChar: 8
       spanCodeSection: rigidbody.
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1075
-      endSourceChar: 1084
-      line: 37
+      startSourceChar: 1081
+      endSourceChar: 1090
+      line: 38
       lineChar: 18
       spanCodeSection: AddForce(
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1084
-      endSourceChar: 1084
-      line: 37
+      startSourceChar: 1090
+      endSourceChar: 1090
+      line: 38
       lineChar: 27
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1084
-      endSourceChar: 1102
-      line: 37
+      startSourceChar: 1090
+      endSourceChar: 1108
+      line: 38
       lineChar: 27
       spanCodeSection: 'forceMultiplier * '
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1102
-      endSourceChar: 1103
-      line: 37
+      startSourceChar: 1108
+      endSourceChar: 1109
+      line: 38
       lineChar: 45
       spanCodeSection: (
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1103
-      endSourceChar: 1103
-      line: 37
+      startSourceChar: 1109
+      endSourceChar: 1109
+      line: 38
       lineChar: 46
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1103
-      endSourceChar: 1111
-      line: 37
+      startSourceChar: 1109
+      endSourceChar: 1117
+      line: 38
       lineChar: 46
       spanCodeSection: 'force - '
     - startInstruction: 704
       endInstruction: 767
-      startSourceChar: 1111
-      endSourceChar: 1128
-      line: 37
+      startSourceChar: 1117
+      endSourceChar: 1134
+      line: 38
       lineChar: 54
       spanCodeSection: 'repulsiveForce), '
     - startInstruction: 768
       endInstruction: 767
-      startSourceChar: 1128
-      endSourceChar: 1128
-      line: 37
+      startSourceChar: 1134
+      endSourceChar: 1134
+      line: 38
       lineChar: 71
       spanCodeSection: 
     - startInstruction: 768
       endInstruction: 767
-      startSourceChar: 1128
-      endSourceChar: 1138
-      line: 37
+      startSourceChar: 1134
+      endSourceChar: 1144
+      line: 38
       lineChar: 71
       spanCodeSection: ForceMode.
     - startInstruction: 768
       endInstruction: 768
-      startSourceChar: 1138
-      endSourceChar: 1138
-      line: 37
+      startSourceChar: 1144
+      endSourceChar: 1144
+      line: 38
       lineChar: 81
       spanCodeSection: 
   hasInteractEvent: 0
