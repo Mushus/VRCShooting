@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UdonSharp;
 using VRC.SDKBase;
 
-public class PlayerDetector : UdonSharpBehaviour
+public class PlayerObserver : UdonSharpBehaviour
 {
     [SerializeField]
     private Text textUI;

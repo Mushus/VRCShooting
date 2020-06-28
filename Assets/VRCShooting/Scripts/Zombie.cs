@@ -6,8 +6,11 @@ using VRC.Udon;
 
 public class Zombie : UdonSharpBehaviour
 {
-    [SerializeField]
-    private float speed = 0.01f;
+    // [SerializeField]
+    private float speed = 10f;
+    
+    // [SerializeField]
+    private float forceMultiplier = 100f;
 
     public VRCPlayerApi Target;
 
@@ -16,6 +19,7 @@ public class Zombie : UdonSharpBehaviour
     {
         rigidbody = (Rigidbody)GetComponent(typeof(Rigidbody));
     }
+    
     private void Update()
     {
         // 自分がオーナーのときだけ操作
@@ -28,11 +32,10 @@ public class Zombie : UdonSharpBehaviour
         var moveTo = targetPosition - transform.position;
         // 横移動だけ追従する
         moveTo.y = 0;
-        var distance = moveTo.magnitude;
-        if (distance == 0) return;
-        var direction = moveTo / distance;
-
-        // transform.position += direction * speed;
-        rigidbody.velocity = direction * speed;
+        // velocity に直接代入してしまうと gravity が消えて落下が遅くなる
+        var myVelocity = rigidbody.velocity;
+        var repulsiveForce = new Vector3(myVelocity.x, 0, myVelocity.z);
+        var force = moveTo.normalized * speed;
+        rigidbody.AddForce(forceMultiplier * (force - repulsiveForce), ForceMode.Force);
     }
 }
