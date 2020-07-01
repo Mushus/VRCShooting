@@ -16,8 +16,6 @@ public class PlayerObserver : UdonSharpBehaviour
 
     [SerializeField] private GameObject[] _playerScore;
 
-    private int hoge = 0;
-
     public override void OnPlayerJoined(VRCPlayerApi player)
     {
         insertPlayer(player);
@@ -81,7 +79,7 @@ public class PlayerObserver : UdonSharpBehaviour
             var id = currentPlayer.playerId;
             var displayName = currentPlayer.displayName;
             var score = getScoreById(id);
-            text += string.Format("id:{0} name:{1} score:{2} \r\n", id, displayName, score);
+            text += string.Format("xxid:{0} name:{1} score:{2} \r\n", id, displayName, score);
         }
 
         for (int i = 0; i < _playerScore.Length; i++)
@@ -92,7 +90,7 @@ public class PlayerObserver : UdonSharpBehaviour
             var score = currentScore.transform.position.y;
             text += string.Format("idx:{0} id:{1} score:{2} \r\n", i, id, score);
         }
-        text += string.Format("hoge:{0} \r\n", hoge);
+
         textUI.text = text;
     }
 
@@ -121,15 +119,11 @@ public class PlayerObserver : UdonSharpBehaviour
         if (!Networking.IsMaster) return;
 
         var withdrawId = player.playerId;
-        for (int i = 0; i < _playerScore.Length; i++)
-        {
-            var playerScore = _playerScore[i];
-            if ((int)playerScore.transform.position.x == withdrawId)
-            {
-                playerScore.transform.position = new Vector3(0, 0, 0);
-                return;
-            }
-        }
+
+        var playerScore = getScoreObjectById(withdrawId);
+        if (playerScore == null) return;
+
+        playerScore.transform.position = new Vector3(0, 0, 0);
     }
     private void assignManageObject(VRCPlayerApi player)
     {
@@ -141,19 +135,14 @@ public class PlayerObserver : UdonSharpBehaviour
 
         var assignId = player.playerId;
 
-        for (int i = 0; i < _playerScore.Length; i++)
+        var playerScore = getScoreObjectById(0);
+        if (playerScore == null) return;
+
+        var pos = playerScore.transform.position;
+        playerScore.transform.position = new Vector3(assignId, 0, 0);
+        if (localPlayer.playerId != myId)
         {
-            var playerScore = _playerScore[i];
-            if (playerScore.transform.position.x == 0)
-            {
-                var pos = playerScore.transform.position;
-                playerScore.transform.position = new Vector3(assignId, 0, 0);
-                if (localPlayer.playerId != myId)
-                {
-                    Networking.SetOwner(player, playerScore);
-                }
-                return;
-            }
+            Networking.SetOwner(player, playerScore);
         }
     }
 

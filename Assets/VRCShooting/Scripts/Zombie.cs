@@ -6,16 +6,16 @@ using VRC.Udon;
 
 public class Zombie : UdonSharpBehaviour
 {
-    [SerializeField]
-    private Text textUI;
     // [SerializeField]
     private float speed = 10f;
     
     // [SerializeField]
     private float forceMultiplier = 100f;
 
-    [SerializeField]
-    private GameObject scoreCountable;
+    // ScoreCountable should implement the methods described below.
+    // * ScoreZombieDamage
+    // * ScoreZombieKill
+    [SerializeField] private GameObject scoreCountable;
 
     public VRCPlayerApi Target;
 
@@ -66,7 +66,6 @@ public class Zombie : UdonSharpBehaviour
 
     public void Damage()
     {
-        // textUI.text = "damage";
         scoreDamage(40);
         SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "D");
     }
