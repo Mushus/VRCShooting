@@ -14,44 +14,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 148147300d8ab5c4b8b9fe2a9723cdb7,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export Target\r\n\r\n    __refl_const_intnl_udonTypeID:
-    %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n
-    \   Target: %VRCSDKBaseVRCPlayerApi, null\r\n    rigidbody: %UnityEngineRigidbody,
-    null\r\n    forceMultiplier: %SystemSingle, null\r\n    speed: %SystemSingle,
-    null\r\n    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject, this\r\n
-    \   __0_this_intnl_UnityEngineTransform: %UnityEngineTransform, this\r\n    __0_this_intnl_Zombie:
-    %VRCUdonUdonBehaviour, this\r\n    __0_force_Vector3: %UnityEngineVector3, null\r\n
+  udonAssembly: ".data_start\r\n\r\n    .export scoreCountable\r\n    .export Target\r\n\r\n
+    \   __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName:
+    %SystemString, null\r\n    scoreCountable: %UnityEngineGameObject, null\r\n    Target:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    _hp: %SystemInt32, null\r\n    rigidbody:
+    %UnityEngineRigidbody, null\r\n    forceMultiplier: %SystemSingle, null\r\n    speed:
+    %SystemSingle, null\r\n    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject,
+    this\r\n    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform, this\r\n
+    \   __0_this_intnl_Zombie: %VRCUdonUdonBehaviour, this\r\n    __0_damage_Int32:
+    %SystemInt32, null\r\n    __1_damage_Int32: %SystemInt32, null\r\n    __0_scoreCountableUdonBehaviour_UdonBehaviour:
+    %VRCUdonUdonBehaviour, null\r\n    __0_force_Vector3: %UnityEngineVector3, null\r\n
     \   __0_moveTo_Vector3: %UnityEngineVector3, null\r\n    __0_myVelocity_Vector3:
     %UnityEngineVector3, null\r\n    __0_repulsiveForce_Vector3: %UnityEngineVector3,
     null\r\n    __0_targetPosition_Vector3: %UnityEngineVector3, null\r\n    __0_localPlayer_VRCPlayerApi:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    __0_const_intnl_UnityEngineForceMode: %UnityEngineForceMode,
-    null\r\n    __0_const_intnl_SystemInt32: %SystemInt32, null\r\n    __0_const_intnl_SystemObject:
-    %SystemObject, null\r\n    __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_SystemUInt32:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __0_const_intnl_SystemBoolean: %SystemBoolean,
+    null\r\n    __0_const_intnl_UnityEngineForceMode: %UnityEngineForceMode, null\r\n
+    \   __0_const_intnl_SystemInt32: %SystemInt32, null\r\n    __1_const_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget:
+    %VRCUdonCommonInterfacesNetworkEventTarget, null\r\n    __0_const_intnl_SystemObject:
+    %SystemObject, null\r\n    __0_const_intnl_SystemString: %SystemString, null\r\n
+    \   __1_const_intnl_SystemString: %SystemString, null\r\n    __2_const_intnl_SystemString:
+    %SystemString, null\r\n    __0_const_intnl_SystemType: %SystemType, null\r\n    __1_const_intnl_SystemType:
+    %SystemType, null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n
+    \   __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32:
     %SystemUInt32, null\r\n    __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
     null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __0_intnl_UnityEngineComponent: %UnityEngineComponent, null\r\n    __0_intnl_SystemSingle:
-    %SystemSingle, null\r\n    __1_intnl_SystemSingle: %SystemSingle, null\r\n    __2_intnl_SystemSingle:
-    %SystemSingle, null\r\n    __3_intnl_SystemSingle: %SystemSingle, null\r\n    __0_intnl_returnTarget_UInt32:
-    %SystemUInt32, null\r\n    __0_intnl_UnityEngineVector3: %UnityEngineVector3,
-    null\r\n    __1_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __2_intnl_UnityEngineVector3:
-    %UnityEngineVector3, null\r\n    __3_intnl_UnityEngineVector3: %UnityEngineVector3,
-    null\r\n    __4_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __5_intnl_UnityEngineVector3:
-    %UnityEngineVector3, null\r\n    __6_intnl_UnityEngineVector3: %UnityEngineVector3,
-    null\r\n    __7_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __8_intnl_UnityEngineVector3:
-    %UnityEngineVector3, null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
-    null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UnityEngine;\r\n        \r\n
-    \        # using UnityEngine.UI;\r\n        \r\n         # using UdonSharp;\r\n
-    \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n
-    \       \r\n         # public class Zombie : UdonSharpBehaviour\r\n.code_start\r\n
-    \       \r\n         # private float speed = 10f;\r\n        \r\n         # private
-    float forceMultiplier = 100f;\r\n        \r\n         # public VRCPlayerApi Target;\r\n
-    \       \r\n         # private Rigidbody rigidbody;\r\n        \r\n         #
-    private void Start()\r\n    .export _start\r\n        \r\n    _start:\r\n        \r\n
-    \       PUSH, __0_const_intnl_SystemUInt32\r\n        \r\n         # {\r\n        \r\n
-    \        # rigidbody = (Rigidbody)GetComponent(typeof(Rigidbody));\r\n        PUSH,
-    __0_this_intnl_Zombie\r\n        PUSH, __0_const_intnl_SystemType\r\n        PUSH,
-    __0_intnl_UnityEngineComponent\r\n        EXTERN, \"UnityEngineComponent.__GetComponent__SystemType__UnityEngineComponent\"\r\n
+    \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __4_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __0_intnl_UnityEngineComponent: %UnityEngineComponent,
+    null\r\n    __1_intnl_UnityEngineComponent: %UnityEngineComponent, null\r\n    __0_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __0_intnl_SystemSingle: %SystemSingle, null\r\n    __1_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __2_intnl_SystemSingle: %SystemSingle, null\r\n    __3_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __0_intnl_VRCUdonCommonInterfacesIUdonEventReceiver:
+    %VRCUdonUdonBehaviour, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32,
+    null\r\n    __0_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __1_intnl_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n    __2_intnl_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n    __3_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __4_intnl_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n    __5_intnl_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n    __6_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __7_intnl_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n    __8_intnl_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n\r\n.data_end\r\n\r\n
+    \       \r\n         # using UnityEngine;\r\n        \r\n         # using UnityEngine.UI;\r\n
+    \       \r\n         # using UdonSharp;\r\n        \r\n         # using VRC.SDKBase;\r\n
+    \       \r\n         # using VRC.Udon;\r\n        \r\n         # public class
+    Zombie : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # private float
+    speed = 10f;\r\n        \r\n         # private float forceMultiplier = 100f;\r\n
+    \       \r\n         # [SerializeField]\r\n        \r\n         # private GameObject
+    scoreCountable;\r\n        \r\n         # public VRCPlayerApi Target;\r\n        \r\n
+    \        # private Rigidbody rigidbody;\r\n        \r\n         # private int
+    _hp = 100;\r\n        \r\n         # private void Start()\r\n    .export _start\r\n
+    \       \r\n    _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
+    \       \r\n         # {\r\n        \r\n         # rigidbody = (Rigidbody)GetComponent(typeof(Rigidbody));\r\n
+    \       PUSH, __0_this_intnl_Zombie\r\n        PUSH, __0_const_intnl_SystemType\r\n
+    \       PUSH, __0_intnl_UnityEngineComponent\r\n        EXTERN, \"UnityEngineComponent.__GetComponent__SystemType__UnityEngineComponent\"\r\n
     \       PUSH, __0_intnl_UnityEngineComponent\r\n        PUSH, rigidbody\r\n        COPY\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
@@ -114,7 +129,55 @@ MonoBehaviour:
     \       PUSH, rigidbody\r\n        PUSH, __8_intnl_UnityEngineVector3\r\n        PUSH,
     __0_const_intnl_UnityEngineForceMode\r\n        EXTERN, \"UnityEngineRigidbody.__AddForce__UnityEngineVector3_UnityEngineForceMode__SystemVoid\"\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
-    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # private void scoreDamage(int damage) {\r\n    scoreDamage:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        \r\n         # var scoreCountableUdonBehaviour
+    = (UdonBehaviour)scoreCountable.GetComponent(typeof(UdonBehaviour));\r\n        PUSH,
+    scoreCountable\r\n        PUSH, __1_const_intnl_SystemType\r\n        PUSH, __1_intnl_UnityEngineComponent\r\n
+    \       EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n
+    \       PUSH, __1_intnl_UnityEngineComponent\r\n        PUSH, __0_intnl_VRCUdonCommonInterfacesIUdonEventReceiver\r\n
+    \       COPY\r\n        PUSH, __0_intnl_VRCUdonCommonInterfacesIUdonEventReceiver\r\n
+    \       PUSH, __0_scoreCountableUdonBehaviour_UdonBehaviour\r\n        COPY\r\n
+    \       \r\n         # if (_hp <= damage) {\r\n        PUSH, _hp\r\n        PUSH,
+    __0_damage_Int32\r\n        PUSH, __3_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000003D4\r\n
+    \       \r\n         # scoreCountableUdonBehaviour.SendCustomEvent(\"ScoreZombieKill\");\r\n
+    \       PUSH, __0_scoreCountableUdonBehaviour_UdonBehaviour\r\n        PUSH, __0_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       JUMP, 0x000003EC\r\n        \r\n         # } else {\r\n        \r\n         #
+    scoreCountableUdonBehaviour.SendCustomEvent(\"ScoreZombieDamage\");\r\n        PUSH,
+    __0_scoreCountableUdonBehaviour_UdonBehaviour\r\n        PUSH, __1_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # private void updateDamage(int damage) {\r\n    updateDamage:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        \r\n         # _hp -= damage;\r\n
+    \       PUSH, _hp\r\n        PUSH, __1_damage_Int32\r\n        PUSH, __0_intnl_SystemInt32\r\n
+    \       EXTERN, \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n
+    \       PUSH, __0_intnl_SystemInt32\r\n        PUSH, _hp\r\n        COPY\r\n        \r\n
+    \        # if (_hp <= 0) {\r\n        PUSH, _hp\r\n        PUSH, __0_const_intnl_SystemInt32\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000484\r\n
+    \       \r\n         # gameObject.SetActive(false);\r\n        PUSH, __0_this_intnl_UnityEngineGameObject\r\n
+    \       PUSH, __0_const_intnl_SystemBoolean\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public void Damage()\r\n    .export Damage\r\n        \r\n    Damage:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        \r\n         #
+    {\r\n        \r\n         # scoreDamage(40);\r\n        PUSH, __1_const_intnl_SystemInt32\r\n
+    \       PUSH, __0_damage_Int32\r\n        COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n
+    \       JUMP, 0x0000033C\r\n        \r\n         # SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+    \"D\");\r\n        PUSH, __0_this_intnl_Zombie\r\n        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget\r\n
+    \       PUSH, __2_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public void D()\r\n    .export D\r\n        \r\n    D:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        \r\n         # {\r\n        \r\n
+    \        # updateDamage(40);\r\n        PUSH, __1_const_intnl_SystemInt32\r\n
+    \       PUSH, __1_damage_Int32\r\n        COPY\r\n        PUSH, __1_const_intnl_exitJumpLoc_UInt32\r\n
+    \       JUMP, 0x00000408\r\n        PUSH, __0_intnl_returnTarget_UInt32 #Function
+    epilogue\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n.code_end\r\n"
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: 0586f041deeb16b4eb99a1f65d27bbbc, type: 3}
   behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
@@ -321,762 +384,1364 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 282
-      endSourceChar: 289
+      endSourceChar: 283
       line: 14
+      lineChar: 4
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 283
+      endSourceChar: 283
+      line: 14
+      lineChar: 5
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 283
+      endSourceChar: 312
+      line: 14
+      lineChar: 5
+      spanCodeSection: "SerializeField]\r\n    private "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 312
+      endSourceChar: 312
+      line: 15
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 312
+      endSourceChar: 346
+      line: 15
+      lineChar: 12
+      spanCodeSection: "GameObject scoreCountable;\r\n\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 346
+      endSourceChar: 353
+      line: 17
       lineChar: 4
       spanCodeSection: 'public '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 289
-      endSourceChar: 289
-      line: 14
+      startSourceChar: 353
+      endSourceChar: 353
+      line: 17
       lineChar: 11
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 289
-      endSourceChar: 317
-      line: 14
+      startSourceChar: 353
+      endSourceChar: 381
+      line: 17
       lineChar: 11
       spanCodeSection: "VRCPlayerApi Target;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 317
-      endSourceChar: 325
-      line: 16
+      startSourceChar: 381
+      endSourceChar: 389
+      line: 19
       lineChar: 4
       spanCodeSection: 'private '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 325
-      endSourceChar: 325
-      line: 16
+      startSourceChar: 389
+      endSourceChar: 389
+      line: 19
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 325
-      endSourceChar: 351
-      line: 16
+      startSourceChar: 389
+      endSourceChar: 417
+      line: 19
       lineChar: 12
-      spanCodeSection: "Rigidbody rigidbody;\r\n    "
+      spanCodeSection: "Rigidbody rigidbody;\r\n\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 417
+      endSourceChar: 425
+      line: 21
+      lineChar: 4
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 425
+      endSourceChar: 425
+      line: 21
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 425
+      endSourceChar: 447
+      line: 21
+      lineChar: 12
+      spanCodeSection: "int _hp = 100;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 7
-      startSourceChar: 351
-      endSourceChar: 377
-      line: 17
+      startSourceChar: 447
+      endSourceChar: 473
+      line: 23
       lineChar: 4
       spanCodeSection: "private void Start()\r\n    "
     - startInstruction: 8
       endInstruction: 7
-      startSourceChar: 377
-      endSourceChar: 388
-      line: 18
+      startSourceChar: 473
+      endSourceChar: 484
+      line: 24
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 8
       endInstruction: 7
-      startSourceChar: 388
-      endSourceChar: 388
-      line: 19
+      startSourceChar: 484
+      endSourceChar: 484
+      line: 25
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 8
       endInstruction: 7
-      startSourceChar: 388
-      endSourceChar: 388
-      line: 19
+      startSourceChar: 484
+      endSourceChar: 484
+      line: 25
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 8
       endInstruction: 7
-      startSourceChar: 388
-      endSourceChar: 400
-      line: 19
+      startSourceChar: 484
+      endSourceChar: 496
+      line: 25
       lineChar: 8
       spanCodeSection: 'rigidbody = '
     - startInstruction: 8
       endInstruction: 7
-      startSourceChar: 400
-      endSourceChar: 411
-      line: 19
+      startSourceChar: 496
+      endSourceChar: 507
+      line: 25
       lineChar: 20
       spanCodeSection: (Rigidbody)
     - startInstruction: 8
       endInstruction: 7
-      startSourceChar: 411
-      endSourceChar: 411
-      line: 19
+      startSourceChar: 507
+      endSourceChar: 507
+      line: 25
       lineChar: 31
       spanCodeSection: 
     - startInstruction: 8
       endInstruction: 7
-      startSourceChar: 411
-      endSourceChar: 424
-      line: 19
+      startSourceChar: 507
+      endSourceChar: 520
+      line: 25
       lineChar: 31
       spanCodeSection: GetComponent(
     - startInstruction: 8
       endInstruction: 7
-      startSourceChar: 424
-      endSourceChar: 431
-      line: 19
+      startSourceChar: 520
+      endSourceChar: 527
+      line: 25
       lineChar: 44
       spanCodeSection: typeof(
     - startInstruction: 8
       endInstruction: 79
-      startSourceChar: 431
-      endSourceChar: 462
-      line: 19
+      startSourceChar: 527
+      endSourceChar: 558
+      line: 25
       lineChar: 51
       spanCodeSection: "Rigidbody));\r\n    }\r\n    \r\n    "
     - startInstruction: 80
       endInstruction: 87
-      startSourceChar: 462
-      endSourceChar: 489
-      line: 22
+      startSourceChar: 558
+      endSourceChar: 585
+      line: 28
       lineChar: 4
       spanCodeSection: "private void Update()\r\n    "
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 489
-      endSourceChar: 527
-      line: 23
+      startSourceChar: 585
+      endSourceChar: 623
+      line: 29
       lineChar: 4
       spanCodeSection: "{\r\n        // \u81EA\u5206\u304C\u30AA\u30FC\u30CA\u30FC\u306E\u3068\u304D\u3060\u3051\u64CD\u4F5C\r\n
         \       "
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 527
-      endSourceChar: 527
-      line: 25
+      startSourceChar: 623
+      endSourceChar: 623
+      line: 31
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 527
-      endSourceChar: 527
-      line: 25
+      startSourceChar: 623
+      endSourceChar: 623
+      line: 31
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 527
-      endSourceChar: 543
-      line: 25
+      startSourceChar: 623
+      endSourceChar: 639
+      line: 31
       lineChar: 8
       spanCodeSection: 'var localPlayer '
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 543
-      endSourceChar: 545
-      line: 25
+      startSourceChar: 639
+      endSourceChar: 641
+      line: 31
       lineChar: 24
       spanCodeSection: '= '
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 545
-      endSourceChar: 545
-      line: 25
+      startSourceChar: 641
+      endSourceChar: 641
+      line: 31
       lineChar: 26
       spanCodeSection: 
     - startInstruction: 88
       endInstruction: 87
-      startSourceChar: 545
-      endSourceChar: 556
-      line: 25
+      startSourceChar: 641
+      endSourceChar: 652
+      line: 31
       lineChar: 26
       spanCodeSection: Networking.
     - startInstruction: 88
       endInstruction: 123
-      startSourceChar: 556
-      endSourceChar: 578
-      line: 25
+      startSourceChar: 652
+      endSourceChar: 674
+      line: 31
       lineChar: 37
       spanCodeSection: "LocalPlayer;\r\n        "
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 578
-      endSourceChar: 582
-      line: 26
+      startSourceChar: 674
+      endSourceChar: 678
+      line: 32
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 582
-      endSourceChar: 583
-      line: 26
+      startSourceChar: 678
+      endSourceChar: 679
+      line: 32
       lineChar: 12
       spanCodeSection: '!'
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 583
-      endSourceChar: 583
-      line: 26
+      startSourceChar: 679
+      endSourceChar: 679
+      line: 32
       lineChar: 13
       spanCodeSection: 
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 583
-      endSourceChar: 583
-      line: 26
+      startSourceChar: 679
+      endSourceChar: 679
+      line: 32
       lineChar: 13
       spanCodeSection: 
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 583
-      endSourceChar: 594
-      line: 26
+      startSourceChar: 679
+      endSourceChar: 690
+      line: 32
       lineChar: 13
       spanCodeSection: Networking.
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 594
-      endSourceChar: 602
-      line: 26
+      startSourceChar: 690
+      endSourceChar: 698
+      line: 32
       lineChar: 24
       spanCodeSection: IsOwner(
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 602
-      endSourceChar: 615
-      line: 26
+      startSourceChar: 698
+      endSourceChar: 711
+      line: 32
       lineChar: 32
       spanCodeSection: 'localPlayer, '
     - startInstruction: 124
       endInstruction: 195
-      startSourceChar: 615
-      endSourceChar: 628
-      line: 26
+      startSourceChar: 711
+      endSourceChar: 724
+      line: 32
       lineChar: 45
       spanCodeSection: 'gameObject)) '
     - startInstruction: 196
       endInstruction: 215
-      startSourceChar: 628
-      endSourceChar: 655
-      line: 26
+      startSourceChar: 724
+      endSourceChar: 751
+      line: 32
       lineChar: 58
       spanCodeSection: "return;\r\n        \r\n        "
     - startInstruction: 216
       endInstruction: 215
-      startSourceChar: 655
-      endSourceChar: 659
-      line: 28
+      startSourceChar: 751
+      endSourceChar: 755
+      line: 34
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 216
       endInstruction: 215
-      startSourceChar: 659
-      endSourceChar: 659
-      line: 28
+      startSourceChar: 755
+      endSourceChar: 755
+      line: 34
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 216
       endInstruction: 215
-      startSourceChar: 659
-      endSourceChar: 669
-      line: 28
+      startSourceChar: 755
+      endSourceChar: 765
+      line: 34
       lineChar: 12
       spanCodeSection: 'Target == '
     - startInstruction: 216
       endInstruction: 263
-      startSourceChar: 669
-      endSourceChar: 675
-      line: 28
+      startSourceChar: 765
+      endSourceChar: 771
+      line: 34
       lineChar: 22
       spanCodeSection: 'null) '
     - startInstruction: 264
       endInstruction: 283
-      startSourceChar: 675
-      endSourceChar: 694
-      line: 28
+      startSourceChar: 771
+      endSourceChar: 790
+      line: 34
       lineChar: 28
       spanCodeSection: "return;\r\n\r\n        "
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 694
-      endSourceChar: 694
-      line: 30
+      startSourceChar: 790
+      endSourceChar: 790
+      line: 36
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 694
-      endSourceChar: 694
-      line: 30
+      startSourceChar: 790
+      endSourceChar: 790
+      line: 36
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 694
-      endSourceChar: 713
-      line: 30
+      startSourceChar: 790
+      endSourceChar: 809
+      line: 36
       lineChar: 8
       spanCodeSection: 'var targetPosition '
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 713
-      endSourceChar: 715
-      line: 30
+      startSourceChar: 809
+      endSourceChar: 811
+      line: 36
       lineChar: 27
       spanCodeSection: '= '
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 715
-      endSourceChar: 715
-      line: 30
+      startSourceChar: 811
+      endSourceChar: 811
+      line: 36
       lineChar: 29
       spanCodeSection: 
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 715
-      endSourceChar: 715
-      line: 30
+      startSourceChar: 811
+      endSourceChar: 811
+      line: 36
       lineChar: 29
       spanCodeSection: 
     - startInstruction: 284
       endInstruction: 283
-      startSourceChar: 715
-      endSourceChar: 722
-      line: 30
+      startSourceChar: 811
+      endSourceChar: 818
+      line: 36
       lineChar: 29
       spanCodeSection: Target.
     - startInstruction: 284
       endInstruction: 327
-      startSourceChar: 722
-      endSourceChar: 746
-      line: 30
+      startSourceChar: 818
+      endSourceChar: 842
+      line: 36
       lineChar: 36
       spanCodeSection: "GetPosition();\r\n        "
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 746
-      endSourceChar: 746
-      line: 31
+      startSourceChar: 842
+      endSourceChar: 842
+      line: 37
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 746
-      endSourceChar: 746
-      line: 31
+      startSourceChar: 842
+      endSourceChar: 842
+      line: 37
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 746
-      endSourceChar: 757
-      line: 31
+      startSourceChar: 842
+      endSourceChar: 853
+      line: 37
       lineChar: 8
       spanCodeSection: 'var moveTo '
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 757
-      endSourceChar: 759
-      line: 31
+      startSourceChar: 853
+      endSourceChar: 855
+      line: 37
       lineChar: 19
       spanCodeSection: '= '
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 759
-      endSourceChar: 759
-      line: 31
+      startSourceChar: 855
+      endSourceChar: 855
+      line: 37
       lineChar: 21
       spanCodeSection: 
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 759
-      endSourceChar: 776
-      line: 31
+      startSourceChar: 855
+      endSourceChar: 872
+      line: 37
       lineChar: 21
       spanCodeSection: 'targetPosition - '
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 776
-      endSourceChar: 776
-      line: 31
+      startSourceChar: 872
+      endSourceChar: 872
+      line: 37
       lineChar: 38
       spanCodeSection: 
     - startInstruction: 328
       endInstruction: 327
-      startSourceChar: 776
-      endSourceChar: 786
-      line: 31
+      startSourceChar: 872
+      endSourceChar: 882
+      line: 37
       lineChar: 38
       spanCodeSection: transform.
     - startInstruction: 328
       endInstruction: 403
-      startSourceChar: 786
-      endSourceChar: 827
-      line: 31
+      startSourceChar: 882
+      endSourceChar: 923
+      line: 37
       lineChar: 48
       spanCodeSection: "position;\r\n        // \u6A2A\u79FB\u52D5\u3060\u3051\u8FFD\u5F93\u3059\u308B\r\n
         \       "
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 827
-      endSourceChar: 827
-      line: 33
+      startSourceChar: 923
+      endSourceChar: 923
+      line: 39
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 827
-      endSourceChar: 827
-      line: 33
+      startSourceChar: 923
+      endSourceChar: 923
+      line: 39
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 827
-      endSourceChar: 827
-      line: 33
+      startSourceChar: 923
+      endSourceChar: 923
+      line: 39
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 827
-      endSourceChar: 834
-      line: 33
+      startSourceChar: 923
+      endSourceChar: 930
+      line: 39
       lineChar: 8
       spanCodeSection: moveTo.
     - startInstruction: 404
       endInstruction: 403
-      startSourceChar: 834
-      endSourceChar: 838
-      line: 33
+      startSourceChar: 930
+      endSourceChar: 934
+      line: 39
       lineChar: 15
       spanCodeSection: 'y = '
     - startInstruction: 404
       endInstruction: 451
-      startSourceChar: 838
-      endSourceChar: 903
-      line: 33
+      startSourceChar: 934
+      endSourceChar: 999
+      line: 39
       lineChar: 19
       spanCodeSection: "0;\r\n        // velocity \u306B\u76F4\u63A5\u4EE3\u5165\u3057\u3066\u3057\u307E\u3046\u3068
         gravity \u304C\u6D88\u3048\u3066\u843D\u4E0B\u304C\u9045\u304F\u306A\u308B\r\n
         \       "
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 903
-      endSourceChar: 903
-      line: 35
+      startSourceChar: 999
+      endSourceChar: 999
+      line: 41
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 903
-      endSourceChar: 903
-      line: 35
+      startSourceChar: 999
+      endSourceChar: 999
+      line: 41
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 903
-      endSourceChar: 918
-      line: 35
+      startSourceChar: 999
+      endSourceChar: 1014
+      line: 41
       lineChar: 8
       spanCodeSection: 'var myVelocity '
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 918
-      endSourceChar: 920
-      line: 35
+      startSourceChar: 1014
+      endSourceChar: 1016
+      line: 41
       lineChar: 23
       spanCodeSection: '= '
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 920
-      endSourceChar: 920
-      line: 35
+      startSourceChar: 1016
+      endSourceChar: 1016
+      line: 41
       lineChar: 25
       spanCodeSection: 
     - startInstruction: 452
       endInstruction: 451
-      startSourceChar: 920
-      endSourceChar: 930
-      line: 35
+      startSourceChar: 1016
+      endSourceChar: 1026
+      line: 41
       lineChar: 25
       spanCodeSection: rigidbody.
     - startInstruction: 452
       endInstruction: 495
-      startSourceChar: 930
-      endSourceChar: 949
-      line: 35
+      startSourceChar: 1026
+      endSourceChar: 1045
+      line: 41
       lineChar: 35
       spanCodeSection: "velocity;\r\n        "
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 949
-      endSourceChar: 949
-      line: 36
+      startSourceChar: 1045
+      endSourceChar: 1045
+      line: 42
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 949
-      endSourceChar: 949
-      line: 36
+      startSourceChar: 1045
+      endSourceChar: 1045
+      line: 42
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 949
-      endSourceChar: 968
-      line: 36
+      startSourceChar: 1045
+      endSourceChar: 1064
+      line: 42
       lineChar: 8
       spanCodeSection: 'var repulsiveForce '
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 968
-      endSourceChar: 970
-      line: 36
+      startSourceChar: 1064
+      endSourceChar: 1066
+      line: 42
       lineChar: 27
       spanCodeSection: '= '
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 970
-      endSourceChar: 974
-      line: 36
+      startSourceChar: 1066
+      endSourceChar: 1070
+      line: 42
       lineChar: 29
       spanCodeSection: 'new '
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 974
-      endSourceChar: 982
-      line: 36
+      startSourceChar: 1070
+      endSourceChar: 1078
+      line: 42
       lineChar: 33
       spanCodeSection: Vector3(
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 982
-      endSourceChar: 982
-      line: 36
+      startSourceChar: 1078
+      endSourceChar: 1078
+      line: 42
       lineChar: 41
       spanCodeSection: 
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 982
-      endSourceChar: 982
-      line: 36
+      startSourceChar: 1078
+      endSourceChar: 1078
+      line: 42
       lineChar: 41
       spanCodeSection: 
     - startInstruction: 496
       endInstruction: 495
-      startSourceChar: 982
-      endSourceChar: 993
-      line: 36
+      startSourceChar: 1078
+      endSourceChar: 1089
+      line: 42
       lineChar: 41
       spanCodeSection: myVelocity.
     - startInstruction: 496
       endInstruction: 519
-      startSourceChar: 993
-      endSourceChar: 996
-      line: 36
+      startSourceChar: 1089
+      endSourceChar: 1092
+      line: 42
       lineChar: 52
       spanCodeSection: 'x, '
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 996
-      endSourceChar: 996
-      line: 36
+      startSourceChar: 1092
+      endSourceChar: 1092
+      line: 42
       lineChar: 55
       spanCodeSection: 
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 996
-      endSourceChar: 999
-      line: 36
+      startSourceChar: 1092
+      endSourceChar: 1095
+      line: 42
       lineChar: 55
       spanCodeSection: '0, '
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 999
-      endSourceChar: 999
-      line: 36
+      startSourceChar: 1095
+      endSourceChar: 1095
+      line: 42
       lineChar: 58
       spanCodeSection: 
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 999
-      endSourceChar: 999
-      line: 36
+      startSourceChar: 1095
+      endSourceChar: 1095
+      line: 42
       lineChar: 58
       spanCodeSection: 
     - startInstruction: 520
       endInstruction: 519
-      startSourceChar: 999
-      endSourceChar: 1010
-      line: 36
+      startSourceChar: 1095
+      endSourceChar: 1106
+      line: 42
       lineChar: 58
       spanCodeSection: myVelocity.
     - startInstruction: 520
       endInstruction: 627
-      startSourceChar: 1010
-      endSourceChar: 1023
-      line: 36
+      startSourceChar: 1106
+      endSourceChar: 1119
+      line: 42
       lineChar: 69
       spanCodeSection: "z);\r\n        "
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1023
-      endSourceChar: 1023
-      line: 37
+      startSourceChar: 1119
+      endSourceChar: 1119
+      line: 43
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1023
-      endSourceChar: 1023
-      line: 37
+      startSourceChar: 1119
+      endSourceChar: 1119
+      line: 43
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1023
-      endSourceChar: 1033
-      line: 37
+      startSourceChar: 1119
+      endSourceChar: 1129
+      line: 43
       lineChar: 8
       spanCodeSection: 'var force '
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1033
-      endSourceChar: 1035
-      line: 37
+      startSourceChar: 1129
+      endSourceChar: 1131
+      line: 43
       lineChar: 18
       spanCodeSection: '= '
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1035
-      endSourceChar: 1035
-      line: 37
+      startSourceChar: 1131
+      endSourceChar: 1131
+      line: 43
       lineChar: 20
       spanCodeSection: 
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1035
-      endSourceChar: 1035
-      line: 37
+      startSourceChar: 1131
+      endSourceChar: 1131
+      line: 43
       lineChar: 20
       spanCodeSection: 
     - startInstruction: 628
       endInstruction: 627
-      startSourceChar: 1035
-      endSourceChar: 1042
-      line: 37
+      startSourceChar: 1131
+      endSourceChar: 1138
+      line: 43
       lineChar: 20
       spanCodeSection: moveTo.
     - startInstruction: 628
       endInstruction: 651
-      startSourceChar: 1042
-      endSourceChar: 1055
-      line: 37
+      startSourceChar: 1138
+      endSourceChar: 1151
+      line: 43
       lineChar: 27
       spanCodeSection: 'normalized * '
     - startInstruction: 652
       endInstruction: 703
-      startSourceChar: 1055
-      endSourceChar: 1071
-      line: 37
+      startSourceChar: 1151
+      endSourceChar: 1167
+      line: 43
       lineChar: 40
       spanCodeSection: "speed;\r\n        "
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1071
-      endSourceChar: 1071
-      line: 38
+      startSourceChar: 1167
+      endSourceChar: 1167
+      line: 44
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1071
-      endSourceChar: 1071
-      line: 38
+      startSourceChar: 1167
+      endSourceChar: 1167
+      line: 44
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1071
-      endSourceChar: 1071
-      line: 38
+      startSourceChar: 1167
+      endSourceChar: 1167
+      line: 44
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1071
-      endSourceChar: 1081
-      line: 38
+      startSourceChar: 1167
+      endSourceChar: 1177
+      line: 44
       lineChar: 8
       spanCodeSection: rigidbody.
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1081
-      endSourceChar: 1090
-      line: 38
+      startSourceChar: 1177
+      endSourceChar: 1186
+      line: 44
       lineChar: 18
       spanCodeSection: AddForce(
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1090
-      endSourceChar: 1090
-      line: 38
+      startSourceChar: 1186
+      endSourceChar: 1186
+      line: 44
       lineChar: 27
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1090
-      endSourceChar: 1108
-      line: 38
+      startSourceChar: 1186
+      endSourceChar: 1204
+      line: 44
       lineChar: 27
       spanCodeSection: 'forceMultiplier * '
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1108
-      endSourceChar: 1109
-      line: 38
+      startSourceChar: 1204
+      endSourceChar: 1205
+      line: 44
       lineChar: 45
       spanCodeSection: (
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1109
-      endSourceChar: 1109
-      line: 38
+      startSourceChar: 1205
+      endSourceChar: 1205
+      line: 44
       lineChar: 46
       spanCodeSection: 
     - startInstruction: 704
       endInstruction: 703
-      startSourceChar: 1109
-      endSourceChar: 1117
-      line: 38
+      startSourceChar: 1205
+      endSourceChar: 1213
+      line: 44
       lineChar: 46
       spanCodeSection: 'force - '
     - startInstruction: 704
       endInstruction: 767
-      startSourceChar: 1117
-      endSourceChar: 1134
-      line: 38
+      startSourceChar: 1213
+      endSourceChar: 1230
+      line: 44
       lineChar: 54
       spanCodeSection: 'repulsiveForce), '
     - startInstruction: 768
       endInstruction: 767
-      startSourceChar: 1134
-      endSourceChar: 1134
-      line: 38
+      startSourceChar: 1230
+      endSourceChar: 1230
+      line: 44
       lineChar: 71
       spanCodeSection: 
     - startInstruction: 768
       endInstruction: 767
-      startSourceChar: 1134
-      endSourceChar: 1144
-      line: 38
+      startSourceChar: 1230
+      endSourceChar: 1240
+      line: 44
       lineChar: 71
       spanCodeSection: ForceMode.
     - startInstruction: 768
-      endInstruction: 768
-      startSourceChar: 1144
-      endSourceChar: 1144
-      line: 38
+      endInstruction: 819
+      startSourceChar: 1240
+      endSourceChar: 1262
+      line: 44
       lineChar: 81
+      spanCodeSection: "Force);\r\n    }\r\n\r\n    "
+    - startInstruction: 820
+      endInstruction: 819
+      startSourceChar: 1262
+      endSourceChar: 1287
+      line: 47
+      lineChar: 4
+      spanCodeSection: private void scoreDamage(
+    - startInstruction: 820
+      endInstruction: 827
+      startSourceChar: 1287
+      endSourceChar: 1299
+      line: 47
+      lineChar: 29
+      spanCodeSection: 'int damage) '
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1299
+      endSourceChar: 1338
+      line: 47
+      lineChar: 41
+      spanCodeSection: "{\r\n        // it will be die.\r\n        "
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1338
+      endSourceChar: 1338
+      line: 49
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1338
+      endSourceChar: 1338
+      line: 49
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1338
+      endSourceChar: 1370
+      line: 49
+      lineChar: 8
+      spanCodeSection: 'var scoreCountableUdonBehaviour '
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1370
+      endSourceChar: 1372
+      line: 49
+      lineChar: 40
+      spanCodeSection: '= '
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1372
+      endSourceChar: 1387
+      line: 49
+      lineChar: 42
+      spanCodeSection: (UdonBehaviour)
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1387
+      endSourceChar: 1387
+      line: 49
+      lineChar: 57
+      spanCodeSection: 
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1387
+      endSourceChar: 1387
+      line: 49
+      lineChar: 57
+      spanCodeSection: 
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1387
+      endSourceChar: 1402
+      line: 49
+      lineChar: 57
+      spanCodeSection: scoreCountable.
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1402
+      endSourceChar: 1415
+      line: 49
+      lineChar: 72
+      spanCodeSection: GetComponent(
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 1415
+      endSourceChar: 1422
+      line: 49
+      lineChar: 85
+      spanCodeSection: typeof(
+    - startInstruction: 828
+      endInstruction: 899
+      startSourceChar: 1422
+      endSourceChar: 1448
+      line: 49
+      lineChar: 92
+      spanCodeSection: "UdonBehaviour));\r\n        "
+    - startInstruction: 900
+      endInstruction: 899
+      startSourceChar: 1448
+      endSourceChar: 1452
+      line: 50
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 900
+      endInstruction: 899
+      startSourceChar: 1452
+      endSourceChar: 1452
+      line: 50
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 900
+      endInstruction: 899
+      startSourceChar: 1452
+      endSourceChar: 1459
+      line: 50
+      lineChar: 12
+      spanCodeSection: '_hp <= '
+    - startInstruction: 900
+      endInstruction: 947
+      startSourceChar: 1459
+      endSourceChar: 1467
+      line: 50
+      lineChar: 19
+      spanCodeSection: 'damage) '
+    - startInstruction: 948
+      endInstruction: 947
+      startSourceChar: 1467
+      endSourceChar: 1482
+      line: 50
+      lineChar: 27
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 948
+      endInstruction: 947
+      startSourceChar: 1482
+      endSourceChar: 1482
+      line: 51
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 948
+      endInstruction: 947
+      startSourceChar: 1482
+      endSourceChar: 1482
+      line: 51
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 948
+      endInstruction: 947
+      startSourceChar: 1482
+      endSourceChar: 1482
+      line: 51
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 948
+      endInstruction: 947
+      startSourceChar: 1482
+      endSourceChar: 1510
+      line: 51
+      lineChar: 12
+      spanCodeSection: scoreCountableUdonBehaviour.
+    - startInstruction: 948
+      endInstruction: 947
+      startSourceChar: 1510
+      endSourceChar: 1526
+      line: 51
+      lineChar: 40
+      spanCodeSection: SendCustomEvent(
+    - startInstruction: 948
+      endInstruction: 979
+      startSourceChar: 1526
+      endSourceChar: 1557
+      line: 51
+      lineChar: 56
+      spanCodeSection: "\"ScoreZombieKill\");\r\n        } "
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1557
+      endSourceChar: 1562
+      line: 52
+      lineChar: 10
+      spanCodeSection: 'else '
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1562
+      endSourceChar: 1577
+      line: 52
+      lineChar: 15
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1577
+      endSourceChar: 1577
+      line: 53
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1577
+      endSourceChar: 1577
+      line: 53
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1577
+      endSourceChar: 1577
+      line: 53
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1577
+      endSourceChar: 1605
+      line: 53
+      lineChar: 12
+      spanCodeSection: scoreCountableUdonBehaviour.
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1605
+      endSourceChar: 1621
+      line: 53
+      lineChar: 40
+      spanCodeSection: SendCustomEvent(
+    - startInstruction: 980
+      endInstruction: 1023
+      startSourceChar: 1621
+      endSourceChar: 1668
+      line: 53
+      lineChar: 56
+      spanCodeSection: "\"ScoreZombieDamage\");\r\n        }\r\n    }\r\n\r\n    "
+    - startInstruction: 1024
+      endInstruction: 1023
+      startSourceChar: 1668
+      endSourceChar: 1694
+      line: 57
+      lineChar: 4
+      spanCodeSection: private void updateDamage(
+    - startInstruction: 1024
+      endInstruction: 1031
+      startSourceChar: 1694
+      endSourceChar: 1706
+      line: 57
+      lineChar: 30
+      spanCodeSection: 'int damage) '
+    - startInstruction: 1032
+      endInstruction: 1031
+      startSourceChar: 1706
+      endSourceChar: 1717
+      line: 57
+      lineChar: 42
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1032
+      endInstruction: 1031
+      startSourceChar: 1717
+      endSourceChar: 1717
+      line: 58
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1032
+      endInstruction: 1031
+      startSourceChar: 1717
+      endSourceChar: 1717
+      line: 58
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1032
+      endInstruction: 1031
+      startSourceChar: 1717
+      endSourceChar: 1724
+      line: 58
+      lineChar: 8
+      spanCodeSection: '_hp -= '
+    - startInstruction: 1032
+      endInstruction: 1083
+      startSourceChar: 1724
+      endSourceChar: 1741
+      line: 58
+      lineChar: 15
+      spanCodeSection: "damage;\r\n        "
+    - startInstruction: 1084
+      endInstruction: 1083
+      startSourceChar: 1741
+      endSourceChar: 1745
+      line: 59
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 1084
+      endInstruction: 1083
+      startSourceChar: 1745
+      endSourceChar: 1745
+      line: 59
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1084
+      endInstruction: 1083
+      startSourceChar: 1745
+      endSourceChar: 1752
+      line: 59
+      lineChar: 12
+      spanCodeSection: '_hp <= '
+    - startInstruction: 1084
+      endInstruction: 1131
+      startSourceChar: 1752
+      endSourceChar: 1755
+      line: 59
+      lineChar: 19
+      spanCodeSection: '0) '
+    - startInstruction: 1132
+      endInstruction: 1131
+      startSourceChar: 1755
+      endSourceChar: 1770
+      line: 59
+      lineChar: 22
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 1132
+      endInstruction: 1131
+      startSourceChar: 1770
+      endSourceChar: 1770
+      line: 60
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1132
+      endInstruction: 1131
+      startSourceChar: 1770
+      endSourceChar: 1770
+      line: 60
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1132
+      endInstruction: 1131
+      startSourceChar: 1770
+      endSourceChar: 1770
+      line: 60
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1132
+      endInstruction: 1131
+      startSourceChar: 1770
+      endSourceChar: 1781
+      line: 60
+      lineChar: 12
+      spanCodeSection: gameObject.
+    - startInstruction: 1132
+      endInstruction: 1131
+      startSourceChar: 1781
+      endSourceChar: 1791
+      line: 60
+      lineChar: 23
+      spanCodeSection: SetActive(
+    - startInstruction: 1132
+      endInstruction: 1175
+      startSourceChar: 1791
+      endSourceChar: 1825
+      line: 60
+      lineChar: 33
+      spanCodeSection: "false); \r\n        }\r\n    }\r\n\r\n    "
+    - startInstruction: 1176
+      endInstruction: 1183
+      startSourceChar: 1825
+      endSourceChar: 1851
+      line: 64
+      lineChar: 4
+      spanCodeSection: "public void Damage()\r\n    "
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1851
+      endSourceChar: 1862
+      line: 65
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1862
+      endSourceChar: 1862
+      line: 66
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1862
+      endSourceChar: 1862
+      line: 66
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1862
+      endSourceChar: 1874
+      line: 66
+      lineChar: 8
+      spanCodeSection: scoreDamage(
+    - startInstruction: 1184
+      endInstruction: 1219
+      startSourceChar: 1874
+      endSourceChar: 1888
+      line: 66
+      lineChar: 20
+      spanCodeSection: "40);\r\n        "
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1888
+      endSourceChar: 1888
+      line: 67
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1888
+      endSourceChar: 1888
+      line: 67
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1888
+      endSourceChar: 1911
+      line: 67
+      lineChar: 8
+      spanCodeSection: SendCustomNetworkEvent(
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1911
+      endSourceChar: 1911
+      line: 67
+      lineChar: 31
+      spanCodeSection: 
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1911
+      endSourceChar: 1911
+      line: 67
+      lineChar: 31
+      spanCodeSection: 
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1911
+      endSourceChar: 1911
+      line: 67
+      lineChar: 31
+      spanCodeSection: 
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1911
+      endSourceChar: 1911
+      line: 67
+      lineChar: 31
+      spanCodeSection: 
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1911
+      endSourceChar: 1911
+      line: 67
+      lineChar: 31
+      spanCodeSection: 
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1911
+      endSourceChar: 1915
+      line: 67
+      lineChar: 31
+      spanCodeSection: VRC.
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1915
+      endSourceChar: 1920
+      line: 67
+      lineChar: 35
+      spanCodeSection: Udon.
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1920
+      endSourceChar: 1927
+      line: 67
+      lineChar: 40
+      spanCodeSection: Common.
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1927
+      endSourceChar: 1938
+      line: 67
+      lineChar: 47
+      spanCodeSection: Interfaces.
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1938
+      endSourceChar: 1957
+      line: 67
+      lineChar: 58
+      spanCodeSection: NetworkEventTarget.
+    - startInstruction: 1220
+      endInstruction: 1219
+      startSourceChar: 1957
+      endSourceChar: 1962
+      line: 67
+      lineChar: 77
+      spanCodeSection: 'All, '
+    - startInstruction: 1220
+      endInstruction: 1271
+      startSourceChar: 1962
+      endSourceChar: 1982
+      line: 67
+      lineChar: 82
+      spanCodeSection: "\"D\");\r\n    }\r\n\r\n    "
+    - startInstruction: 1272
+      endInstruction: 1279
+      startSourceChar: 1982
+      endSourceChar: 2003
+      line: 70
+      lineChar: 4
+      spanCodeSection: "public void D()\r\n    "
+    - startInstruction: 1280
+      endInstruction: 1279
+      startSourceChar: 2003
+      endSourceChar: 2014
+      line: 71
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1280
+      endInstruction: 1279
+      startSourceChar: 2014
+      endSourceChar: 2014
+      line: 72
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1280
+      endInstruction: 1279
+      startSourceChar: 2014
+      endSourceChar: 2014
+      line: 72
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1280
+      endInstruction: 1279
+      startSourceChar: 2014
+      endSourceChar: 2027
+      line: 72
+      lineChar: 8
+      spanCodeSection: updateDamage(
+    - startInstruction: 1280
+      endInstruction: 1280
+      startSourceChar: 2027
+      endSourceChar: 2027
+      line: 72
+      lineChar: 21
       spanCodeSection: 
   hasInteractEvent: 0
   serializationData:
@@ -1101,7 +1766,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 6
     - Name: 
       Entry: 7
       Data: 
@@ -1227,7 +1892,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: Target
+      Data: scoreCountable
     - Name: $v
       Entry: 7
       Data: 9|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -1237,6 +1902,75 @@ MonoBehaviour:
     - Name: internalType
       Entry: 7
       Data: 11|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.GameObject, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineGameObject
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: scoreCountable
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: scoreCountable
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 12|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 13|UnityEngine.SerializeField, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Target
+    - Name: $v
+      Entry: 7
+      Data: 14|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 15|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 16|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: VRC.SDKBase.VRCPlayerApi, VRCSDKBase
@@ -1266,7 +2000,7 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 12|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 17|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -1293,13 +2027,13 @@ MonoBehaviour:
       Data: rigidbody
     - Name: $v
       Entry: 7
-      Data: 13|UdonSharp.FieldDefinition, UdonSharp.Editor
+      Data: 18|UdonSharp.FieldDefinition, UdonSharp.Editor
     - Name: fieldSymbol
       Entry: 7
-      Data: 14|UdonSharp.SymbolDefinition, UdonSharp.Editor
+      Data: 19|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
       Entry: 7
-      Data: 15|System.RuntimeType, mscorlib
+      Data: 20|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: UnityEngine.Rigidbody, UnityEngine.PhysicsModule
@@ -1329,7 +2063,70 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 16|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 21|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: _hp
+    - Name: $v
+      Entry: 7
+      Data: 22|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 23|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 24|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Int32, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemInt32
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: _hp
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: _hp
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 25|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
