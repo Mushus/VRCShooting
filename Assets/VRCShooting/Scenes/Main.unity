@@ -1778,17 +1778,17 @@ PrefabInstance:
         type: 3}
       propertyPath: DynamicMaterials.Array.data[1]
       value: 
-      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: 9edd8ecddcf21ba44945dfd81a72a355, type: 3}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: ac7baa69b4fdd654a95563d9726c20c2, type: 2}
+      objectReference: {fileID: 2100002, guid: 9edd8ecddcf21ba44945dfd81a72a355, type: 3}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[3]
       value: 
-      objectReference: {fileID: 2100000, guid: 41358b2e2150a4f458f5dc6cd9d3d2c4, type: 2}
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: layerCollisionArr.Array.data[183]
@@ -1833,12 +1833,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DynamicMaterials.Array.data[4]
       value: 
-      objectReference: {fileID: 2100000, guid: 9edd8ecddcf21ba44945dfd81a72a355, type: 3}
+      objectReference: {fileID: 2100000, guid: ac7baa69b4fdd654a95563d9726c20c2, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[5]
       value: 
-      objectReference: {fileID: 2100002, guid: 9edd8ecddcf21ba44945dfd81a72a355, type: 3}
+      objectReference: {fileID: 2100000, guid: 41358b2e2150a4f458f5dc6cd9d3d2c4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8894fa7e4588a5c4fab98453e558847d, type: 3}
 --- !u!4 &1571252993 stripped

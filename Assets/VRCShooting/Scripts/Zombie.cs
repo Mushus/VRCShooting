@@ -6,10 +6,8 @@ using VRC.Udon;
 
 public class Zombie : UdonSharpBehaviour
 {
-    // [SerializeField]
-    private float speed = 10f;
+    private float speed = 2f;
     
-    // [SerializeField]
     private float forceMultiplier = 100f;
 
     // ScoreCountable should implement the methods described below.
@@ -19,13 +17,13 @@ public class Zombie : UdonSharpBehaviour
 
     public VRCPlayerApi Target;
 
-    private Rigidbody rigidbody;
+    private Rigidbody _rigidbody;
 
     private int _hp = 100;
 
     private void Start()
     {
-        rigidbody = (Rigidbody)GetComponent(typeof(Rigidbody));
+        _rigidbody = (Rigidbody)GetComponent(typeof(Rigidbody));
     }
     
     private void Update()
@@ -41,13 +39,14 @@ public class Zombie : UdonSharpBehaviour
         // 横移動だけ追従する
         moveTo.y = 0;
         // velocity に直接代入してしまうと gravity が消えて落下が遅くなる
-        var myVelocity = rigidbody.velocity;
+        var myVelocity = _rigidbody.velocity;
         var repulsiveForce = new Vector3(myVelocity.x, 0, myVelocity.z);
         var force = moveTo.normalized * speed;
-        rigidbody.AddForce(forceMultiplier * (force - repulsiveForce), ForceMode.Force);
+        _rigidbody.AddForce(forceMultiplier * (force - repulsiveForce), ForceMode.Force);
     }
 
     private void scoreDamage(int damage) {
+        if (scoreCountable == null) return;
         // it will be die.
         var scoreCountableUdonBehaviour = (UdonBehaviour)scoreCountable.GetComponent(typeof(UdonBehaviour));
         if (_hp <= damage) {
