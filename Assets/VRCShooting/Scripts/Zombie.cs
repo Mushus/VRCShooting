@@ -15,11 +15,13 @@ public class Zombie : UdonSharpBehaviour
     // * ScoreZombieKill
     [SerializeField] private GameObject scoreCountable;
 
-    public VRCPlayerApi Target;
-
     private Rigidbody _rigidbody;
 
     private int _hp = 100;
+
+    // 0: idle
+    // 1: chase owner
+    private int _behaviorState = 0;
 
     private void Start()
     {
@@ -28,13 +30,14 @@ public class Zombie : UdonSharpBehaviour
     
     private void Update()
     {
+        if (!isChase()) return;
+
         // 自分がオーナーのときだけ操作
         var localPlayer = Networking.LocalPlayer;
         if (!Networking.IsOwner(localPlayer, gameObject)) return;
-        
-        if (Target == null) return;
 
-        var targetPosition = Target.GetPosition();
+        var target = localPlayer;
+        var targetPosition = target.GetPosition();
         var moveTo = targetPosition - transform.position;
         // 横移動だけ追従する
         moveTo.y = 0;
@@ -72,5 +75,24 @@ public class Zombie : UdonSharpBehaviour
     public void D()
     {
         updateDamage(40);
+    }
+
+    public void Idle()
+    {
+        _behaviorState = 0;
+    }
+
+    public void Chase()
+    {
+        _behaviorState = 1;
+    }
+
+    private bool isIdle()
+    {
+        return _behaviorState == 0;
+    }
+    private bool isChase()
+    {
+        return _behaviorState == 1;
     }
 }
