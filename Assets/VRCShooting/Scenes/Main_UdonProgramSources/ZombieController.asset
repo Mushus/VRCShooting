@@ -23,20 +23,23 @@ MonoBehaviour:
     %SystemInt32, null\r\n    __0_distanceSqrMagnitude_Single: %SystemSingle, null\r\n
     \   __0_zombieUdon_UdonBehaviour: %VRCUdonUdonBehaviour, null\r\n    __0_distanceVec_Vector3:
     %UnityEngineVector3, null\r\n    __0_zombiePos_Vector3: %UnityEngineVector3, null\r\n
-    \   __0_nearestPlayer_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n    __0_player_VRCPlayerApi:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    __0_const_intnl_SystemInt32: %SystemInt32,
-    null\r\n    __1_const_intnl_SystemInt32: %SystemInt32, null\r\n    __2_const_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __0_const_intnl_SystemObject: %SystemObject, null\r\n
-    \   __0_const_intnl_SystemString: %SystemString, null\r\n    __0_const_intnl_SystemType:
-    %SystemType, null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n
-    \   __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
-    \   __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    \   __0_localPlayer_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n    __0_nearestPlayer_VRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __0_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __0_const_intnl_SystemInt32: %SystemInt32, null\r\n    __1_const_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __2_const_intnl_SystemInt32: %SystemInt32, null\r\n
+    \   __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget: %VRCUdonCommonInterfacesNetworkEventTarget,
+    null\r\n    __0_const_intnl_SystemObject: %SystemObject, null\r\n    __0_const_intnl_SystemString:
+    %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
+    \   __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_SystemUInt32:
+    %SystemUInt32, null\r\n    __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_intnl_UnityEngineComponent:
-    %UnityEngineComponent, null\r\n    __0_intnl_SystemDouble: %SystemDouble, null\r\n
-    \   __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null\r\n    __0_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __1_intnl_SystemInt32: %SystemInt32, null\r\n    __2_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __0_intnl_SystemSingle: %SystemSingle, null\r\n    __0_intnl_UnityEngineTransform:
+    \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __4_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __0_intnl_UnityEngineComponent: %UnityEngineComponent,
+    null\r\n    __0_intnl_SystemDouble: %SystemDouble, null\r\n    __0_intnl_UnityEngineGameObject:
+    %UnityEngineGameObject, null\r\n    __0_intnl_SystemInt32: %SystemInt32, null\r\n
+    \   __1_intnl_SystemInt32: %SystemInt32, null\r\n    __2_intnl_SystemInt32: %SystemInt32,
+    null\r\n    __0_intnl_SystemSingle: %SystemSingle, null\r\n    __0_intnl_UnityEngineTransform:
     %UnityEngineTransform, null\r\n    __1_intnl_UnityEngineTransform: %UnityEngineTransform,
     null\r\n    __2_intnl_UnityEngineTransform: %UnityEngineTransform, null\r\n    __3_intnl_UnityEngineTransform:
     %UnityEngineTransform, null\r\n    __4_intnl_UnityEngineTransform: %UnityEngineTransform,
@@ -45,15 +48,16 @@ MonoBehaviour:
     %UnityEngineVector3, null\r\n    __1_intnl_UnityEngineVector3: %UnityEngineVector3,
     null\r\n    __2_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __3_intnl_UnityEngineVector3:
     %UnityEngineVector3, null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
-    null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UnityEngine;\r\n        \r\n
-    \        # using UnityEngine.UI;\r\n        \r\n         # using UdonSharp;\r\n
-    \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n
-    \       \r\n         # public class ZombieController : UdonSharpBehaviour\r\n.code_start\r\n
-    \       \r\n         # [SerializeField]\r\n        \r\n         # private GameObject
-    zombieGroup;\r\n        \r\n         # private bool isUpdeteFirstTime = true;\r\n
-    \       \r\n         # public VRCPlayerApi[] Players;\r\n        \r\n         #
-    private int zombieIndex = 0;\r\n        \r\n         # private void Start()\r\n
-    \   .export _start\r\n        \r\n    _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
+    null\r\n    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n\r\n.data_end\r\n\r\n
+    \       \r\n         # using UnityEngine;\r\n        \r\n         # using UnityEngine.UI;\r\n
+    \       \r\n         # using UdonSharp;\r\n        \r\n         # using VRC.SDKBase;\r\n
+    \       \r\n         # using VRC.Udon;\r\n        \r\n         # public class
+    ZombieController : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         #
+    [SerializeField]\r\n        \r\n         # private GameObject zombieGroup;\r\n
+    \       \r\n         # private bool isUpdeteFirstTime = true;\r\n        \r\n
+    \        # public VRCPlayerApi[] Players;\r\n        \r\n         # private int
+    zombieIndex = 0;\r\n        \r\n         # private void Start()\r\n    .export
+    _start\r\n        \r\n    _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
     \       \r\n         # {\r\n        \r\n         # Players = new VRCPlayerApi[0];\r\n
     \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, Players\r\n        EXTERN,
     \"VRCSDKBaseVRCPlayerApiArray.__ctor__SystemInt32__VRCSDKBaseVRCPlayerApiArray\"\r\n
@@ -85,26 +89,31 @@ MonoBehaviour:
     \       PUSH, __3_intnl_UnityEngineTransform\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n
     \       EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
     \       PUSH, __0_intnl_UnityEngineVector3\r\n        PUSH, __0_zombiePos_Vector3\r\n
-    \       COPY\r\n        \r\n         # double minSqrMagnitude = 10000000;\r\n
-    \       PUSH, __1_const_intnl_SystemInt32\r\n        PUSH, __0_minSqrMagnitude_Double\r\n
-    \       EXTERN, \"SystemConvert.__ToDouble__SystemInt32__SystemDouble\"\r\n        \r\n
-    \        # VRCPlayerApi nearestPlayer = null;\r\n        PUSH, __0_const_intnl_SystemObject\r\n
+    \       COPY\r\n        \r\n         # var localPlayer = Networking.LocalPlayer;\r\n
+    \       PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_localPlayer_VRCPlayerApi\r\n
+    \       COPY\r\n        \r\n         # Networking.IsOwner(localPlayer, zombie);\r\n
+    \       PUSH, __0_localPlayer_VRCPlayerApi\r\n        PUSH, __0_zombie_GameObject\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        EXTERN, \"VRCSDKBaseNetworking.__IsOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemBoolean\"\r\n
+    \       \r\n         # double minSqrMagnitude = 10000000;\r\n        PUSH, __1_const_intnl_SystemInt32\r\n
+    \       PUSH, __0_minSqrMagnitude_Double\r\n        EXTERN, \"SystemConvert.__ToDouble__SystemInt32__SystemDouble\"\r\n
+    \       \r\n         # VRCPlayerApi nearestPlayer = null;\r\n        PUSH, __0_const_intnl_SystemObject\r\n
     \       PUSH, __0_nearestPlayer_VRCPlayerApi\r\n        COPY\r\n        \r\n         #
     for (int i = 0; i < Players.Length; i++)\r\n        PUSH, __0_const_intnl_SystemInt32\r\n
     \       PUSH, __0_i_Int32\r\n        COPY\r\n        PUSH, Players\r\n        PUSH,
     __1_intnl_SystemInt32\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApiArray.__get_Length__SystemInt32\"\r\n
     \       PUSH, __0_i_Int32\r\n        PUSH, __1_intnl_SystemInt32\r\n        PUSH,
-    __1_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n
-    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000003A4\r\n
+    __2_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000003E8\r\n
     \       \r\n         # {\r\n        \r\n         # var player = Players[i];\r\n
-    \       PUSH, Players\r\n        PUSH, __0_i_Int32\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       PUSH, Players\r\n        PUSH, __0_i_Int32\r\n        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n
     \       EXTERN, \"VRCSDKBaseVRCPlayerApiArray.__Get__SystemInt32__VRCSDKBaseVRCPlayerApi\"\r\n
-    \       PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_player_VRCPlayerApi\r\n
+    \       PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_player_VRCPlayerApi\r\n
     \       COPY\r\n        \r\n         # if (player == null) break;\r\n        PUSH,
     __0_player_VRCPlayerApi\r\n        PUSH, __0_const_intnl_VRCSDKBaseVRCPlayerApi\r\n
-    \       PUSH, __2_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000024C\r\n
-    \       JUMP, 0x000003A4\r\n        \r\n         # var distanceVec = player.GetPosition()
+    \       PUSH, __3_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000290\r\n
+    \       JUMP, 0x000003E8\r\n        \r\n         # var distanceVec = player.GetPosition()
     - zombie.transform.position;\r\n        PUSH, __0_player_VRCPlayerApi\r\n        PUSH,
     __1_intnl_UnityEngineVector3\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPosition__UnityEngineVector3\"\r\n
     \       PUSH, __0_zombie_GameObject\r\n        PUSH, __4_intnl_UnityEngineTransform\r\n
@@ -121,9 +130,9 @@ MonoBehaviour:
     \       \r\n         # if (distanceSqrMagnitude < minSqrMagnitude)\r\n        PUSH,
     __0_distanceSqrMagnitude_Single\r\n        PUSH, __0_intnl_SystemDouble\r\n        EXTERN,
     \"SystemConvert.__ToDouble__SystemSingle__SystemDouble\"\r\n        PUSH, __0_intnl_SystemDouble\r\n
-    \       PUSH, __0_minSqrMagnitude_Double\r\n        PUSH, __3_intnl_SystemBoolean\r\n
+    \       PUSH, __0_minSqrMagnitude_Double\r\n        PUSH, __4_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemDouble.__op_LessThan__SystemDouble_SystemDouble__SystemBoolean\"\r\n
-    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000368\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000003AC\r\n
     \       \r\n         # {\r\n        \r\n         # minSqrMagnitude = distanceSqrMagnitude;\r\n
     \       PUSH, __0_distanceSqrMagnitude_Single\r\n        PUSH, __0_minSqrMagnitude_Double\r\n
     \       EXTERN, \"SystemConvert.__ToDouble__SystemSingle__SystemDouble\"\r\n        \r\n
@@ -132,15 +141,25 @@ MonoBehaviour:
     __0_i_Int32\r\n        PUSH, __2_intnl_SystemInt32\r\n        COPY\r\n        PUSH,
     __0_i_Int32\r\n        PUSH, __2_const_intnl_SystemInt32\r\n        PUSH, __0_i_Int32\r\n
     \       EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
-    \       JUMP, 0x00000198\r\n        \r\n         # var zombieUdon = (UdonBehaviour)zombie.GetComponent(typeof(UdonBehaviour));\r\n
+    \       JUMP, 0x000001DC\r\n        \r\n         # var zombieUdon = (UdonBehaviour)zombie.GetComponent(typeof(UdonBehaviour));\r\n
     \       PUSH, __0_zombie_GameObject\r\n        PUSH, __0_const_intnl_SystemType\r\n
     \       PUSH, __0_intnl_UnityEngineComponent\r\n        EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n
     \       PUSH, __0_intnl_UnityEngineComponent\r\n        PUSH, __0_intnl_VRCUdonCommonInterfacesIUdonEventReceiver\r\n
     \       COPY\r\n        PUSH, __0_intnl_VRCUdonCommonInterfacesIUdonEventReceiver\r\n
     \       PUSH, __0_zombieUdon_UdonBehaviour\r\n        COPY\r\n        \r\n         #
-    zombieUdon.SetProgramVariable(\"Target\", nearestPlayer);\r\n        PUSH, __0_zombieUdon_UdonBehaviour\r\n
-    \       PUSH, __0_const_intnl_SystemString\r\n        PUSH, __0_nearestPlayer_VRCPlayerApi\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    if (nearestPlayer == null) {\r\n        PUSH, __0_nearestPlayer_VRCPlayerApi\r\n
+    \       PUSH, __0_const_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __2_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000488\r\n
+    \       \r\n         # zombieUdon.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner,
+    \"Idle\");\r\n        PUSH, __0_zombieUdon_UdonBehaviour\r\n        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget\r\n
+    \       PUSH, __0_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
+    \       JUMP, 0x000004C0\r\n        \r\n         # } else {\r\n        \r\n         #
+    Networking.SetOwner(nearestPlayer, zombie);\r\n        PUSH, __0_nearestPlayer_VRCPlayerApi\r\n
+    \       PUSH, __0_zombie_GameObject\r\n        EXTERN, \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n
+    \       \r\n         # zombieUdon.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner,
+    \"Chase\");\r\n        PUSH, __0_zombieUdon_UdonBehaviour\r\n        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget\r\n
+    \       PUSH, __1_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
     \       \r\n         # zombieIndex++;\r\n        PUSH, zombieIndex\r\n        PUSH,
     __1_intnl_SystemInt32\r\n        COPY\r\n        PUSH, zombieIndex\r\n        PUSH,
     __2_const_intnl_SystemInt32\r\n        PUSH, zombieIndex\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
@@ -741,667 +760,1052 @@ MonoBehaviour:
     - startInstruction: 276
       endInstruction: 343
       startSourceChar: 687
-      endSourceChar: 734
+      endSourceChar: 769
       line: 30
       lineChar: 41
-      spanCodeSection: "position;\r\n\r\n        // \u4E00\u756A\u8FD1\u304F\u306E\u30D7\u30EC\u30A4\u30E4\u30FC\u3092\u63A2\u3059\r\n
-        \       "
+      spanCodeSection: "position;\r\n\r\n        // Only players with owner privileges
+        can SetOwner.\r\n        "
     - startInstruction: 344
       endInstruction: 343
-      startSourceChar: 734
-      endSourceChar: 734
+      startSourceChar: 769
+      endSourceChar: 769
       line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 344
       endInstruction: 343
-      startSourceChar: 734
-      endSourceChar: 734
+      startSourceChar: 769
+      endSourceChar: 769
       line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 344
       endInstruction: 343
-      startSourceChar: 734
-      endSourceChar: 734
+      startSourceChar: 769
+      endSourceChar: 785
       line: 33
       lineChar: 8
+      spanCodeSection: 'var localPlayer '
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 785
+      endSourceChar: 787
+      line: 33
+      lineChar: 24
+      spanCodeSection: '= '
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 787
+      endSourceChar: 787
+      line: 33
+      lineChar: 26
       spanCodeSection: 
     - startInstruction: 344
       endInstruction: 343
-      startSourceChar: 734
-      endSourceChar: 757
+      startSourceChar: 787
+      endSourceChar: 798
       line: 33
+      lineChar: 26
+      spanCodeSection: Networking.
+    - startInstruction: 344
+      endInstruction: 379
+      startSourceChar: 798
+      endSourceChar: 820
+      line: 33
+      lineChar: 37
+      spanCodeSection: "LocalPlayer;\r\n        "
+    - startInstruction: 380
+      endInstruction: 379
+      startSourceChar: 820
+      endSourceChar: 820
+      line: 34
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 380
+      endInstruction: 379
+      startSourceChar: 820
+      endSourceChar: 820
+      line: 34
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 380
+      endInstruction: 379
+      startSourceChar: 820
+      endSourceChar: 820
+      line: 34
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 380
+      endInstruction: 379
+      startSourceChar: 820
+      endSourceChar: 831
+      line: 34
+      lineChar: 8
+      spanCodeSection: Networking.
+    - startInstruction: 380
+      endInstruction: 379
+      startSourceChar: 831
+      endSourceChar: 839
+      line: 34
+      lineChar: 19
+      spanCodeSection: IsOwner(
+    - startInstruction: 380
+      endInstruction: 379
+      startSourceChar: 839
+      endSourceChar: 852
+      line: 34
+      lineChar: 27
+      spanCodeSection: 'localPlayer, '
+    - startInstruction: 380
+      endInstruction: 411
+      startSourceChar: 852
+      endSourceChar: 909
+      line: 34
+      lineChar: 40
+      spanCodeSection: "zombie);\r\n\r\n        // Find the nearest player.\r\n        "
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 909
+      endSourceChar: 909
+      line: 37
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 909
+      endSourceChar: 909
+      line: 37
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 909
+      endSourceChar: 909
+      line: 37
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 909
+      endSourceChar: 932
+      line: 37
       lineChar: 8
       spanCodeSection: 'double minSqrMagnitude '
-    - startInstruction: 344
-      endInstruction: 343
-      startSourceChar: 757
-      endSourceChar: 759
-      line: 33
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 932
+      endSourceChar: 934
+      line: 37
       lineChar: 31
       spanCodeSection: '= '
-    - startInstruction: 344
-      endInstruction: 367
-      startSourceChar: 759
-      endSourceChar: 778
-      line: 33
+    - startInstruction: 412
+      endInstruction: 435
+      startSourceChar: 934
+      endSourceChar: 953
+      line: 37
       lineChar: 33
       spanCodeSection: "10000000;\r\n        "
-    - startInstruction: 368
-      endInstruction: 367
-      startSourceChar: 778
-      endSourceChar: 778
-      line: 34
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 953
+      endSourceChar: 953
+      line: 38
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 368
-      endInstruction: 367
-      startSourceChar: 778
-      endSourceChar: 778
-      line: 34
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 953
+      endSourceChar: 953
+      line: 38
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 368
-      endInstruction: 367
-      startSourceChar: 778
-      endSourceChar: 778
-      line: 34
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 953
+      endSourceChar: 953
+      line: 38
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 368
-      endInstruction: 367
-      startSourceChar: 778
-      endSourceChar: 805
-      line: 34
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 953
+      endSourceChar: 980
+      line: 38
       lineChar: 8
       spanCodeSection: 'VRCPlayerApi nearestPlayer '
-    - startInstruction: 368
-      endInstruction: 367
-      startSourceChar: 805
-      endSourceChar: 807
-      line: 34
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 980
+      endSourceChar: 982
+      line: 38
       lineChar: 35
       spanCodeSection: '= '
-    - startInstruction: 368
-      endInstruction: 387
-      startSourceChar: 807
-      endSourceChar: 822
-      line: 34
+    - startInstruction: 436
+      endInstruction: 455
+      startSourceChar: 982
+      endSourceChar: 997
+      line: 38
       lineChar: 37
       spanCodeSection: "null;\r\n        "
-    - startInstruction: 388
-      endInstruction: 387
-      startSourceChar: 822
-      endSourceChar: 827
-      line: 35
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 997
+      endSourceChar: 1002
+      line: 39
       lineChar: 8
       spanCodeSection: for (
-    - startInstruction: 388
-      endInstruction: 387
-      startSourceChar: 827
-      endSourceChar: 827
-      line: 35
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 1002
+      endSourceChar: 1002
+      line: 39
       lineChar: 13
       spanCodeSection: 
-    - startInstruction: 388
-      endInstruction: 387
-      startSourceChar: 827
-      endSourceChar: 827
-      line: 35
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 1002
+      endSourceChar: 1002
+      line: 39
       lineChar: 13
       spanCodeSection: 
-    - startInstruction: 388
-      endInstruction: 387
-      startSourceChar: 827
-      endSourceChar: 833
-      line: 35
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 1002
+      endSourceChar: 1008
+      line: 39
       lineChar: 13
       spanCodeSection: 'int i '
-    - startInstruction: 388
-      endInstruction: 387
-      startSourceChar: 833
-      endSourceChar: 835
-      line: 35
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 1008
+      endSourceChar: 1010
+      line: 39
       lineChar: 19
       spanCodeSection: '= '
-    - startInstruction: 388
-      endInstruction: 407
-      startSourceChar: 835
-      endSourceChar: 838
-      line: 35
-      lineChar: 21
-      spanCodeSection: '0; '
-    - startInstruction: 408
-      endInstruction: 407
-      startSourceChar: 838
-      endSourceChar: 838
-      line: 35
-      lineChar: 24
-      spanCodeSection: 
-    - startInstruction: 408
-      endInstruction: 407
-      startSourceChar: 838
-      endSourceChar: 842
-      line: 35
-      lineChar: 24
-      spanCodeSection: 'i < '
-    - startInstruction: 408
-      endInstruction: 407
-      startSourceChar: 842
-      endSourceChar: 842
-      line: 35
-      lineChar: 28
-      spanCodeSection: 
-    - startInstruction: 408
-      endInstruction: 407
-      startSourceChar: 842
-      endSourceChar: 850
-      line: 35
-      lineChar: 28
-      spanCodeSection: Players.
-    - startInstruction: 408
-      endInstruction: 479
-      startSourceChar: 850
-      endSourceChar: 872
-      line: 35
-      lineChar: 36
-      spanCodeSection: "Length; i++)\r\n        "
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 872
-      endSourceChar: 887
-      line: 36
-      lineChar: 8
-      spanCodeSection: "{\r\n            "
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 887
-      endSourceChar: 887
-      line: 37
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 887
-      endSourceChar: 887
-      line: 37
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 887
-      endSourceChar: 898
-      line: 37
-      lineChar: 12
-      spanCodeSection: 'var player '
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 898
-      endSourceChar: 900
-      line: 37
-      lineChar: 23
-      spanCodeSection: '= '
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 900
-      endSourceChar: 900
-      line: 37
-      lineChar: 25
-      spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 900
-      endSourceChar: 908
-      line: 37
-      lineChar: 25
-      spanCodeSection: Players[
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 908
-      endSourceChar: 908
-      line: 37
-      lineChar: 33
-      spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 531
-      startSourceChar: 908
-      endSourceChar: 925
-      line: 37
-      lineChar: 33
-      spanCodeSection: "i];\r\n            "
-    - startInstruction: 532
-      endInstruction: 531
-      startSourceChar: 925
-      endSourceChar: 929
-      line: 38
-      lineChar: 12
-      spanCodeSection: if (
-    - startInstruction: 532
-      endInstruction: 531
-      startSourceChar: 929
-      endSourceChar: 929
-      line: 38
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 532
-      endInstruction: 531
-      startSourceChar: 929
-      endSourceChar: 939
-      line: 38
-      lineChar: 16
-      spanCodeSection: 'player == '
-    - startInstruction: 532
-      endInstruction: 579
-      startSourceChar: 939
-      endSourceChar: 945
-      line: 38
-      lineChar: 26
-      spanCodeSection: 'null) '
-    - startInstruction: 580
-      endInstruction: 587
-      startSourceChar: 945
-      endSourceChar: 965
-      line: 38
-      lineChar: 32
-      spanCodeSection: "break;\r\n            "
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 965
-      endSourceChar: 965
-      line: 39
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 965
-      endSourceChar: 965
-      line: 39
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 965
-      endSourceChar: 981
-      line: 39
-      lineChar: 12
-      spanCodeSection: 'var distanceVec '
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 981
-      endSourceChar: 983
-      line: 39
-      lineChar: 28
-      spanCodeSection: '= '
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 983
-      endSourceChar: 983
-      line: 39
-      lineChar: 30
-      spanCodeSection: 
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 983
-      endSourceChar: 983
-      line: 39
-      lineChar: 30
-      spanCodeSection: 
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 983
-      endSourceChar: 983
-      line: 39
-      lineChar: 30
-      spanCodeSection: 
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 983
-      endSourceChar: 990
-      line: 39
-      lineChar: 30
-      spanCodeSection: player.
-    - startInstruction: 588
-      endInstruction: 611
-      startSourceChar: 990
-      endSourceChar: 1006
-      line: 39
-      lineChar: 37
-      spanCodeSection: 'GetPosition() - '
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1006
-      endSourceChar: 1006
-      line: 39
-      lineChar: 53
-      spanCodeSection: 
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1006
-      endSourceChar: 1006
-      line: 39
-      lineChar: 53
-      spanCodeSection: 
-    - startInstruction: 612
-      endInstruction: 611
-      startSourceChar: 1006
+    - startInstruction: 456
+      endInstruction: 475
+      startSourceChar: 1010
       endSourceChar: 1013
       line: 39
-      lineChar: 53
-      spanCodeSection: zombie.
-    - startInstruction: 612
-      endInstruction: 611
+      lineChar: 21
+      spanCodeSection: '0; '
+    - startInstruction: 476
+      endInstruction: 475
       startSourceChar: 1013
-      endSourceChar: 1023
+      endSourceChar: 1013
       line: 39
-      lineChar: 60
-      spanCodeSection: transform.
-    - startInstruction: 612
-      endInstruction: 711
-      startSourceChar: 1023
-      endSourceChar: 1046
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 476
+      endInstruction: 475
+      startSourceChar: 1013
+      endSourceChar: 1017
       line: 39
-      lineChar: 70
-      spanCodeSection: "position;\r\n            "
-    - startInstruction: 712
-      endInstruction: 711
-      startSourceChar: 1046
-      endSourceChar: 1046
+      lineChar: 24
+      spanCodeSection: 'i < '
+    - startInstruction: 476
+      endInstruction: 475
+      startSourceChar: 1017
+      endSourceChar: 1017
+      line: 39
+      lineChar: 28
+      spanCodeSection: 
+    - startInstruction: 476
+      endInstruction: 475
+      startSourceChar: 1017
+      endSourceChar: 1025
+      line: 39
+      lineChar: 28
+      spanCodeSection: Players.
+    - startInstruction: 476
+      endInstruction: 547
+      startSourceChar: 1025
+      endSourceChar: 1047
+      line: 39
+      lineChar: 36
+      spanCodeSection: "Length; i++)\r\n        "
+    - startInstruction: 548
+      endInstruction: 547
+      startSourceChar: 1047
+      endSourceChar: 1062
       line: 40
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 548
+      endInstruction: 547
+      startSourceChar: 1062
+      endSourceChar: 1062
+      line: 41
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 712
-      endInstruction: 711
-      startSourceChar: 1046
-      endSourceChar: 1046
-      line: 40
+    - startInstruction: 548
+      endInstruction: 547
+      startSourceChar: 1062
+      endSourceChar: 1062
+      line: 41
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 712
-      endInstruction: 711
-      startSourceChar: 1046
-      endSourceChar: 1071
-      line: 40
-      lineChar: 12
-      spanCodeSection: 'var distanceSqrMagnitude '
-    - startInstruction: 712
-      endInstruction: 711
-      startSourceChar: 1071
+    - startInstruction: 548
+      endInstruction: 547
+      startSourceChar: 1062
       endSourceChar: 1073
-      line: 40
-      lineChar: 37
-      spanCodeSection: '= '
-    - startInstruction: 712
-      endInstruction: 711
-      startSourceChar: 1073
-      endSourceChar: 1073
-      line: 40
-      lineChar: 39
-      spanCodeSection: 
-    - startInstruction: 712
-      endInstruction: 711
-      startSourceChar: 1073
-      endSourceChar: 1085
-      line: 40
-      lineChar: 39
-      spanCodeSection: distanceVec.
-    - startInstruction: 712
-      endInstruction: 755
-      startSourceChar: 1085
-      endSourceChar: 1112
-      line: 40
-      lineChar: 51
-      spanCodeSection: "sqrMagnitude;\r\n            "
-    - startInstruction: 756
-      endInstruction: 755
-      startSourceChar: 1112
-      endSourceChar: 1116
       line: 41
       lineChar: 12
-      spanCodeSection: if (
-    - startInstruction: 756
-      endInstruction: 755
-      startSourceChar: 1116
-      endSourceChar: 1116
+      spanCodeSection: 'var player '
+    - startInstruction: 548
+      endInstruction: 547
+      startSourceChar: 1073
+      endSourceChar: 1075
       line: 41
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 756
-      endInstruction: 755
-      startSourceChar: 1116
-      endSourceChar: 1139
-      line: 41
-      lineChar: 16
-      spanCodeSection: 'distanceSqrMagnitude < '
-    - startInstruction: 756
-      endInstruction: 827
-      startSourceChar: 1139
-      endSourceChar: 1169
-      line: 41
-      lineChar: 39
-      spanCodeSection: "minSqrMagnitude)\r\n            "
-    - startInstruction: 828
-      endInstruction: 827
-      startSourceChar: 1169
-      endSourceChar: 1188
-      line: 42
-      lineChar: 12
-      spanCodeSection: "{\r\n                "
-    - startInstruction: 828
-      endInstruction: 827
-      startSourceChar: 1188
-      endSourceChar: 1188
-      line: 43
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 828
-      endInstruction: 827
-      startSourceChar: 1188
-      endSourceChar: 1188
-      line: 43
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 828
-      endInstruction: 827
-      startSourceChar: 1188
-      endSourceChar: 1206
-      line: 43
-      lineChar: 16
-      spanCodeSection: 'minSqrMagnitude = '
-    - startInstruction: 828
-      endInstruction: 851
-      startSourceChar: 1206
-      endSourceChar: 1245
-      line: 43
-      lineChar: 34
-      spanCodeSection: "distanceSqrMagnitude;\r\n                "
-    - startInstruction: 852
-      endInstruction: 851
-      startSourceChar: 1245
-      endSourceChar: 1245
-      line: 44
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 852
-      endInstruction: 851
-      startSourceChar: 1245
-      endSourceChar: 1245
-      line: 44
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 852
-      endInstruction: 851
-      startSourceChar: 1245
-      endSourceChar: 1261
-      line: 44
-      lineChar: 16
-      spanCodeSection: 'nearestPlayer = '
-    - startInstruction: 852
-      endInstruction: 931
-      startSourceChar: 1261
-      endSourceChar: 1306
-      line: 44
-      lineChar: 32
-      spanCodeSection: "player;\r\n            }\r\n        }\r\n\r\n        "
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1306
-      endSourceChar: 1306
-      line: 48
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1306
-      endSourceChar: 1306
-      line: 48
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1306
-      endSourceChar: 1321
-      line: 48
-      lineChar: 8
-      spanCodeSection: 'var zombieUdon '
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1321
-      endSourceChar: 1323
-      line: 48
       lineChar: 23
       spanCodeSection: '= '
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1323
-      endSourceChar: 1338
+    - startInstruction: 548
+      endInstruction: 547
+      startSourceChar: 1075
+      endSourceChar: 1075
+      line: 41
+      lineChar: 25
+      spanCodeSection: 
+    - startInstruction: 548
+      endInstruction: 547
+      startSourceChar: 1075
+      endSourceChar: 1083
+      line: 41
+      lineChar: 25
+      spanCodeSection: Players[
+    - startInstruction: 548
+      endInstruction: 547
+      startSourceChar: 1083
+      endSourceChar: 1083
+      line: 41
+      lineChar: 33
+      spanCodeSection: 
+    - startInstruction: 548
+      endInstruction: 599
+      startSourceChar: 1083
+      endSourceChar: 1100
+      line: 41
+      lineChar: 33
+      spanCodeSection: "i];\r\n            "
+    - startInstruction: 600
+      endInstruction: 599
+      startSourceChar: 1100
+      endSourceChar: 1104
+      line: 42
+      lineChar: 12
+      spanCodeSection: if (
+    - startInstruction: 600
+      endInstruction: 599
+      startSourceChar: 1104
+      endSourceChar: 1104
+      line: 42
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 600
+      endInstruction: 599
+      startSourceChar: 1104
+      endSourceChar: 1114
+      line: 42
+      lineChar: 16
+      spanCodeSection: 'player == '
+    - startInstruction: 600
+      endInstruction: 647
+      startSourceChar: 1114
+      endSourceChar: 1120
+      line: 42
+      lineChar: 26
+      spanCodeSection: 'null) '
+    - startInstruction: 648
+      endInstruction: 655
+      startSourceChar: 1120
+      endSourceChar: 1140
+      line: 42
+      lineChar: 32
+      spanCodeSection: "break;\r\n            "
+    - startInstruction: 656
+      endInstruction: 655
+      startSourceChar: 1140
+      endSourceChar: 1140
+      line: 43
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 656
+      endInstruction: 655
+      startSourceChar: 1140
+      endSourceChar: 1140
+      line: 43
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 656
+      endInstruction: 655
+      startSourceChar: 1140
+      endSourceChar: 1156
+      line: 43
+      lineChar: 12
+      spanCodeSection: 'var distanceVec '
+    - startInstruction: 656
+      endInstruction: 655
+      startSourceChar: 1156
+      endSourceChar: 1158
+      line: 43
+      lineChar: 28
+      spanCodeSection: '= '
+    - startInstruction: 656
+      endInstruction: 655
+      startSourceChar: 1158
+      endSourceChar: 1158
+      line: 43
+      lineChar: 30
+      spanCodeSection: 
+    - startInstruction: 656
+      endInstruction: 655
+      startSourceChar: 1158
+      endSourceChar: 1158
+      line: 43
+      lineChar: 30
+      spanCodeSection: 
+    - startInstruction: 656
+      endInstruction: 655
+      startSourceChar: 1158
+      endSourceChar: 1158
+      line: 43
+      lineChar: 30
+      spanCodeSection: 
+    - startInstruction: 656
+      endInstruction: 655
+      startSourceChar: 1158
+      endSourceChar: 1165
+      line: 43
+      lineChar: 30
+      spanCodeSection: player.
+    - startInstruction: 656
+      endInstruction: 679
+      startSourceChar: 1165
+      endSourceChar: 1181
+      line: 43
+      lineChar: 37
+      spanCodeSection: 'GetPosition() - '
+    - startInstruction: 680
+      endInstruction: 679
+      startSourceChar: 1181
+      endSourceChar: 1181
+      line: 43
+      lineChar: 53
+      spanCodeSection: 
+    - startInstruction: 680
+      endInstruction: 679
+      startSourceChar: 1181
+      endSourceChar: 1181
+      line: 43
+      lineChar: 53
+      spanCodeSection: 
+    - startInstruction: 680
+      endInstruction: 679
+      startSourceChar: 1181
+      endSourceChar: 1188
+      line: 43
+      lineChar: 53
+      spanCodeSection: zombie.
+    - startInstruction: 680
+      endInstruction: 679
+      startSourceChar: 1188
+      endSourceChar: 1198
+      line: 43
+      lineChar: 60
+      spanCodeSection: transform.
+    - startInstruction: 680
+      endInstruction: 779
+      startSourceChar: 1198
+      endSourceChar: 1221
+      line: 43
+      lineChar: 70
+      spanCodeSection: "position;\r\n            "
+    - startInstruction: 780
+      endInstruction: 779
+      startSourceChar: 1221
+      endSourceChar: 1221
+      line: 44
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 780
+      endInstruction: 779
+      startSourceChar: 1221
+      endSourceChar: 1221
+      line: 44
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 780
+      endInstruction: 779
+      startSourceChar: 1221
+      endSourceChar: 1246
+      line: 44
+      lineChar: 12
+      spanCodeSection: 'var distanceSqrMagnitude '
+    - startInstruction: 780
+      endInstruction: 779
+      startSourceChar: 1246
+      endSourceChar: 1248
+      line: 44
+      lineChar: 37
+      spanCodeSection: '= '
+    - startInstruction: 780
+      endInstruction: 779
+      startSourceChar: 1248
+      endSourceChar: 1248
+      line: 44
+      lineChar: 39
+      spanCodeSection: 
+    - startInstruction: 780
+      endInstruction: 779
+      startSourceChar: 1248
+      endSourceChar: 1260
+      line: 44
+      lineChar: 39
+      spanCodeSection: distanceVec.
+    - startInstruction: 780
+      endInstruction: 823
+      startSourceChar: 1260
+      endSourceChar: 1287
+      line: 44
+      lineChar: 51
+      spanCodeSection: "sqrMagnitude;\r\n            "
+    - startInstruction: 824
+      endInstruction: 823
+      startSourceChar: 1287
+      endSourceChar: 1291
+      line: 45
+      lineChar: 12
+      spanCodeSection: if (
+    - startInstruction: 824
+      endInstruction: 823
+      startSourceChar: 1291
+      endSourceChar: 1291
+      line: 45
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 824
+      endInstruction: 823
+      startSourceChar: 1291
+      endSourceChar: 1314
+      line: 45
+      lineChar: 16
+      spanCodeSection: 'distanceSqrMagnitude < '
+    - startInstruction: 824
+      endInstruction: 895
+      startSourceChar: 1314
+      endSourceChar: 1344
+      line: 45
+      lineChar: 39
+      spanCodeSection: "minSqrMagnitude)\r\n            "
+    - startInstruction: 896
+      endInstruction: 895
+      startSourceChar: 1344
+      endSourceChar: 1363
+      line: 46
+      lineChar: 12
+      spanCodeSection: "{\r\n                "
+    - startInstruction: 896
+      endInstruction: 895
+      startSourceChar: 1363
+      endSourceChar: 1363
+      line: 47
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 896
+      endInstruction: 895
+      startSourceChar: 1363
+      endSourceChar: 1363
+      line: 47
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 896
+      endInstruction: 895
+      startSourceChar: 1363
+      endSourceChar: 1381
+      line: 47
+      lineChar: 16
+      spanCodeSection: 'minSqrMagnitude = '
+    - startInstruction: 896
+      endInstruction: 919
+      startSourceChar: 1381
+      endSourceChar: 1420
+      line: 47
+      lineChar: 34
+      spanCodeSection: "distanceSqrMagnitude;\r\n                "
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 1420
+      endSourceChar: 1420
       line: 48
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 1420
+      endSourceChar: 1420
+      line: 48
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 1420
+      endSourceChar: 1436
+      line: 48
+      lineChar: 16
+      spanCodeSection: 'nearestPlayer = '
+    - startInstruction: 920
+      endInstruction: 999
+      startSourceChar: 1436
+      endSourceChar: 1481
+      line: 48
+      lineChar: 32
+      spanCodeSection: "player;\r\n            }\r\n        }\r\n\r\n        "
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1481
+      endSourceChar: 1481
+      line: 52
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1481
+      endSourceChar: 1481
+      line: 52
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1481
+      endSourceChar: 1496
+      line: 52
+      lineChar: 8
+      spanCodeSection: 'var zombieUdon '
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1496
+      endSourceChar: 1498
+      line: 52
+      lineChar: 23
+      spanCodeSection: '= '
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1498
+      endSourceChar: 1513
+      line: 52
       lineChar: 25
       spanCodeSection: (UdonBehaviour)
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1338
-      endSourceChar: 1338
-      line: 48
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1513
+      endSourceChar: 1513
+      line: 52
       lineChar: 40
       spanCodeSection: 
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1338
-      endSourceChar: 1338
-      line: 48
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1513
+      endSourceChar: 1513
+      line: 52
       lineChar: 40
       spanCodeSection: 
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1338
-      endSourceChar: 1345
-      line: 48
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1513
+      endSourceChar: 1520
+      line: 52
       lineChar: 40
       spanCodeSection: zombie.
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1345
-      endSourceChar: 1358
-      line: 48
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1520
+      endSourceChar: 1533
+      line: 52
       lineChar: 47
       spanCodeSection: GetComponent(
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1358
-      endSourceChar: 1365
-      line: 48
+    - startInstruction: 1000
+      endInstruction: 999
+      startSourceChar: 1533
+      endSourceChar: 1540
+      line: 52
       lineChar: 60
       spanCodeSection: typeof(
-    - startInstruction: 932
-      endInstruction: 1003
-      startSourceChar: 1365
-      endSourceChar: 1391
-      line: 48
+    - startInstruction: 1000
+      endInstruction: 1071
+      startSourceChar: 1540
+      endSourceChar: 1566
+      line: 52
       lineChar: 67
       spanCodeSection: "UdonBehaviour));\r\n        "
-    - startInstruction: 1004
-      endInstruction: 1003
-      startSourceChar: 1391
-      endSourceChar: 1391
-      line: 49
+    - startInstruction: 1072
+      endInstruction: 1071
+      startSourceChar: 1566
+      endSourceChar: 1570
+      line: 53
       lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 1072
+      endInstruction: 1071
+      startSourceChar: 1570
+      endSourceChar: 1570
+      line: 53
+      lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1004
-      endInstruction: 1003
-      startSourceChar: 1391
-      endSourceChar: 1391
-      line: 49
-      lineChar: 8
+    - startInstruction: 1072
+      endInstruction: 1071
+      startSourceChar: 1570
+      endSourceChar: 1587
+      line: 53
+      lineChar: 12
+      spanCodeSection: 'nearestPlayer == '
+    - startInstruction: 1072
+      endInstruction: 1119
+      startSourceChar: 1587
+      endSourceChar: 1593
+      line: 53
+      lineChar: 29
+      spanCodeSection: 'null) '
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1593
+      endSourceChar: 1608
+      line: 53
+      lineChar: 35
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1608
+      endSourceChar: 1608
+      line: 54
+      lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1004
-      endInstruction: 1003
-      startSourceChar: 1391
-      endSourceChar: 1391
-      line: 49
-      lineChar: 8
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1608
+      endSourceChar: 1608
+      line: 54
+      lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1004
-      endInstruction: 1003
-      startSourceChar: 1391
-      endSourceChar: 1402
-      line: 49
-      lineChar: 8
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1608
+      endSourceChar: 1608
+      line: 54
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1608
+      endSourceChar: 1619
+      line: 54
+      lineChar: 12
       spanCodeSection: zombieUdon.
-    - startInstruction: 1004
-      endInstruction: 1003
-      startSourceChar: 1402
-      endSourceChar: 1421
-      line: 49
-      lineChar: 19
-      spanCodeSection: SetProgramVariable(
-    - startInstruction: 1004
-      endInstruction: 1003
-      startSourceChar: 1421
-      endSourceChar: 1431
-      line: 49
-      lineChar: 38
-      spanCodeSection: '"Target", '
-    - startInstruction: 1004
-      endInstruction: 1035
-      startSourceChar: 1431
-      endSourceChar: 1458
-      line: 49
-      lineChar: 48
-      spanCodeSection: "nearestPlayer);\r\n\r\n        "
-    - startInstruction: 1036
-      endInstruction: 1035
-      startSourceChar: 1458
-      endSourceChar: 1458
-      line: 51
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1619
+      endSourceChar: 1642
+      line: 54
+      lineChar: 23
+      spanCodeSection: SendCustomNetworkEvent(
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1642
+      endSourceChar: 1642
+      line: 54
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1642
+      endSourceChar: 1642
+      line: 54
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1642
+      endSourceChar: 1642
+      line: 54
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1642
+      endSourceChar: 1642
+      line: 54
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1642
+      endSourceChar: 1642
+      line: 54
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1642
+      endSourceChar: 1646
+      line: 54
+      lineChar: 46
+      spanCodeSection: VRC.
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1646
+      endSourceChar: 1651
+      line: 54
+      lineChar: 50
+      spanCodeSection: Udon.
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1651
+      endSourceChar: 1658
+      line: 54
+      lineChar: 55
+      spanCodeSection: Common.
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1658
+      endSourceChar: 1669
+      line: 54
+      lineChar: 62
+      spanCodeSection: Interfaces.
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1669
+      endSourceChar: 1688
+      line: 54
+      lineChar: 73
+      spanCodeSection: NetworkEventTarget.
+    - startInstruction: 1120
+      endInstruction: 1119
+      startSourceChar: 1688
+      endSourceChar: 1695
+      line: 54
+      lineChar: 92
+      spanCodeSection: 'Owner, '
+    - startInstruction: 1120
+      endInstruction: 1159
+      startSourceChar: 1695
+      endSourceChar: 1715
+      line: 54
+      lineChar: 99
+      spanCodeSection: "\"Idle\");\r\n        } "
+    - startInstruction: 1160
+      endInstruction: 1159
+      startSourceChar: 1715
+      endSourceChar: 1720
+      line: 55
+      lineChar: 10
+      spanCodeSection: 'else '
+    - startInstruction: 1160
+      endInstruction: 1159
+      startSourceChar: 1720
+      endSourceChar: 1735
+      line: 55
+      lineChar: 15
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 1160
+      endInstruction: 1159
+      startSourceChar: 1735
+      endSourceChar: 1735
+      line: 56
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1160
+      endInstruction: 1159
+      startSourceChar: 1735
+      endSourceChar: 1735
+      line: 56
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1160
+      endInstruction: 1159
+      startSourceChar: 1735
+      endSourceChar: 1735
+      line: 56
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1160
+      endInstruction: 1159
+      startSourceChar: 1735
+      endSourceChar: 1746
+      line: 56
+      lineChar: 12
+      spanCodeSection: Networking.
+    - startInstruction: 1160
+      endInstruction: 1159
+      startSourceChar: 1746
+      endSourceChar: 1755
+      line: 56
+      lineChar: 23
+      spanCodeSection: SetOwner(
+    - startInstruction: 1160
+      endInstruction: 1159
+      startSourceChar: 1755
+      endSourceChar: 1770
+      line: 56
+      lineChar: 32
+      spanCodeSection: 'nearestPlayer, '
+    - startInstruction: 1160
+      endInstruction: 1183
+      startSourceChar: 1770
+      endSourceChar: 1792
+      line: 56
+      lineChar: 47
+      spanCodeSection: "zombie);\r\n            "
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1792
+      endSourceChar: 1792
+      line: 57
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1792
+      endSourceChar: 1792
+      line: 57
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1792
+      endSourceChar: 1792
+      line: 57
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1792
+      endSourceChar: 1803
+      line: 57
+      lineChar: 12
+      spanCodeSection: zombieUdon.
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1803
+      endSourceChar: 1826
+      line: 57
+      lineChar: 23
+      spanCodeSection: SendCustomNetworkEvent(
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1826
+      endSourceChar: 1826
+      line: 57
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1826
+      endSourceChar: 1826
+      line: 57
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1826
+      endSourceChar: 1826
+      line: 57
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1826
+      endSourceChar: 1826
+      line: 57
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1826
+      endSourceChar: 1826
+      line: 57
+      lineChar: 46
+      spanCodeSection: 
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1826
+      endSourceChar: 1830
+      line: 57
+      lineChar: 46
+      spanCodeSection: VRC.
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1830
+      endSourceChar: 1835
+      line: 57
+      lineChar: 50
+      spanCodeSection: Udon.
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1835
+      endSourceChar: 1842
+      line: 57
+      lineChar: 55
+      spanCodeSection: Common.
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1842
+      endSourceChar: 1853
+      line: 57
+      lineChar: 62
+      spanCodeSection: Interfaces.
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1853
+      endSourceChar: 1872
+      line: 57
+      lineChar: 73
+      spanCodeSection: NetworkEventTarget.
+    - startInstruction: 1184
+      endInstruction: 1183
+      startSourceChar: 1872
+      endSourceChar: 1879
+      line: 57
+      lineChar: 92
+      spanCodeSection: 'Owner, '
+    - startInstruction: 1184
+      endInstruction: 1215
+      startSourceChar: 1879
+      endSourceChar: 1911
+      line: 57
+      lineChar: 99
+      spanCodeSection: "\"Chase\");\r\n        }\r\n\r\n        "
+    - startInstruction: 1216
+      endInstruction: 1215
+      startSourceChar: 1911
+      endSourceChar: 1911
+      line: 60
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 1036
-      endInstruction: 1035
-      startSourceChar: 1458
-      endSourceChar: 1458
-      line: 51
+    - startInstruction: 1216
+      endInstruction: 1215
+      startSourceChar: 1911
+      endSourceChar: 1911
+      line: 60
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 1036
-      endInstruction: 1107
-      startSourceChar: 1458
-      endSourceChar: 1487
-      line: 51
+    - startInstruction: 1216
+      endInstruction: 1287
+      startSourceChar: 1911
+      endSourceChar: 1940
+      line: 60
       lineChar: 8
       spanCodeSection: "zombieIndex++;\r\n    }\r\n\r\n    "
-    - startInstruction: 1108
-      endInstruction: 1115
-      startSourceChar: 1487
-      endSourceChar: 1522
-      line: 54
+    - startInstruction: 1288
+      endInstruction: 1295
+      startSourceChar: 1940
+      endSourceChar: 1975
+      line: 63
       lineChar: 4
       spanCodeSection: "public void OnUpdatePlayers()\r\n    "
-    - startInstruction: 1116
-      endInstruction: 1116
-      startSourceChar: 1522
-      endSourceChar: 1522
-      line: 55
+    - startInstruction: 1296
+      endInstruction: 1296
+      startSourceChar: 1975
+      endSourceChar: 1975
+      line: 64
       lineChar: 4
       spanCodeSection: 
   hasInteractEvent: 0

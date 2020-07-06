@@ -30,7 +30,11 @@ public class ZombieController : UdonSharpBehaviour
         var zombie = zombieGroup.transform.GetChild(zombieIndex).gameObject;
         var zombiePos = zombie.transform.position;
 
-        // 一番近くのプレイヤーを探す
+        // Only players with owner privileges can SetOwner.
+        var localPlayer = Networking.LocalPlayer;
+        Networking.IsOwner(localPlayer, zombie);
+
+        // Find the nearest player.
         double minSqrMagnitude = 10000000;
         VRCPlayerApi nearestPlayer = null;
         for (int i = 0; i < Players.Length; i++)
@@ -47,7 +51,12 @@ public class ZombieController : UdonSharpBehaviour
         }
 
         var zombieUdon = (UdonBehaviour)zombie.GetComponent(typeof(UdonBehaviour));
-        zombieUdon.SetProgramVariable("Target", nearestPlayer);
+        if (nearestPlayer == null) {
+            zombieUdon.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "Idle");
+        } else {
+            Networking.SetOwner(nearestPlayer, zombie);
+            zombieUdon.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "Chase");
+        }
 
         zombieIndex++;
     }
