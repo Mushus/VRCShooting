@@ -37,7 +37,6 @@ public class Gun : UdonSharpBehaviour
         _coolTime -= 1;
         if (_isPickup && _coolTime <= 0 && Input.GetKeyDown(KeyCode.R)) {
             SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "Reload");
-            Reload();
         }
     }
 
@@ -68,7 +67,6 @@ public class Gun : UdonSharpBehaviour
         }
         if (_bulletsInMagazine <= 0) {
             SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "Reload");
-            Reload();
             return;
         }
 
@@ -82,16 +80,15 @@ public class Gun : UdonSharpBehaviour
 
         _coolTime = coolTime;
         this.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OnShot");
-        OnShot();
     }
 
-    private void OnShot()
+    public void OnShot()
     {
         _bulletsInMagazine -= 1;
         _isReloadable = true;
     }
 
-    private void Reload()
+    public void Reload()
     {
         if (!_isReloadable || _bullets == 0) {
             return;
