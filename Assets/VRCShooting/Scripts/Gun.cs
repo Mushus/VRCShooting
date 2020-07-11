@@ -19,7 +19,6 @@ public class Gun : UdonSharpBehaviour
     [SerializeField] private AudioSource reloadSound;
     /// Self transform
     private Transform _transform;
-    private GameObject _gameObject;
     private int _coolTime = 0;
     /// number of bullets in the magazine
     private int _bulletsInMagazine = 17;
@@ -31,19 +30,20 @@ public class Gun : UdonSharpBehaviour
     private void Start()
     {
         _transform = GetComponent<Transform>();
+        Init();
     }
     private void Update()
     {
         _coolTime -= 1;
         if (_isPickup && _coolTime <= 0 && Input.GetKeyDown(KeyCode.R)) {
-            Reload();
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "Reload");
         }
     }
 
     public override void OnPickup()
     {
         _isPickup = true;
-        Networking.SetOwner(Networking.LocalPlayer, _gameObject);
+        Networking.SetOwner(Networking.LocalPlayer, this.gameObject);
     }
 
     public override void OnDrop()
@@ -54,7 +54,7 @@ public class Gun : UdonSharpBehaviour
         for(var i = 0; i < 64; ++i) {
             var master = VRCPlayerApi.GetPlayerById(i);
             if (master != null) {
-                Networking.SetOwner(master, _gameObject);
+                Networking.SetOwner(master, this.gameObject);
                 break;
             }
         }
@@ -66,7 +66,7 @@ public class Gun : UdonSharpBehaviour
             return;
         }
         if (_bulletsInMagazine <= 0) {
-            Reload();
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "Reload");
             return;
         }
 
@@ -79,11 +79,16 @@ public class Gun : UdonSharpBehaviour
         }
 
         _coolTime = coolTime;
+        this.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OnShot");
+    }
+
+    public void OnShot()
+    {
         _bulletsInMagazine -= 1;
         _isReloadable = true;
     }
 
-    private void Reload()
+    public void Reload()
     {
         if (!_isReloadable || _bullets == 0) {
             return;
