@@ -82,3 +82,6 @@ crashlytics-build.properties
 /[Aa]ssets/UdonSharp
 /[Aa]ssets/VRChat Examples
 /[Aa]ssets/VRCSDK
+
+!*.blend1
+!*.blend1.meta
