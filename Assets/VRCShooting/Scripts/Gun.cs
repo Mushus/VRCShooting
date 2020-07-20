@@ -1,5 +1,6 @@
 using UdonSharp;
 using UnityEngine;
+using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
@@ -17,6 +18,7 @@ public class Gun : UdonSharpBehaviour
     [SerializeField] private int bullets = 100;
     [SerializeField] private AudioSource shotSound;
     [SerializeField] private AudioSource reloadSound;
+    [SerializeField] private Text gunStatusText;
     /// Self transform
     private Transform _transform;
     private int _coolTime = 0;
@@ -44,6 +46,8 @@ public class Gun : UdonSharpBehaviour
     {
         _isPickup = true;
         Networking.SetOwner(Networking.LocalPlayer, this.gameObject);
+        
+        updateGunStatusText();
     }
 
     public override void OnDrop()
@@ -58,6 +62,8 @@ public class Gun : UdonSharpBehaviour
                 break;
             }
         }
+
+        clearGunStatusText();
     }
 
     public override void OnPickupUseDown()
@@ -86,6 +92,8 @@ public class Gun : UdonSharpBehaviour
     {
         _bulletsInMagazine -= 1;
         _isReloadable = true;
+        
+        updateGunStatusText();
     }
 
     public void Reload()
@@ -115,6 +123,10 @@ public class Gun : UdonSharpBehaviour
         _bulletsInMagazine += _reloadBullets;
         _bullets -= _reloadBullets;
         _isReloadable = false;
+
+        if (_isPickup) {
+            updateGunStatusText();
+        }
     }
     /// Initialize all gun values
     private void Init()
@@ -124,5 +136,14 @@ public class Gun : UdonSharpBehaviour
         _coolTime = 0;
         _isReloadable = false;
         _isPickup = false;
+    }
+
+    private void updateGunStatusText() {
+        if (gunStatusText == null) return;
+        gunStatusText.text = string.Format("{0} / {1}", _bulletsInMagazine, _bullets);
+    }
+    private void clearGunStatusText() {
+        if (gunStatusText == null) return;
+        gunStatusText.text = "";
     }
 }
